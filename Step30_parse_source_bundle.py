@@ -4,6 +4,12 @@ FHIR Bundle Parser
 
 This script parses a FHIR Bundle JSON file and extracts individual entries
 into separate JSON files, organized by resource type and named by resource ID.
+
+TODO: 
+* Implement arguements of --input_dir and --input_file. If --input_dir is set then loop over every file in the directory and repeat the process on each one of them
+* automatically create a subdirectory in the same directory the processed file is in with the same name as the file without the json file. 
+* write all of that jsons seperated entry sub-files into that directory
+
 """
 
 import json
