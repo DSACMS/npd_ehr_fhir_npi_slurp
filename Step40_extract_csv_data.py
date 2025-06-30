@@ -340,7 +340,13 @@ def process_organization_file(file_path, vendor_name):
         if resource.get('resourceType') != 'Organization':
             return None
         
-        org_id = resource.get('id', '')
+        # Use fullUrl as the primary identifier, but only if it's https
+        full_url = data.get('fullUrl', '')
+        if not full_url.startswith('https://'):
+            # Skip entries that don't have https fullUrl
+            return None
+        
+        org_id = full_url
         org_name = resource.get('name', '')
         active = resource.get('active', False)
         
@@ -373,11 +379,44 @@ def process_organization_file(file_path, vendor_name):
     except Exception as e:
         return {'error': str(e), 'file_path': str(file_path)}
 
+def process_endpoint_file(file_path, vendor_name):
+    """Process a single endpoint JSON file"""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        resource = data.get('resource', {})
+        if resource.get('resourceType') != 'Endpoint':
+            return None
+        
+        # Use fullUrl as the primary identifier, but only if it's https
+        full_url = data.get('fullUrl', '')
+        if not full_url.startswith('https://'):
+            # Skip entries that don't have https fullUrl
+            return None
+        
+        endpoint_id = full_url
+        endpoint_name = resource.get('name', '')
+        endpoint_address = resource.get('address', '')
+        status = resource.get('status', '')
+        
+        return {
+            'endpoint_id': endpoint_id,
+            'endpoint_name': endpoint_name,
+            'endpoint_address': endpoint_address,
+            'status': status,
+            'vendor_name': vendor_name,
+            'file_path': str(file_path)
+        }
+        
+    except Exception as e:
+        return {'error': str(e), 'file_path': str(file_path)}
+
 def main():
     parser = argparse.ArgumentParser(description='Extract CSV data from FHIR Organization JSON files')
     parser.add_argument('--input_dir', default='./data/service_json', 
                        help='Input directory containing vendor subdirectories with JSON files')
-    parser.add_argument('--output_dir', default='./data/normalized_csv_files',
+    parser.add_argument('--output_dir', default='./output_data/normalized_csv_files',
                        help='Output directory for CSV files')
     parser.add_argument('--test', action='store_true',
                        help='Test mode: only process first 1000 files per vendor for validation')

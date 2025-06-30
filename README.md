@@ -1,5 +1,11 @@
 # EHR FHIR Entity Slurp
 
+# TODO 
+* We need to streamline the whole process to account for the fact that some entry blocks, like 
+data/service_json/athena-fhir-service-base-urls/entry_a1c9c7fe-6d45-5a92-922c-7bfcd55a062d.json
+"forget" the URL they are sourced from. We need to figure out how to retain that information from a previous step so that we can keep everything in https. 
+
+
 A comprehensive data processing pipeline for extracting, analyzing, and normalizing EHR (Electronic Health Records) FHIR endpoint data from healthcare providers. This tool helps assess HTI-2 compliance and generates normalized datasets for healthcare interoperability analysis.
 
 ## Overview
