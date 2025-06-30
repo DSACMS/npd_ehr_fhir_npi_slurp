@@ -114,8 +114,9 @@ Creates normalized CSV datasets from FHIR Organization resources.
 
 ### NPI Validation
 - Format validation (10-digit requirement)
-- Real-time API validation against CMS NPI Registry
-- Invalid NPI flagging and error reporting
+- API validation against CMS NPI Registry (currently disabled for performance)
+- Validation columns preserved with placeholder values ('?') for future implementation
+- Invalid NPI flagging based on format validation
 
 ### Phone Number Validation
 - International format parsing using `phonenumbers` library

@@ -23,9 +23,10 @@ NPIs are always 10 digits and usually have the "system" value of "http://hl7.org
 Put all of the resulting csv files in ./data/normalized_csv_files
 
 NPI Validation:
-NPIs are validated against the CMS NPI Registry API at https://npiregistry.cms.hhs.gov/api/?version=2.1&number={npi}
-Valid NPIs have a result_count of 1 instead of 0 in the resulting JSON response.
-The validation results are included in the org_to_npi.csv output with api_error and result_count fields.
+NPIs are currently validated for format only (10-digit requirement).
+API validation against the CMS NPI Registry has been disabled for performance reasons.
+The validation columns (api_error, result_count) contain placeholder values ('?') for future implementation.
+Format validation results are included in the is_invalid_npi field (0=valid format, 1=invalid format).
 
 Test Mode:
 Use the --test flag to run in test mode, which only processes the first 1000 files per EHR vendor.
@@ -136,21 +137,21 @@ def extract_npi_identifiers(identifiers):
             'npi' in system.lower() or 
             is_valid_npi_format(value)):
             
-            # Always perform API validation for definitive results
-            api_result = validate_npi_via_api(value)
+            # Skip API validation for now - use placeholder values for future implementation
+            # api_result = validate_npi_via_api(value)  # Commented out for performance
             
             npi_record = {
                 'system': system,
                 'value': value,
-                'is_valid': api_result['is_valid_api'],
-                'api_error': api_result['api_error'],
-                'result_count': api_result['result_count']
+                'is_valid': '?',  # Placeholder - will be implemented in future phase
+                'api_error': None,
+                'result_count': '?'  # Placeholder - will be implemented in future phase
             }
             
             npis.append(npi_record)
             
-            # Add a small delay between API calls to be respectful
-            time.sleep(0.1)
+            # No delay needed since we're not making API calls
+            # time.sleep(0.1)  # Commented out since no API calls
     
     return npis
 
@@ -478,11 +479,14 @@ def main():
                 
                 # Process NPIs
                 for npi in result['npis']:
+                    # Since we're not doing API validation, use format validation for is_invalid_npi
+                    is_invalid = 0 if is_valid_npi_format(npi['value']) else 1
+                    
                     org_to_npi.append({
                         'org_id': result['org_id'],
                         'npi_system': npi['system'],
                         'npi_value': npi['value'],
-                        'is_invalid_npi': 0 if npi['is_valid'] else 1,
+                        'is_invalid_npi': is_invalid,
                         'api_error': npi['api_error'],
                         'result_count': npi['result_count']
                     })

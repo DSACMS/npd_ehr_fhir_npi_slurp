@@ -57,7 +57,5 @@ echo ""
 
 
 echo "Additional options:"
-echo "  - Run analysis: ./go.sh --analyze"
 echo "  - Run tests: python test_pipeline.py"
 echo "  - Test mode (faster): python Step40_extract_csv_data.py --test"
-
