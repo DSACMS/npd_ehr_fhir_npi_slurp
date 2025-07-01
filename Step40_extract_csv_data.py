@@ -311,11 +311,9 @@ def extract_endpoints(endpoints):
     
     for endpoint in endpoints:
         reference = endpoint.get('reference', '')
-        # Extract URL if it's a full URL, otherwise keep the reference
-        if reference.startswith('http'):
-            url = reference
-        else:
-            url = reference
+        # For now, we'll store the reference and resolve URLs in a separate pass
+        # The actual endpoint URLs are in separate Endpoint resource files
+        url = reference  # This will be resolved later when we process Endpoint files
         
         endpoint_list.append({
             'reference': reference,
@@ -340,10 +338,10 @@ def process_organization_file(file_path, vendor_name):
         if resource.get('resourceType') != 'Organization':
             return None
         
-        # Use fullUrl as the primary identifier, but only if it's https
+        # Use fullUrl as the primary identifier
         full_url = data.get('fullUrl', '')
-        if not full_url.startswith('https://'):
-            # Skip entries that don't have https fullUrl
+        if not full_url:
+            # Skip entries that don't have fullUrl
             return None
         
         org_id = full_url
@@ -448,6 +446,9 @@ def main():
     # Error tracking
     errors = []
     
+    # Endpoint reference to URL mapping
+    endpoint_reference_to_url = {}
+    
     print(f"Processing files from: {input_path}")
     print(f"Output directory: {output_path}")
     if args.test:
@@ -458,6 +459,37 @@ def main():
     total_files = 0
     processed_files = 0
     
+    # PASS 1: Process all files to build endpoint reference mapping
+    print("\nPass 1: Building endpoint reference mapping...")
+    for vendor_dir in vendor_dirs:
+        vendor_name = vendor_dir.name
+        json_files = list(vendor_dir.glob('*.json'))
+        
+        # In test mode, limit to first 1000 files per vendor
+        if args.test and len(json_files) > 1000:
+            json_files = json_files[:1000]
+        
+        for json_file in json_files:
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                resource = data.get('resource', {})
+                if resource.get('resourceType') == 'Endpoint':
+                    full_url = data.get('fullUrl', '')
+                    endpoint_address = resource.get('address', '')
+                    
+                    if full_url and endpoint_address:
+                        endpoint_reference_to_url[full_url] = endpoint_address
+                        
+            except Exception as e:
+                # Skip files that can't be processed in pass 1
+                continue
+    
+    print(f"Found {len(endpoint_reference_to_url)} endpoint mappings")
+    
+    # PASS 2: Process organization files with endpoint resolution
+    print("\nPass 2: Processing organizations with endpoint resolution...")
     for vendor_dir in vendor_dirs:
         vendor_name = vendor_dir.name
         print(f"\nProcessing vendor: {vendor_name}")
