@@ -135,29 +135,36 @@ def write_markdown_report(vendor_results, output_path):
         key=lambda x: (-x[1]["_count"], x[0].lower())
     )
 
-    # Markdown table header
-    header = "| Vendor | " + " | ".join(c[0] for c in CHECKS) + " |\n"
-    header += "|--------" + "|".join(["--------"] * len(CHECKS)) + "|\n"
+    # HTML table header
+    html = []
+    html.append("<table>")
+    html.append("  <thead>")
+    html.append("    <tr>")
+    html.append("      <th>Vendor</th>")
+    for c, _ in CHECKS:
+        html.append(f"      <th>{c}</th>")
+    html.append("    </tr>")
+    html.append("  </thead>")
+    html.append("  <tbody>")
 
-    # Table rows
-    rows = []
     for vendor, results in sorted_vendors:
-        row = f"| {vendor} "
+        html.append("    <tr>")
+        html.append(f"      <td>{vendor}</td>")
         for c, _ in CHECKS:
             passed = results[c]
             badge_url = BADGES[passed].format(label=c.replace(' ', '%20'))
             alt_text = f"{c}: {'Pass' if passed else 'Fail'}"
-            row += f'| ![{alt_text}]({badge_url} "{alt_text}") '
-        row += "|\n"
-        rows.append(row)
+            html.append(f'      <td><img src="{badge_url}" alt="{alt_text}" title="{alt_text}"></td>')
+        html.append("    </tr>")
+    html.append("  </tbody>")
+    html.append("</table>")
 
     # Write to file
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("# CEHRT FHIR Vendor Compliance Dashboard\n\n")
         f.write("This dashboard lists CEHRT vendors in order of their compliance with a scrappable FHIR ecosystem. Each column represents a compliance check, and each cell shows a shield.io badge indicating pass (green) or fail (red).\n\n")
-        f.write(header)
-        for row in rows:
-            f.write(row)
+        for line in html:
+            f.write(line + "\n")
 
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
