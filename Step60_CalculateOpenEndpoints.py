@@ -1,4 +1,6 @@
 """
+DO NOT ATTEMPT TO READ THE CSV files directly!! this currently crashes the cline API. 
+
 Now that step50 is implemented we have a list of NPIs their associated urls. That CSV file structure looks like this
 
 org_fhir_url,npi
@@ -15,6 +17,8 @@ https://interface.relimedsolutions.com/fhir/r4/Organization/2460037878,246003787
 https://interface.relimedsolutions.com/fhir/r4/Organization/2460037878,1154719797
 
 We know that there is a server listening because of the logic in Step50_simple_clean_output.py (though sometimes we get weird server headers)
+Please ignore the weird server headers in an otherwise working server endpoint, similar to the way it is handled in Step50. 
+Use similar timeouts to Step50
 
 Now we need to calculate the always-available-well-known-and-open endpoints that should be available without authentication.
 However, it is not clear what sub-directory on a given url will have these files. For 
@@ -29,15 +33,16 @@ https://example.com/which/
 or
 https://example.com/which/dir/
 
-etc etc 
+You need to check every directory, starting at the domain name until you find a level that is responsive to your specific sub-url requests. 
 
 We are looking for several specific types of urls: 
 
 * Capability Statement - should be valid XML or JSON at /metadata
 * Well-known Smart Config -  Oauth endpoints available at /.well-known/smart-configuration
 * OpenAPI - at /api-docs
-* OpenAPi - at /openapi.json
-* Swagger - at /swagger or /swagger.json
+* OpenAPi json - at /openapi.json
+* Swagger - at /swagger
+* Swagger json - at /swagger.json
 
 At each level of the URL directory structure, starting at the top, check to see if these exist. 
 
@@ -47,6 +52,8 @@ then create an enriched csv output with the following headers for each row of da
 org_fhir_url,npi,capability_url,smart_url,openapi_docs_url,openapi_json_url,swagger_url
 
 In the event that it is not possible to find a responsive url for a given url type at an endpoint, in the place of a valid url this row data should say "Error - failed to find openapi_docs url" etc etc. 
+
+There should be no defaults to the --input_csv_file and --output_csv_file arguments. 
 
 
 """
