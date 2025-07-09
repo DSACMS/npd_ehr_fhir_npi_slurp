@@ -89,11 +89,62 @@ def check_endpoint_found(row, col):
     # If the value is a valid URL, consider it found
     return is_valid_url(row.get(col, ""))
 
-def aggregate_vendor_compliance(enriched_path, vendor_map):
+# Updated to accept org_to_npi_path as a parameter and implement correct logic
+def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
     """
     Returns a dict: vendor_name -> {check_name: bool, ...}
+    Implements logic:
+    - For orgs in org_to_npi.csv but not in enriched_endpoints.csv, use Step50 logic for first three columns.
+    - For orgs in enriched_endpoints.csv, use normal logic.
+    - If vendor has no org_id in either: all fail.
     """
+    import re
+    import requests
+
+    def is_valid_npi(npi_value):
+        return bool(re.match(r'^\d{10}$', npi_value.strip()))
+
+    def is_valid_https_url(url):
+        return url.strip().startswith('https://')
+
+    def is_domain_responsive(base_domain):
+        try:
+            response = requests.get(base_domain, timeout=10, allow_redirects=True)
+            return 200 <= response.status_code < 500
+        except Exception:
+            return False
+
+    # 1. Parse org_to_npi.csv and collect per-vendor org info
+    org_to_npi = {}
+    org_to_npi_rows = []
+    with open(org_to_npi_path, newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            org_id = row.get("org_id", "").strip()
+            npi_value = row.get("npi_value", "").strip()
+            base = get_base_domain(org_id)
+            vendor = vendor_map.get(base, "Unknown")
+            org_to_npi_rows.append((vendor, org_id, npi_value))
+            if vendor not in org_to_npi:
+                org_to_npi[vendor] = []
+            org_to_npi[vendor].append((org_id, npi_value))
+
+    # 2. Parse enriched_endpoints.csv
+    org_in_enriched = {}
+    with open(enriched_path, newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            org_url = row.get("org_fhir_url", "").strip()
+            base = get_base_domain(org_url)
+            vendor = vendor_map.get(base, "Unknown")
+            if vendor not in org_in_enriched:
+                org_in_enriched[vendor] = set()
+            org_in_enriched[vendor].add(org_url)
+
+    # 3. Aggregate compliance
     vendor_results = {}
+
+    # First, handle vendors with orgs in enriched_endpoints.csv (normal logic)
     with open(enriched_path, newline='', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -121,7 +172,31 @@ def aggregate_vendor_compliance(enriched_path, vendor_map):
                 if v:
                     vendor_results[vendor][k] = True
 
-    # Count number of passing checks for sorting
+    # Next, handle vendors with orgs in org_to_npi.csv but not in enriched_endpoints.csv
+    for vendor in org_to_npi:
+        if vendor not in vendor_results:
+            # For each org_id, check the three criteria
+            reachable = False
+            has_onpi = False
+            https_org_url = False
+            for org_id, npi_value in org_to_npi[vendor]:
+                # Reachable: base domain is responsive
+                base_domain = get_base_domain(org_id)
+                if is_domain_responsive(base_domain):
+                    reachable = True
+                # Has ONPI: valid 10-digit NPI
+                if is_valid_npi(npi_value):
+                    has_onpi = True
+                # HTTPS ORG URL: starts with https://
+                if is_valid_https_url(org_id):
+                    https_org_url = True
+            vendor_results[vendor] = {c[0]: False for c in CHECKS}
+            vendor_results[vendor]["Reachable"] = reachable
+            vendor_results[vendor]["Has ONPI"] = has_onpi
+            vendor_results[vendor]["HTTPS ORG URL"] = https_org_url
+            vendor_results[vendor]["_count"] = sum([reachable, has_onpi, https_org_url])
+
+    # Count number of passing checks for sorting (for those with real data)
     for vendor in vendor_results:
         vendor_results[vendor]["_count"] = sum(
             vendor_results[vendor][c[0]] for c in CHECKS
@@ -179,7 +254,8 @@ def main():
     output_path = os.path.join(base_dir, "CEHRT_FHIR_Report.md")
 
     vendor_map = load_vendor_mapping(list_sources_path)
-    vendor_results = aggregate_vendor_compliance(enriched_path, vendor_map)
+    org_to_npi_path = os.path.join(base_dir, "data", "output_data", "normalized_csv_files", "org_to_npi.csv")
+    vendor_results = aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map)
     write_markdown_report(vendor_results, vendor_map, output_path)
     print(f"Dashboard written to {output_path}")
 
