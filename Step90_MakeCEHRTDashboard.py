@@ -37,11 +37,19 @@ CHECKS = [
     ("Findable Swagger JSON", "swagger_json_url"), # ./icons/green_fire_swagger.200.png
 ]
 
-# Shield.io badge templates
-BADGES = {
-    True: "https://img.shields.io/badge/{label}-green?style=for-the-badge",
-    False: "https://img.shields.io/badge/{label}-red?style=for-the-badge"
+# Icon mapping for passing checks
+PASS_ICONS = {
+    "Reachable": "./icons/green_check.png",
+    "Has ONPI": "./icons/green_check.png",
+    "HTTPS ORG URL": "./icons/green_fire_org_endpoint.200.png",
+    "Findable Metadata": "./icons/green_fire_metadata.200.png",
+    "Findable SMART": "./icons/green_fire_smart.200.png",
+    "Findable OpenAPI Docs": "./icons/green_fire_openapi.200.png",
+    "Findable OpenAPI JSON": "./icons/green_fire_openapi.200.png",
+    "Findable Swagger": "./icons/green_fire_swagger.200.png",
+    "Findable Swagger JSON": "./icons/green_fire_swagger.200.png",
 }
+FAIL_ICON = "./icons/red_x.png"
 
 def get_base_domain(url):
     """Extract scheme://netloc from a URL."""
@@ -210,49 +218,7 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
         )
     return vendor_results
 
-def write_markdown_report(vendor_results, vendor_map, output_path):
-    # Ensure every vendor from vendor_map is present, add as all-fail if missing
-    for vendor in set(vendor_map.values()):
-        if vendor not in vendor_results:
-            vendor_results[vendor] = {c[0]: False for c in CHECKS}
-            vendor_results[vendor]["_count"] = 0
-
-    # Sort vendors by number of passing checks, descending
-    sorted_vendors = sorted(
-        vendor_results.items(),
-        key=lambda x: (-x[1]["_count"], x[0].lower())
-    )
-
-    # HTML table header
-    html = []
-    html.append("<table>")
-    html.append("  <thead>")
-    html.append("    <tr>")
-    html.append("      <th>Vendor</th>")
-    for c, _ in CHECKS:
-        html.append(f"      <th>{c}</th>")
-    html.append("    </tr>")
-    html.append("  </thead>")
-    html.append("  <tbody>")
-
-    for vendor, results in sorted_vendors:
-        html.append("    <tr>")
-        html.append(f"      <td>{vendor}</td>")
-        for c, _ in CHECKS:
-            passed = results[c]
-            badge_url = BADGES[passed].format(label=c.replace(' ', '%20'))
-            alt_text = f"{c}: {'Pass' if passed else 'Fail'}"
-            html.append(f'      <td><img src="{badge_url}" alt="{alt_text}" title="{alt_text}"></td>')
-        html.append("    </tr>")
-    html.append("  </tbody>")
-    html.append("</table>")
-
-    # Write to file
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write("# CEHRT FHIR Vendor Compliance Dashboard\n\n")
-        f.write("This dashboard lists CEHRT vendors in order of their compliance with a scrappable FHIR ecosystem. Each column represents a compliance check, and each cell shows a shield.io badge indicating pass (green) or fail (red).\n\n")
-        for line in html:
-            f.write(line + "\n")
+# (write_markdown_report function removed; all HTML table logic is now in main())
 
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -283,11 +249,10 @@ def main():
             if col == "Vendor":
                 html.append(f"      <td>{val}</td>")
             else:
-                label = col.replace(' ', '%20')
                 passed = val == "True"
-                badge_url = BADGES[passed].format(label=label)
+                icon_path = PASS_ICONS.get(col, PASS_ICONS["Reachable"]) if passed else FAIL_ICON
                 alt_text = f"{col}: {'Pass' if passed else 'Fail'}"
-                html.append(f'      <td><img src="{badge_url}" alt="{alt_text}" title="{alt_text}"></td>')
+                html.append(f'      <td><img src="{icon_path}" alt="{alt_text}" title="{alt_text}" height="{icon_img_height}" width="{icon_img_width}"></td>')
         html.append("    </tr>")
     html.append("  </tbody>")
     html.append("</table>")
