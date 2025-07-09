@@ -35,7 +35,7 @@ CHECKS = [
     ("Findable OpenAPI JSON", "openapi_json_url"), # ./icons/green_fire_openapi.200.png
     ("Findable Swagger", "swagger_url"), # ./icons/green_fire_swagger.200.png
     ("Findable Swagger JSON", "swagger_json_url"), # ./icons/green_fire_swagger.200.png
-]
+] 
 
 # Icon mapping for passing checks
 PASS_ICONS = {
@@ -175,7 +175,7 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
                 "Reachable": check_reachable(row),
                 "Has ONPI": check_has_onpi(row),
                 "HTTPS ORG URL": check_https_org_url(row),
-                "Findable Capabilities": check_endpoint_found(row, "capability_url"),
+                "Findable Metadata": check_endpoint_found(row, "capability_url"),
                 "Findable SMART": check_endpoint_found(row, "smart_url"),
                 "Findable OpenAPI Docs": check_endpoint_found(row, "openapi_docs_url"),
                 "Findable OpenAPI JSON": check_endpoint_found(row, "openapi_json_url"),

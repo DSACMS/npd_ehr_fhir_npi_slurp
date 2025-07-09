@@ -1,4 +1,4 @@
-Vendor,Reachable,Has ONPI,HTTPS ORG URL,Findable Capabilities,Findable SMART,Findable OpenAPI Docs,Findable OpenAPI JSON,Findable Swagger,Findable Swagger JSON
+Vendor,Reachable,Has ONPI,HTTPS ORG URL,Findable Metadata,Findable SMART,Findable OpenAPI Docs,Findable OpenAPI JSON,Findable Swagger,Findable Swagger JSON
 "1Life Healthcare, Inc",False,False,False,False,False,False,False,False,False
 Aarista Technology LLC,False,False,False,False,False,False,False,False,False
 "Abeo Solutions, Inc",False,False,False,False,False,False,False,False,False

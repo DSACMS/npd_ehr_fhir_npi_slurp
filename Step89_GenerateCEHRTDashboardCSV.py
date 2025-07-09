@@ -10,7 +10,7 @@ This file is used as input for the dashboard markdown generator.
 - Reads data/output_data/normalized_csv_files/org_to_npi.csv for partial compliance.
 - Aggregates compliance per vendor.
 
-Columns: Vendor, Reachable, Has ONPI, HTTPS ORG URL, Findable Capabilities, Findable SMART, Findable OpenAPI Docs, Findable OpenAPI JSON, Findable Swagger, Findable Swagger JSON
+Columns: Vendor, Reachable, Has ONPI, HTTPS ORG URL, Findable Metadata, Findable SMART, Findable OpenAPI Docs, Findable OpenAPI JSON, Findable Swagger, Findable Swagger JSON
 """
 
 import csv
@@ -23,7 +23,7 @@ CHECKS = [
     ("Reachable", "reachable"),
     ("Has ONPI", "has_onpi"),
     ("HTTPS ORG URL", "https_org_url"),
-    ("Findable Capabilities", "capability_url"),
+    ("Findable Metadata", "capability_url"),
     ("Findable SMART", "smart_url"),
     ("Findable OpenAPI Docs", "openapi_docs_url"),
     ("Findable OpenAPI JSON", "openapi_json_url"),
@@ -125,7 +125,7 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
                 "Reachable": check_reachable(row),
                 "Has ONPI": check_has_onpi(row),
                 "HTTPS ORG URL": check_https_org_url(row),
-                "Findable Capabilities": check_endpoint_found(row, "capability_url"),
+                "Findable Metadata": check_endpoint_found(row, "capability_url"),
                 "Findable SMART": check_endpoint_found(row, "smart_url"),
                 "Findable OpenAPI Docs": check_endpoint_found(row, "openapi_docs_url"),
                 "Findable OpenAPI JSON": check_endpoint_found(row, "openapi_json_url"),
@@ -169,10 +169,25 @@ def main():
     org_to_npi_path = os.path.join(base_dir, "data", "output_data", "normalized_csv_files", "org_to_npi.csv")
     output_csv = os.path.join(base_dir, "CEHRT_FHIR_Report.csv")
 
+    print("Loading vendor mapping from prod_data/list_sources_summary.csv...")
     vendor_map = load_vendor_mapping(list_sources_path)
-    vendor_results = aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map)
+    print(f"Loaded {len(vendor_map)} vendor base domains.")
 
-    # Write CSV
+    print("Parsing org_to_npi.csv for partial compliance info...")
+    with open(org_to_npi_path, newline='', encoding='utf-8') as f:
+        org_to_npi_count = sum(1 for _ in f) - 1
+    print(f"Found {org_to_npi_count} org_id rows in org_to_npi.csv.")
+
+    print("Parsing enriched_endpoints.csv for endpoint compliance info...")
+    with open(enriched_path, newline='', encoding='utf-8') as f:
+        enriched_count = sum(1 for _ in f) - 1
+    print(f"Found {enriched_count} org_fhir_url rows in enriched_endpoints.csv.")
+
+    print("Aggregating compliance results per vendor...")
+    vendor_results = aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map)
+    print(f"Aggregated compliance for {len(vendor_results)} vendors.")
+
+    print("Writing dashboard CSV output...")
     with open(output_csv, "w", newline='', encoding="utf-8") as f:
         writer = csv.writer(f)
         header = ["Vendor"] + [c[0] for c in CHECKS]
