@@ -232,13 +232,17 @@ def main():
         for row in reader:
             vendor_results.append(row)
 
+    one_space = '&nbsp;'
+    how_many_spaces = 15
+    the_spaces = one_space * how_many_spaces
+
     # HTML table header
     html = []
     html.append("<table>")
     html.append("  <thead>")
     html.append("    <tr>")
     for col in vendor_results[0].keys():
-        html.append(f"      <th>{col}</th>")
+        html.append(f"      <th>{the_spaces}<br>{col}</th>")
     html.append("    </tr>")
     html.append("  </thead>")
     html.append("  <tbody>")
