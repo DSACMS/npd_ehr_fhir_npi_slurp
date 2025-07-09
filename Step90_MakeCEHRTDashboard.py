@@ -128,7 +128,13 @@ def aggregate_vendor_compliance(enriched_path, vendor_map):
         )
     return vendor_results
 
-def write_markdown_report(vendor_results, output_path):
+def write_markdown_report(vendor_results, vendor_map, output_path):
+    # Ensure every vendor from vendor_map is present, add as all-fail if missing
+    for vendor in set(vendor_map.values()):
+        if vendor not in vendor_results:
+            vendor_results[vendor] = {c[0]: False for c in CHECKS}
+            vendor_results[vendor]["_count"] = 0
+
     # Sort vendors by number of passing checks, descending
     sorted_vendors = sorted(
         vendor_results.items(),
@@ -174,7 +180,7 @@ def main():
 
     vendor_map = load_vendor_mapping(list_sources_path)
     vendor_results = aggregate_vendor_compliance(enriched_path, vendor_map)
-    write_markdown_report(vendor_results, output_path)
+    write_markdown_report(vendor_results, vendor_map, output_path)
     print(f"Dashboard written to {output_path}")
 
 if __name__ == "__main__":

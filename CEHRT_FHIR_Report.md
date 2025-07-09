@@ -414,5 +414,1901 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
       <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
     </tr>
+    <tr>
+      <td>1Life Healthcare, Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Aarista Technology LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Abeo Solutions, Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Acurus Solutions, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Adaptamed, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Advanced Data Systems Corporation</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>AdvancedMD</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Agastha, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>agilon health inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>AllegianceMD Software, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Altera Digital Health Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Applied Research Works, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>ASP.MD Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Astronaut, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>athenahealth, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Axxess</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Azalea Health</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Benchmark Systems</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Bizmatics Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Braintree Health</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Brilogy Corporation</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>BroadStreet Health LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Canvas Medical, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>CareCloud Health, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>CareEvolution, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Careexpand LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Carefluence</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Carepaths Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>CareTracker, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Cerner Corporation</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>ChartPath, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>CHN Tech Solutions LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>CitiusTech, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Claimpower, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>CliniComp, Intl.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>CompuGroup Medical US</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Compulink Healthcare Solutions</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Comtron Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Darena Solutions LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Doc-tor.com</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>DOX EMR</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>E*HealthLine.com, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>eClinicalWorks, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>eDerm Systems LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Edvak Technologies Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>eHana</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>EHNOTE,INC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Elation Health, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Elekta Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>eMedPractice LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>EndoSoft, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>EnSoftek, Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Epic Systems Corporation</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Eyefinity, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Firely USA Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>First Insight Corporation</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Foothold Technology, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Genensys LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Glenwood Systems LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Greenway Health, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Harris CareTracker, Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Healogics, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Health Care 2000, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Health Care Systems, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Health Information Management Systems, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Health Samurai, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Health Systems Technology, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Healthie</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Helixbeat</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>i3 Healthcare Solutions, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>iCare.com, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Indian Health Service</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Inmediata Health Group LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>InPracSys</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Integra Connect Newco, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Kaiser Permanente/CIDS</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Kanrad Technologies Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Keiser Computers, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Lille Group, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MassLight</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>McKesson Specialty Health Technology Products LLC (Ontada)</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MD Charts, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MD Logic, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MD Synergy Solutions, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MDFlow EHR, LLC DBA: MDFlow Systems</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MDLAND</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MDOfficeManager</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MEDENT - Community Computer Service, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MEDHOST</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Medi-EHR, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Medical Informatics Engineering</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Medical Information Technology, Inc. (MEDITECH)</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MedicalMine Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MedicaSoft, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Medicus Clinical, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MediFusion, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MedOne Healthcare Partners</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MedPharm Services LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Medplum</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Metasolutions Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MicroFour, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>MicroMD, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Modernizing Medicine Gastroenterology, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>ModuleMD</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Moyae, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>NaphCare, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Navigating Cancer, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Netsmart Technologies</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Nextech</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>NextGen Healthcare</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>NovoMedici, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Nth Technologies, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Objective Medical Systems, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Office Practicum</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>OmniMD Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>OT EMR, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Patagonia Health</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>PCE Systems</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>PCIS GOLD</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>PointClickCare Technologies Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Practice Alternatives, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Practice EHR LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Practice Fusion</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>PracticeSuite, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Prime Clinical Systems, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Procentive</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Pulse Systems, Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Qualifacts Systems, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Radysans, Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>ReLi Med Solutions, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Royal Health, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Saisystems International</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Sevocity, a division of Conceptual MindWorks, Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Smile CDR Inc. (doing business as Smile Digital Health)</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Softbir, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Sophrona Solutions, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Strateq Health, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>StreamlineMD, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Systemedx Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Tebra Technologies, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>TechSoft, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>TenEleven Group</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Tenzing Medical LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>The Echo Group</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>TRIARQ Practice Services</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>TriMed Technologies</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>TronsHealth LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>US Monitoring, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Varian Medical Systems</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Veradigm</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>VersaSuite</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>VIPA Health Solutions, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Vision Infonet Inc</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Vohra Wound Physicians Management, LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>WEBeDoctor, Inc.</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Welligent, Part of the ContinuumCloud</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Willowglade Technologies Corporation</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
+    <tr>
+      <td>Zoobook Systems LLC</td>
+      <td><img src="https://img.shields.io/badge/Reachable-red?style=for-the-badge" alt="Reachable: Fail" title="Reachable: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Has%20ONPI-red?style=for-the-badge" alt="Has ONPI: Fail" title="Has ONPI: Fail"></td>
+      <td><img src="https://img.shields.io/badge/HTTPS%20ORG%20URL-red?style=for-the-badge" alt="HTTPS ORG URL: Fail" title="HTTPS ORG URL: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Capabilities-red?style=for-the-badge" alt="Findable Capabilities: Fail" title="Findable Capabilities: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20SMART-red?style=for-the-badge" alt="Findable SMART: Fail" title="Findable SMART: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20Docs-red?style=for-the-badge" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20OpenAPI%20JSON-red?style=for-the-badge" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger-red?style=for-the-badge" alt="Findable Swagger: Fail" title="Findable Swagger: Fail"></td>
+      <td><img src="https://img.shields.io/badge/Findable%20Swagger%20JSON-red?style=for-the-badge" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail"></td>
+    </tr>
   </tbody>
 </table>
