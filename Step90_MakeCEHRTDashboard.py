@@ -272,7 +272,7 @@ def main():
                 icon_path = PASS_ICONS.get(icon_key, PASS_ICONS["Up"]) if passed else FAIL_ICON
                 alt_text = f"{col}: {'Pass' if passed else 'Fail'}"
                 html.append(f'      <td style="text-align:center; vertical-align:middle;">'
-                            f'<img src="{icon_path}" alt="{alt_text}" title="{alt_text}" height="32"></td>')
+                            f'<img src="{icon_path}" alt="{alt_text}" title="{alt_text}" ></td>')
         html.append("    </tr>")
     html.append("  </tbody>")
     html.append("</table>")
