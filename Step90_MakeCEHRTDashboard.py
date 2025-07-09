@@ -252,10 +252,8 @@ def main():
                 passed = val == "True"
                 icon_path = PASS_ICONS.get(col, PASS_ICONS["Reachable"]) if passed else FAIL_ICON
                 alt_text = f"{col}: {'Pass' if passed else 'Fail'}"
-                html.append(f'      <td style="min-width:{icon_img_width}px; min-height:{icon_img_height}px; text-align:center; vertical-align:middle;">'
-                            f'<img src="{icon_path}" alt="{alt_text}" title="{alt_text}" '
-                            f'height="{icon_img_height}" width="{icon_img_width}" '
-                            f'style="width:{icon_img_width}px; height:{icon_img_height}px; object-fit:contain; display:block; margin:auto;"></td>')
+                html.append(f'      <td style="text-align:center; vertical-align:middle;">'
+            f'<img src="{icon_path}" alt="{alt_text}" title="{alt_text}"></td>')
         html.append("    </tr>")
     html.append("  </tbody>")
     html.append("</table>")
