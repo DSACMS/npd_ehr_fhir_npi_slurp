@@ -20,15 +20,15 @@ import re
 import requests
 
 CHECKS = [
-    ("Up", "reachable"),
-    ("ONPI", "has_onpi"),
-    ("HTTPS", "https_org_url"),
-    ("Metadata", "capability_url"),
-    ("SMART", "smart_url"),
-    ("OpenAPI Docs", "openapi_docs_url"),
-    ("OpenAPI JSON", "openapi_json_url"),
-    ("Swagger", "swagger_url"),
-    ("Swagger JSON", "swagger_json_url"),
+    ("Reachable", "reachable"),
+    ("Has ONPI", "has_onpi"),
+    ("HTTPS ORG URL", "https_org_url"),
+    ("Findable Metadata", "capability_url"),
+    ("Findable SMART", "smart_url"),
+    ("Findable OpenAPI Docs", "openapi_docs_url"),
+    ("Findable OpenAPI JSON", "openapi_json_url"),
+    ("Findable Swagger", "swagger_url"),
+    ("Findable Swagger JSON", "swagger_json_url"),
 ]
 
 def get_base_domain(url):

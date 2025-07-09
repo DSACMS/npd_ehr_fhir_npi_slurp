@@ -25,29 +25,30 @@ icon_img_height = 200
 icon_img_width = 200
 
 # Compliance checks and their markdown column names
+# Use short column names for headings and icon mapping
 CHECKS = [
-    ("Reachable", "reachable"), # ./icons/green_check.png
-    ("Has ONPI", "has_onpi"), # ./icons/green_check.png
-    ("HTTPS ORG URL", "https_org_url"), # ./icons/green_fire_org_endpoint.200.png
-    ("Findable Metadata", "capability_url"),  # ./icons/green_fire_metadata.200.png
-    ("Findable SMART", "smart_url"), # ./icons/green_fire_smart.200.png
-    ("Findable OpenAPI Docs", "openapi_docs_url"), # ./icons/green_fire_openapi.200.png
-    ("Findable OpenAPI JSON", "openapi_json_url"), # ./icons/green_fire_openapi.200.png
-    ("Findable Swagger", "swagger_url"), # ./icons/green_fire_swagger.200.png
-    ("Findable Swagger JSON", "swagger_json_url"), # ./icons/green_fire_swagger.200.png
-] 
+    ("Up", "reachable"), # ./icons/green_check.png
+    ("ONPI", "has_onpi"), # ./icons/green_check.png
+    ("HTTPS", "https_org_url"), # ./icons/green_fire_org_endpoint.200.png
+    ("Metadata", "capability_url"),  # ./icons/green_fire_metadata.200.png
+    ("SMART", "smart_url"), # ./icons/green_fire_smart.200.png
+    ("OpenAPI Docs", "openapi_docs_url"), # ./icons/green_fire_openapi.200.png
+    ("OpenAPI JSON", "openapi_json_url"), # ./icons/green_fire_openapi.200.png
+    ("Swagger", "swagger_url"), # ./icons/green_fire_swagger.200.png
+    ("Swagger JSON", "swagger_json_url"), # ./icons/green_fire_swagger.200.png
+]
 
-# Icon mapping for passing checks
+# Icon mapping for passing checks (short keys)
 PASS_ICONS = {
-    "Reachable": "./icons/green_check.png",
-    "Has ONPI": "./icons/green_check.png",
-    "HTTPS ORG URL": "./icons/green_fire_org_endpoint.200.png",
-    "Findable Metadata": "./icons/green_fire_metadata.200.png",
-    "Findable SMART": "./icons/green_fire_smart.200.png",
-    "Findable OpenAPI Docs": "./icons/green_fire_openapi.200.png",
-    "Findable OpenAPI JSON": "./icons/green_fire_openapi.200.png",
-    "Findable Swagger": "./icons/green_fire_swagger.200.png",
-    "Findable Swagger JSON": "./icons/green_fire_swagger.200.png",
+    "Up": "./icons/green_check.png",
+    "ONPI": "./icons/green_check.png",
+    "HTTPS": "./icons/green_fire_org_endpoint.200.png",
+    "Metadata": "./icons/green_fire_metadata.200.png",
+    "SMART": "./icons/green_fire_smart.200.png",
+    "OpenAPI Docs": "./icons/green_fire_openapi.200.png",
+    "OpenAPI JSON": "./icons/green_fire_openapi.200.png",
+    "Swagger": "./icons/green_fire_swagger.200.png",
+    "Swagger JSON": "./icons/green_fire_swagger.200.png",
 }
 FAIL_ICON = "./icons/red_x.png"
 
@@ -254,10 +255,10 @@ def main():
                 html.append(f"      <td>{val}</td>")
             else:
                 passed = val == "True"
-                icon_path = PASS_ICONS.get(col, PASS_ICONS["Reachable"]) if passed else FAIL_ICON
+                icon_path = PASS_ICONS.get(col, PASS_ICONS["Up"]) if passed else FAIL_ICON
                 alt_text = f"{col}: {'Pass' if passed else 'Fail'}"
                 html.append(f'      <td style="text-align:center; vertical-align:middle;">'
-            f'<img src="{icon_path}" alt="{alt_text}" title="{alt_text}"></td>')
+            f'<img src="{icon_path}" alt="{alt_text}" title="{alt_text}" height="32"></td>')
         html.append("    </tr>")
     html.append("  </tbody>")
     html.append("</table>")
