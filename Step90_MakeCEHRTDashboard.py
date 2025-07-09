@@ -233,7 +233,7 @@ def main():
             vendor_results.append(row)
 
     one_space = '&nbsp;'
-    how_many_spaces = 15
+    how_many_spaces = 25
     the_spaces = one_space * how_many_spaces
 
     # HTML table header
