@@ -1,4 +1,15 @@
 Vendor,Reachable,Has ONPI,HTTPS ORG URL,Findable Metadata,Findable SMART,Findable OpenAPI Docs,Findable OpenAPI JSON,Findable Swagger,Findable Swagger JSON
+"CloudCraft, LLC",True,True,True,True,True,True,True,True,True
+drchrono Inc.,True,True,True,True,True,True,True,True,True
+"DSS, Inc.",True,True,True,True,True,True,True,True,True
+Enable Healthcare Inc.,True,True,True,True,True,True,True,True,True
+EnableDoc LLC,True,True,True,True,True,True,True,True,True
+"Health Innovation Technologies, Inc.",True,True,True,True,True,True,True,True,True
+iSALUS Healthcare,True,True,True,True,True,True,True,True,True
+"MedConnect, Inc.",True,True,True,True,True,True,True,True,True
+"myhELO, Inc.",True,True,True,True,True,True,True,True,True
+Streamline Healthcare Solutions,True,True,True,True,True,True,True,True,True
+Unknown,True,True,True,True,True,True,True,True,True
 "1Life Healthcare, Inc",False,False,False,False,False,False,False,False,False
 Aarista Technology LLC,False,False,False,False,False,False,False,False,False
 "Abeo Solutions, Inc",False,False,False,False,False,False,False,False,False
@@ -36,7 +47,6 @@ CHN Tech Solutions LLC,False,False,False,False,False,False,False,False,False
 "CitiusTech, Inc.",False,False,False,False,False,False,False,False,False
 "Claimpower, Inc.",False,False,False,False,False,False,False,False,False
 "CliniComp, Intl.",False,False,False,False,False,False,False,False,False
-"CloudCraft, LLC",True,True,True,True,True,True,True,True,True
 CompuGroup Medical US,False,False,False,False,False,False,False,False,False
 Compulink Healthcare Solutions,False,False,False,False,False,False,False,False,False
 Comtron Inc.,False,False,False,False,False,False,False,False,False
@@ -46,8 +56,6 @@ Darena Solutions LLC,False,False,False,False,False,False,False,False,False
 "DigiDMS, Inc.",False,True,True,False,False,False,False,False,False
 Doc-tor.com,False,False,False,False,False,False,False,False,False
 DOX EMR,True,False,True,False,False,False,False,False,False
-drchrono Inc.,True,True,True,True,True,True,True,True,True
-"DSS, Inc.",True,True,True,True,True,True,True,True,True
 "Dynamic Health IT, Inc",False,True,True,False,False,False,False,False,False
 "E*HealthLine.com, Inc.",False,False,False,False,False,False,False,False,False
 "eClinicalWorks, LLC",False,False,False,False,False,False,False,False,False
@@ -59,8 +67,6 @@ eHana,False,False,False,False,False,False,False,False,False
 "Elation Health, Inc.",False,False,False,False,False,False,False,False,False
 Elekta Inc.,False,False,False,False,False,False,False,False,False
 eMedPractice LLC,False,False,False,False,False,False,False,False,False
-Enable Healthcare Inc.,True,True,True,True,True,True,True,True,True
-EnableDoc LLC,True,True,True,True,True,True,True,True,True
 "EndoSoft, LLC",False,False,False,False,False,False,False,False,False
 "EnSoftek, Inc",False,False,False,False,False,False,False,False,False
 Epic Systems Corporation,False,False,False,False,False,False,False,False,False
@@ -81,7 +87,6 @@ Glenwood Systems LLC,False,False,False,False,False,False,False,False,False
 "Health Care 2000, Inc.",False,False,False,False,False,False,False,False,False
 "Health Care Systems, Inc.",False,False,False,False,False,False,False,False,False
 "Health Information Management Systems, LLC",False,False,False,False,False,False,False,False,False
-"Health Innovation Technologies, Inc.",True,True,True,True,True,True,True,True,True
 "Health Samurai, Inc.",False,False,False,False,False,False,False,False,False
 "Health Systems Technology, Inc.",False,False,False,False,False,False,False,False,False
 Healthie,False,False,False,False,False,False,False,False,False
@@ -93,7 +98,6 @@ Inmediata Health Group LLC,False,False,False,False,False,False,False,False,False
 InPracSys,False,False,False,False,False,False,False,False,False
 "Integra Connect Newco, LLC",True,False,True,False,False,False,False,False,False
 InteliChart LLC,True,True,True,False,False,False,False,True,False
-iSALUS Healthcare,True,True,True,True,True,True,True,True,True
 Kaiser Permanente/CIDS,False,False,False,False,False,False,False,False,False
 Kanrad Technologies Inc,False,False,False,False,False,False,False,False,False
 "Keiser Computers, Inc.",False,False,False,False,False,False,False,False,False
@@ -109,7 +113,6 @@ MDLAND,False,False,False,False,False,False,False,False,False
 MDOfficeManager,False,False,False,False,False,False,False,False,False
 "MedAZ.Net, LLC",False,True,True,False,False,False,False,False,False
 Medcare MSO,True,True,True,True,True,False,False,True,False
-"MedConnect, Inc.",True,True,True,True,True,True,True,True,True
 "MEDENT - Community Computer Service, Inc.",False,False,False,False,False,False,False,False,False
 MEDHOST,False,False,False,False,False,False,False,False,False
 "Medi-EHR, LLC",False,False,False,False,False,False,False,False,False
@@ -129,7 +132,6 @@ Metasolutions Inc,False,False,False,False,False,False,False,False,False
 "Modernizing Medicine Gastroenterology, LLC",False,False,False,False,False,False,False,False,False
 ModuleMD,False,False,False,False,False,False,False,False,False
 "Moyae, Inc.",False,False,False,False,False,False,False,False,False
-"myhELO, Inc.",True,True,True,True,True,True,True,True,True
 "NaphCare, Inc.",False,False,False,False,False,False,False,False,False
 "Navigating Cancer, LLC",False,False,False,False,False,False,False,False,False
 Net Health,True,True,True,True,True,False,False,False,False
@@ -164,7 +166,6 @@ Smile CDR Inc. (doing business as Smile Digital Health),False,False,False,False,
 "SolidPractice Technologies, LLC",False,True,True,False,False,False,False,False,False
 "Sophrona Solutions, Inc.",False,False,False,False,False,False,False,False,False
 "Strateq Health, Inc.",False,False,False,False,False,False,False,False,False
-Streamline Healthcare Solutions,True,True,True,True,True,True,True,True,True
 "StreamlineMD, LLC",False,False,False,False,False,False,False,False,False
 Systemedx Inc,False,False,False,False,False,False,False,False,False
 "Tebra Technologies, Inc.",False,False,False,False,False,False,False,False,False
@@ -177,7 +178,6 @@ TRIARQ Practice Services,False,False,False,False,False,False,False,False,False
 TriMed Technologies,False,False,False,False,False,False,False,False,False
 TronsHealth LLC,False,False,False,False,False,False,False,False,False
 "TruBridge, Inc.",True,True,True,True,True,False,False,True,False
-Unknown,True,True,True,True,True,True,True,True,True
 "US Monitoring, Inc.",False,False,False,False,False,False,False,False,False
 Varian Medical Systems,False,False,False,False,False,False,False,False,False
 Veradigm,False,False,False,False,False,False,False,False,False
