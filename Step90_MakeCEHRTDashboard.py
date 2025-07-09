@@ -17,17 +17,24 @@ import csv
 import os
 from urllib.parse import urlparse
 
+# TODO lets replace the word-based table with perfectly square icons use the icon_img_height and width variables to display all of the images in the same size. 
+# Replace all failing displays with a the ./icons/red_x.png
+# Replace the successful icons using the icons listed below in the comments to the CHECKS variable. 
+
+icon_img_height = 200
+icon_img_width = 200
+
 # Compliance checks and their markdown column names
 CHECKS = [
-    ("Reachable", "reachable"),
-    ("Has ONPI", "has_onpi"),
-    ("HTTPS ORG URL", "https_org_url"),
-    ("Findable Capabilities", "capability_url"),
-    ("Findable SMART", "smart_url"),
-    ("Findable OpenAPI Docs", "openapi_docs_url"),
-    ("Findable OpenAPI JSON", "openapi_json_url"),
-    ("Findable Swagger", "swagger_url"),
-    ("Findable Swagger JSON", "swagger_json_url"),
+    ("Reachable", "reachable"), # ./icons/green_check.png
+    ("Has ONPI", "has_onpi"), # ./icons/green_check.png
+    ("HTTPS ORG URL", "https_org_url"), # ./icons/green_fire_org_endpoint.200.png
+    ("Findable Metadata", "capability_url"),  # ./icons/green_fire_metadata.200.png
+    ("Findable SMART", "smart_url"), # ./icons/green_fire_smart.200.png
+    ("Findable OpenAPI Docs", "openapi_docs_url"), # ./icons/green_fire_openapi.200.png
+    ("Findable OpenAPI JSON", "openapi_json_url"), # ./icons/green_fire_openapi.200.png
+    ("Findable Swagger", "swagger_url"), # ./icons/green_fire_swagger.200.png
+    ("Findable Swagger JSON", "swagger_json_url"), # ./icons/green_fire_swagger.200.png
 ]
 
 # Shield.io badge templates
