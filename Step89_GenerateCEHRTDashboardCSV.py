@@ -192,12 +192,12 @@ def main():
         writer = csv.writer(f)
         header = ["Vendor"] + [c[0] for c in CHECKS]
         writer.writerow(header)
-        # Sort: all-green vendors first, then alphabetically
-        def is_all_green(results):
-            return all(results[c[0]] for c in CHECKS)
+        # Sort: most green (most True columns) at the top, then alphabetically
+        def green_count(results):
+            return sum(results[c[0]] for c in CHECKS)
         sorted_vendors = sorted(
             vendor_results.items(),
-            key=lambda x: (not is_all_green(x[1]), x[0].lower())
+            key=lambda x: (-green_count(x[1]), x[0].lower())
         )
         for vendor, results in sorted_vendors:
             row = [vendor] + [str(results[c[0]]) for c in CHECKS]
