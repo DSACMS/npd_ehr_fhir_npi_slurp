@@ -249,14 +249,49 @@ def write_markdown_report(vendor_results, vendor_map, output_path):
 
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    list_sources_path = os.path.join(base_dir, "prod_data", "list_sources_summary.csv")
-    enriched_path = os.path.join(base_dir, "data", "output_data", "enriched_endpoints.csv")
+    input_csv = os.path.join(base_dir, "CEHRT_FHIR_Report.csv")
     output_path = os.path.join(base_dir, "CEHRT_FHIR_Report.md")
 
-    vendor_map = load_vendor_mapping(list_sources_path)
-    org_to_npi_path = os.path.join(base_dir, "data", "output_data", "normalized_csv_files", "org_to_npi.csv")
-    vendor_results = aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map)
-    write_markdown_report(vendor_results, vendor_map, output_path)
+    # Read CSV
+    vendor_results = []
+    with open(input_csv, newline='', encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            vendor_results.append(row)
+
+    # HTML table header
+    html = []
+    html.append("<table>")
+    html.append("  <thead>")
+    html.append("    <tr>")
+    for col in vendor_results[0].keys():
+        html.append(f"      <th>{col}</th>")
+    html.append("    </tr>")
+    html.append("  </thead>")
+    html.append("  <tbody>")
+
+    for row in vendor_results:
+        html.append("    <tr>")
+        for col, val in row.items():
+            if col == "Vendor":
+                html.append(f"      <td>{val}</td>")
+            else:
+                label = col.replace(' ', '%20')
+                passed = val == "True"
+                badge_url = BADGES[passed].format(label=label)
+                alt_text = f"{col}: {'Pass' if passed else 'Fail'}"
+                html.append(f'      <td><img src="{badge_url}" alt="{alt_text}" title="{alt_text}"></td>')
+        html.append("    </tr>")
+    html.append("  </tbody>")
+    html.append("</table>")
+
+    # Write to file
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write("# CEHRT FHIR Vendor Compliance Dashboard\n\n")
+        f.write("This dashboard lists CEHRT vendors in order of their compliance with a scrappable FHIR ecosystem. Each column represents a compliance check, and each cell shows a shield.io badge indicating pass (green) or fail (red).\n\n")
+        for line in html:
+            f.write(line + "\n")
+
     print(f"Dashboard written to {output_path}")
 
 if __name__ == "__main__":
