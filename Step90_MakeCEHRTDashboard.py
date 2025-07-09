@@ -248,6 +248,19 @@ def main():
     html.append("  </thead>")
     html.append("  <tbody>")
 
+    # Map CSV column names to PASS_ICONS keys
+    CSV_TO_ICON_KEY = {
+        "Reachable": "Up",
+        "Has ONPI": "ONPI",
+        "HTTPS ORG URL": "HTTPS",
+        "Findable Metadata": "Metadata",
+        "Findable SMART": "SMART",
+        "Findable OpenAPI Docs": "OpenAPI Docs",
+        "Findable OpenAPI JSON": "OpenAPI JSON",
+        "Findable Swagger": "Swagger",
+        "Findable Swagger JSON": "Swagger JSON",
+    }
+
     for row in vendor_results:
         html.append("    <tr>")
         for col, val in row.items():
@@ -255,10 +268,11 @@ def main():
                 html.append(f"      <td>{val}</td>")
             else:
                 passed = val == "True"
-                icon_path = PASS_ICONS.get(col, PASS_ICONS["Up"]) if passed else FAIL_ICON
+                icon_key = CSV_TO_ICON_KEY.get(col, "Up")
+                icon_path = PASS_ICONS.get(icon_key, PASS_ICONS["Up"]) if passed else FAIL_ICON
                 alt_text = f"{col}: {'Pass' if passed else 'Fail'}"
                 html.append(f'      <td style="text-align:center; vertical-align:middle;">'
-            f'<img src="{icon_path}" alt="{alt_text}" title="{alt_text}" height="32"></td>')
+                            f'<img src="{icon_path}" alt="{alt_text}" title="{alt_text}" height="32"></td>')
         html.append("    </tr>")
     html.append("  </tbody>")
     html.append("</table>")

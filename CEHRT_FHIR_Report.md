@@ -22,143 +22,143 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>CloudCraft, LLC</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
     </tr>
     <tr>
       <td>drchrono Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
     </tr>
     <tr>
       <td>DSS, Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
     </tr>
     <tr>
       <td>Enable Healthcare Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
     </tr>
     <tr>
       <td>EnableDoc LLC</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
     </tr>
     <tr>
       <td>Health Innovation Technologies, Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
     </tr>
     <tr>
       <td>iSALUS Healthcare</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
     </tr>
     <tr>
       <td>MedConnect, Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
     </tr>
     <tr>
       <td>myhELO, Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
     </tr>
     <tr>
       <td>Streamline Healthcare Solutions</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
     </tr>
     <tr>
       <td>Unknown</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger JSON: Pass" title="Findable Swagger JSON: Pass" height="32"></td>
     </tr>
     <tr>
       <td>EyeMD EMR Healthcare Systems, Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI Docs: Pass" title="Findable OpenAPI Docs: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_openapi.200.png" alt="Findable OpenAPI JSON: Pass" title="Findable OpenAPI JSON: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger: Fail" title="Findable Swagger: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail" height="32"></td>
     </tr>
@@ -166,57 +166,57 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>MaxRemind Inc</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail" height="32"></td>
     </tr>
     <tr>
       <td>Medcare MSO</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail" height="32"></td>
     </tr>
     <tr>
       <td>Mendelson Kornblum Orthopedic & Spine Specialists</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail" height="32"></td>
     </tr>
     <tr>
       <td>TruBridge, Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail" height="32"></td>
     </tr>
     <tr>
       <td>Avon Health</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger: Fail" title="Findable Swagger: Fail" height="32"></td>
@@ -226,9 +226,9 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>CureMD.com, Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger: Fail" title="Findable Swagger: Fail" height="32"></td>
@@ -238,9 +238,9 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>Cyfluent</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger: Fail" title="Findable Swagger: Fail" height="32"></td>
@@ -250,9 +250,9 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>EDENLAB OÜ</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger: Fail" title="Findable Swagger: Fail" height="32"></td>
@@ -262,9 +262,9 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>Flatiron Health</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger: Fail" title="Findable Swagger: Fail" height="32"></td>
@@ -274,9 +274,9 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>GeniusDoc, Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger: Fail" title="Findable Swagger: Fail" height="32"></td>
@@ -286,9 +286,9 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>Net Health</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger: Fail" title="Findable Swagger: Fail" height="32"></td>
@@ -298,9 +298,9 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>Theoria Medical, PLLC</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger: Fail" title="Findable Swagger: Fail" height="32"></td>
@@ -310,9 +310,9 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>WRS Health</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_metadata.200.png" alt="Findable Metadata: Pass" title="Findable Metadata: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_smart.200.png" alt="Findable SMART: Pass" title="Findable SMART: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger: Fail" title="Findable Swagger: Fail" height="32"></td>
@@ -322,19 +322,19 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>InteliChart LLC</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI JSON: Fail" title="Findable OpenAPI JSON: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_swagger.200.png" alt="Findable Swagger: Pass" title="Findable Swagger: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Swagger JSON: Fail" title="Findable Swagger JSON: Fail" height="32"></td>
     </tr>
     <tr>
       <td>AdvancedMD</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Has ONPI: Fail" title="Has ONPI: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -346,7 +346,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>agilon health inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Has ONPI: Fail" title="Has ONPI: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -358,7 +358,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>AssureCare LLC</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Reachable: Fail" title="Reachable: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -370,7 +370,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>DigiDMS, Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Reachable: Fail" title="Reachable: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -382,7 +382,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>DOX EMR</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Has ONPI: Fail" title="Has ONPI: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -394,7 +394,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>Dynamic Health IT, Inc</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Reachable: Fail" title="Reachable: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -406,7 +406,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>ezCaretech Co., Ltd.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Reachable: Fail" title="Reachable: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -418,7 +418,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>ezEMRx Inc</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Reachable: Fail" title="Reachable: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -430,7 +430,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>Integra Connect Newco, LLC</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Has ONPI: Fail" title="Has ONPI: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -442,7 +442,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>MD Synergy Solutions, LLC</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Has ONPI: Fail" title="Has ONPI: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -454,7 +454,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>MedAZ.Net, LLC</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Reachable: Fail" title="Reachable: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -466,7 +466,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>Office Practicum</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Reachable: Fail" title="Reachable: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -478,7 +478,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>Sevocity, a division of Conceptual MindWorks, Inc</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Has ONPI: Fail" title="Has ONPI: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -490,7 +490,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>SolidPractice Technologies, LLC</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Reachable: Fail" title="Reachable: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Has ONPI: Pass" title="Has ONPI: Pass" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
@@ -502,7 +502,7 @@ This dashboard lists CEHRT vendors in order of their compliance with a scrappabl
       <td>TechSoft, Inc.</td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="Reachable: Pass" title="Reachable: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Has ONPI: Fail" title="Has ONPI: Fail" height="32"></td>
-      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_check.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
+      <td style="text-align:center; vertical-align:middle;"><img src="./icons/green_fire_org_endpoint.200.png" alt="HTTPS ORG URL: Pass" title="HTTPS ORG URL: Pass" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable Metadata: Fail" title="Findable Metadata: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable SMART: Fail" title="Findable SMART: Fail" height="32"></td>
       <td style="text-align:center; vertical-align:middle;"><img src="./icons/red_x.png" alt="Findable OpenAPI Docs: Fail" title="Findable OpenAPI Docs: Fail" height="32"></td>
