@@ -4,8 +4,18 @@ NPIValidator - A class to validate NPI numbers against the CMS NPI Registry
 
 This class exists to validate NPI records as described in AI_Instructions/ValidateNPI.md
 
-The class loads a cache of previously validated NPIs from ./prod_data/valid_npi_list.csv
-and validates new NPIs against the CMS NPI Registry API, caching results for future use.
+The class loads a cache of previously validated NPIs from multiple CSV files:
+- /prod_data/valid_npi.1.csv
+- /prod_data/valid_npi.2.csv 
+- /prod_data/valid_npi.3.csv
+- Any files matching the pattern /prod_data/valid_npi.*.csv
+
+The CSV file structure uses the header: npi,is_valid
+Where is_valid is 1 for valid NPIs and 0 for invalid NPIs.
+
+All cache files are loaded to build the full NPI validity cache. New validations
+are saved to /prod_data/valid_npi.3.csv when the program shuts down, using the
+same fallback to API approach as before.
 """
 
 import csv
@@ -30,10 +40,10 @@ class NPIValidator:
         Initialize the NPIValidator with cache loading.
         
         Args:
-            cache_file_path: Path to the CSV cache file. Defaults to ./prod_data/valid_npi_list.csv
+            cache_file_path: Path to the CSV cache file. Defaults to ./prod_data/valid_npi.3.csv
         """
         if cache_file_path is None:
-            self.cache_file_path = Path("./prod_data/valid_npi_list.csv")
+            self.cache_file_path = Path("./prod_data/valid_npi.3.csv")
         else:
             self.cache_file_path = Path(cache_file_path)
         
@@ -47,33 +57,45 @@ class NPIValidator:
         self._load_cache()
     
     def _load_cache(self):
-        """Load existing NPI validation results from CSV cache file."""
-        if not self.cache_file_path.exists():
-            print(f"Cache file not found: {self.cache_file_path}")
+        """Load existing NPI validation results from all CSV cache files."""
+        # Find all cache files with pattern /prod_data/valid_npi.*.csv
+        cache_dir = Path("./prod_data")
+        cache_files = list(cache_dir.glob("valid_npi.*.csv"))
+        
+        if not cache_files:
+            print("No cache files found with pattern valid_npi.*.csv")
             print("Starting with empty cache.")
             return
         
-        try:
-            with open(self.cache_file_path, 'r', encoding='utf-8') as f:
-                reader = csv.DictReader(f)
-                for row in reader:
-                    npi = str(row.get('npi', '')).strip()
-                    is_invalid = row.get('is_invalid', '').strip()
+        total_loaded = 0
+        
+        for cache_file in sorted(cache_files):
+            try:
+                with open(cache_file, 'r', encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    file_count = 0
                     
-                    if npi and is_invalid:
-                        # Convert string values to boolean
-                        # 'Invalid NPI' -> False, 'Valid NPI' -> True
-                        is_valid = is_invalid == 'Valid NPI'
-                        self.npi_cache[npi] = is_valid
-            
-            print(f"Loaded {len(self.npi_cache)} NPIs from cache")
-            
-        except Exception as e:
-            print(f"Error loading cache file: {e}")
-            print("Starting with empty cache.")
+                    for row in reader:
+                        npi = str(row.get('npi', '')).strip()
+                        is_valid_str = str(row.get('is_valid', '')).strip()
+                        
+                        if npi and is_valid_str:
+                            # Convert string values to boolean
+                            # '1' -> True, '0' -> False
+                            is_valid = is_valid_str == '1'
+                            self.npi_cache[npi] = is_valid
+                            file_count += 1
+                    
+                    print(f"Loaded {file_count} NPIs from {cache_file}")
+                    total_loaded += file_count
+                    
+            except Exception as e:
+                print(f"Error loading cache file {cache_file}: {e}")
+        
+        print(f"Total loaded: {total_loaded} NPIs from {len(cache_files)} cache files")
     
     def _save_cache(self):
-        """Save all validation results back to CSV cache file."""
+        """Save newly validated NPIs to the cache file."""
         if not self.newly_validated_npis:
             return  # No new data to save
         
@@ -81,23 +103,27 @@ class NPIValidator:
             # Create directory if it doesn't exist
             self.cache_file_path.parent.mkdir(parents=True, exist_ok=True)
             
-            # Combine existing and new data
-            all_npis = {**self.npi_cache}
+            # Check if file exists to determine if we need to write header
+            file_exists = self.cache_file_path.exists()
             
-            # Write all data to CSV
-            with open(self.cache_file_path, 'w', newline='', encoding='utf-8') as f:
-                fieldnames = ['npi', 'is_invalid']
+            # Append new data to the cache file
+            with open(self.cache_file_path, 'a', newline='', encoding='utf-8') as f:
+                fieldnames = ['npi', 'is_valid']
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
-                writer.writeheader()
                 
-                for npi, is_valid in all_npis.items():
-                    is_invalid_str = 'Valid NPI' if is_valid else 'Invalid NPI'
+                # Write header only if file is new/empty
+                if not file_exists:
+                    writer.writeheader()
+                
+                # Write only the newly validated NPIs
+                for npi, is_valid in self.newly_validated_npis.items():
+                    is_valid_int = 1 if is_valid else 0
                     writer.writerow({
                         'npi': npi,
-                        'is_invalid': is_invalid_str
+                        'is_valid': is_valid_int
                     })
             
-            print(f"Saved {len(self.newly_validated_npis)} new NPI validations to cache")
+            print(f"Saved {len(self.newly_validated_npis)} new NPI validations to {self.cache_file_path}")
             
         except Exception as e:
             print(f"Error saving cache file: {e}")
