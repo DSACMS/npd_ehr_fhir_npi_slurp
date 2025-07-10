@@ -47,7 +47,7 @@ def load_vendor_mapping(list_sources_path):
             vendor = row.get("certified_api_developer_name", "").strip()
             if list_source.startswith("http"):
                 base = get_base_domain(list_source)
-                mapping[base] = vendor if vendor else "Unknown"
+                mapping[base] = vendor if vendor else "Unknown, missing from list_sources_summary.csv"
     return mapping
 
 def is_valid_npi(npi_value):
@@ -101,7 +101,7 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
             org_id = row.get("org_id", "").strip()
             npi_value = row.get("npi_value", "").strip()
             base = get_base_domain(org_id)
-            vendor = vendor_map.get(base, "Unknown")
+            vendor = vendor_map.get(base, "Unknown, missing from list_sources_summary.csv")
             if vendor not in org_to_npi:
                 org_to_npi[vendor] = []
             org_to_npi[vendor].append((org_id, npi_value))
@@ -113,7 +113,7 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
         for row in reader:
             org_url = row.get("org_fhir_url", "").strip()
             base = get_base_domain(org_url)
-            vendor = vendor_map.get(base, "Unknown")
+            vendor = vendor_map.get(base, "Unknown, missing from list_sources_summary.csv")
             if vendor not in org_in_enriched:
                 org_in_enriched[vendor] = set()
             org_in_enriched[vendor].add(org_url)
@@ -127,7 +127,7 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
         for row in reader:
             org_url = row.get("org_fhir_url", "").strip()
             base = get_base_domain(org_url)
-            vendor = vendor_map.get(base, "Unknown")
+            vendor = vendor_map.get(base, "Unknown, missing from list_sources_summary.csv")
             if vendor not in vendor_results:
                 # Initialize with empty strings for URLs, False for boolean checks
                 vendor_results[vendor] = {

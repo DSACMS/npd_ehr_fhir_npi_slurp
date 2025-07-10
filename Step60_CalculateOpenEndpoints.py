@@ -5,7 +5,8 @@ Step60_CalculateOpenEndpoints.py
 This script enriches the org_fhir_url,npi CSV data by discovering well-known FHIR endpoints
 at various directory levels for each unique domain.
 
-TODO: Need to implement the specific content expectations after getting a 200 message for the following urls
+TODO: Need to implement the specific content expectations after getting a 200 message for the following urls. 
+Getting a 200 but failing to provide the expected content, should be listed as as fail. But with a different error. 
 
 For each domain, it tests directory levels to find:
 - Capability Statement (/metadata) Request JSON in the headers and Expect JSON with a "resourceType" that should be called "CapabilityStatement"
