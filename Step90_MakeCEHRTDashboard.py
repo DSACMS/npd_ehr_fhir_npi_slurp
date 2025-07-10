@@ -267,12 +267,23 @@ def main():
             if col == "Vendor":
                 html.append(f"      <td>{val}</td>")
             else:
-                passed = val == "True"
+                # Check if value is a URL (starts with http) or boolean string
+                is_url = val.startswith("http://") or val.startswith("https://")
+                is_passed = val == "True" or is_url
+                
                 icon_key = CSV_TO_ICON_KEY.get(col, "Up")
-                icon_path = PASS_ICONS.get(icon_key, PASS_ICONS["Up"]) if passed else FAIL_ICON
-                alt_text = f"{col}: {'Pass' if passed else 'Fail'}"
-                html.append(f'      <td style="text-align:center; vertical-align:middle;">'
-                            f'<img src="{icon_path}" alt="{alt_text}" title="{alt_text}" ></td>')
+                icon_path = PASS_ICONS.get(icon_key, PASS_ICONS["Up"]) if is_passed else FAIL_ICON
+                alt_text = f"{col}: {'Pass' if is_passed else 'Fail'}"
+                
+                if is_url:
+                    # Make icon clickable link to the actual endpoint
+                    html.append(f'      <td style="text-align:center; vertical-align:middle;">'
+                                f'<a href="{val}" target="_blank" rel="noopener noreferrer">'
+                                f'<img src="{icon_path}" alt="{alt_text}" title="Click to visit: {val}" ></a></td>')
+                else:
+                    # Regular icon without link
+                    html.append(f'      <td style="text-align:center; vertical-align:middle;">'
+                                f'<img src="{icon_path}" alt="{alt_text}" title="{alt_text}" ></td>')
         html.append("    </tr>")
     html.append("  </tbody>")
     html.append("</table>")

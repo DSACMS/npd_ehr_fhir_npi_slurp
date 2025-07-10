@@ -108,7 +108,7 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
                 org_in_enriched[vendor] = set()
             org_in_enriched[vendor].add(org_url)
 
-    # 3. Aggregate compliance
+    # 3. Aggregate compliance - now storing URLs for endpoint checks
     vendor_results = {}
 
     # Vendors with orgs in enriched_endpoints.csv (normal logic)
@@ -119,22 +119,40 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
             base = get_base_domain(org_url)
             vendor = vendor_map.get(base, "Unknown")
             if vendor not in vendor_results:
-                vendor_results[vendor] = {c[0]: False for c in CHECKS}
+                # Initialize with empty strings for URLs, False for boolean checks
+                vendor_results[vendor] = {
+                    "Reachable": False,
+                    "Has ONPI": False,
+                    "HTTPS ORG URL": False,
+                    "Findable Metadata": "",
+                    "Findable SMART": "",
+                    "Findable OpenAPI Docs": "",
+                    "Findable OpenAPI JSON": "",
+                    "Findable Swagger": "",
+                    "Findable Swagger JSON": ""
+                }
 
-            checks = {
-                "Reachable": check_reachable(row),
-                "Has ONPI": check_has_onpi(row),
-                "HTTPS ORG URL": check_https_org_url(row),
-                "Findable Metadata": check_endpoint_found(row, "capability_url"),
-                "Findable SMART": check_endpoint_found(row, "smart_url"),
-                "Findable OpenAPI Docs": check_endpoint_found(row, "openapi_docs_url"),
-                "Findable OpenAPI JSON": check_endpoint_found(row, "openapi_json_url"),
-                "Findable Swagger": check_endpoint_found(row, "swagger_url"),
-                "Findable Swagger JSON": check_endpoint_found(row, "swagger_json_url"),
-            }
-            for k, v in checks.items():
-                if v:
-                    vendor_results[vendor][k] = True
+            # Update boolean checks
+            if check_reachable(row):
+                vendor_results[vendor]["Reachable"] = True
+            if check_has_onpi(row):
+                vendor_results[vendor]["Has ONPI"] = True
+            if check_https_org_url(row):
+                vendor_results[vendor]["HTTPS ORG URL"] = True
+            
+            # Update URL checks - store the actual URL if found
+            if check_endpoint_found(row, "capability_url"):
+                vendor_results[vendor]["Findable Metadata"] = row.get("capability_url", "")
+            if check_endpoint_found(row, "smart_url"):
+                vendor_results[vendor]["Findable SMART"] = row.get("smart_url", "")
+            if check_endpoint_found(row, "openapi_docs_url"):
+                vendor_results[vendor]["Findable OpenAPI Docs"] = row.get("openapi_docs_url", "")
+            if check_endpoint_found(row, "openapi_json_url"):
+                vendor_results[vendor]["Findable OpenAPI JSON"] = row.get("openapi_json_url", "")
+            if check_endpoint_found(row, "swagger_url"):
+                vendor_results[vendor]["Findable Swagger"] = row.get("swagger_url", "")
+            if check_endpoint_found(row, "swagger_json_url"):
+                vendor_results[vendor]["Findable Swagger JSON"] = row.get("swagger_json_url", "")
 
     # Vendors with orgs in org_to_npi.csv but not in enriched_endpoints.csv
     for vendor in org_to_npi:
@@ -150,15 +168,32 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
                     has_onpi = True
                 if is_valid_https_url(org_id):
                     https_org_url = True
-            vendor_results[vendor] = {c[0]: False for c in CHECKS}
-            vendor_results[vendor]["Reachable"] = reachable
-            vendor_results[vendor]["Has ONPI"] = has_onpi
-            vendor_results[vendor]["HTTPS ORG URL"] = https_org_url
+            vendor_results[vendor] = {
+                "Reachable": reachable,
+                "Has ONPI": has_onpi,
+                "HTTPS ORG URL": https_org_url,
+                "Findable Metadata": "",
+                "Findable SMART": "",
+                "Findable OpenAPI Docs": "",
+                "Findable OpenAPI JSON": "",
+                "Findable Swagger": "",
+                "Findable Swagger JSON": ""
+            }
 
     # Vendors in vendor_map but not in either file: all fail
     for vendor in set(vendor_map.values()):
         if vendor not in vendor_results:
-            vendor_results[vendor] = {c[0]: False for c in CHECKS}
+            vendor_results[vendor] = {
+                "Reachable": False,
+                "Has ONPI": False,
+                "HTTPS ORG URL": False,
+                "Findable Metadata": "",
+                "Findable SMART": "",
+                "Findable OpenAPI Docs": "",
+                "Findable OpenAPI JSON": "",
+                "Findable Swagger": "",
+                "Findable Swagger JSON": ""
+            }
 
     return vendor_results
 
@@ -194,13 +229,31 @@ def main():
         writer.writerow(header)
         # Sort: most green (most True columns) at the top, then alphabetically
         def green_count(results):
-            return sum(results[c[0]] for c in CHECKS)
+            count = 0
+            for check_name, _ in CHECKS:
+                value = results[check_name]
+                # Count True for boolean checks, or non-empty URLs for endpoint checks
+                if isinstance(value, bool):
+                    count += 1 if value else 0
+                else:  # URL string
+                    count += 1 if value.strip() else 0
+            return count
+        
         sorted_vendors = sorted(
             vendor_results.items(),
             key=lambda x: (-green_count(x[1]), x[0].lower())
         )
+        
         for vendor, results in sorted_vendors:
-            row = [vendor] + [str(results[c[0]]) for c in CHECKS]
+            row = [vendor]
+            for check_name, _ in CHECKS:
+                value = results[check_name]
+                # For CSV output, convert to True/False string or URL
+                if isinstance(value, bool):
+                    row.append(str(value))
+                else:  # URL string
+                    # Store the URL itself in CSV for dashboard to use
+                    row.append(value if value.strip() else "False")
             writer.writerow(row)
 
     print(f"Dashboard CSV written to {output_csv}")

@@ -1,30 +1,30 @@
 Vendor,Reachable,Has ONPI,HTTPS ORG URL,Findable Metadata,Findable SMART,Findable OpenAPI Docs,Findable OpenAPI JSON,Findable Swagger,Findable Swagger JSON
-"CloudCraft, LLC",True,True,True,True,True,True,True,True,True
-drchrono Inc.,True,True,True,True,True,True,True,True,True
-"DSS, Inc.",True,True,True,True,True,True,True,True,True
-Enable Healthcare Inc.,True,True,True,True,True,True,True,True,True
-EnableDoc LLC,True,True,True,True,True,True,True,True,True
-"Health Innovation Technologies, Inc.",True,True,True,True,True,True,True,True,True
-iSALUS Healthcare,True,True,True,True,True,True,True,True,True
-"MedConnect, Inc.",True,True,True,True,True,True,True,True,True
-"myhELO, Inc.",True,True,True,True,True,True,True,True,True
-Streamline Healthcare Solutions,True,True,True,True,True,True,True,True,True
-Unknown,True,True,True,True,True,True,True,True,True
-"EyeMD EMR Healthcare Systems, Inc.",True,True,True,True,True,True,True,False,False
-MaxRemind Inc,True,True,True,True,True,False,False,True,False
-Medcare MSO,True,True,True,True,True,False,False,True,False
-Mendelson Kornblum Orthopedic & Spine Specialists,True,True,True,True,True,False,False,True,False
-"TruBridge, Inc.",True,True,True,True,True,False,False,True,False
-Avon Health,True,True,True,True,True,False,False,False,False
-"CureMD.com, Inc.",True,True,True,True,True,False,False,False,False
-Cyfluent,True,True,True,True,True,False,False,False,False
-EDENLAB OÜ,True,True,True,True,True,False,False,False,False
-Flatiron Health,True,True,True,True,True,False,False,False,False
-"GeniusDoc, Inc.",True,True,True,True,True,False,False,False,False
-Net Health,True,True,True,True,True,False,False,False,False
-"Theoria Medical, PLLC",True,True,True,True,True,False,False,False,False
-WRS Health,True,True,True,True,True,False,False,False,False
-InteliChart LLC,True,True,True,False,False,False,False,True,False
+"CloudCraft, LLC",True,True,True,https://fhirapi.naiacorp.net/metadata,https://fhirapi.naiacorp.net/.well-known/smart-configuration,https://fhirapi.naiacorp.net/api-docs,https://fhirapi.naiacorp.net/openapi.json,https://fhirapi.naiacorp.net/swagger,https://fhirapi.naiacorp.net/swagger.json
+drchrono Inc.,True,True,True,https://drchrono-fhirpresentation.everhealthsoftware.com/fhir/metadata,https://drchrono-fhirpresentation.everhealthsoftware.com/fhir/.well-known/smart-configuration,https://drchrono-fhirpresentation.everhealthsoftware.com/api-docs,https://drchrono-fhirpresentation.everhealthsoftware.com/openapi.json,https://drchrono-fhirpresentation.everhealthsoftware.com/swagger,https://drchrono-fhirpresentation.everhealthsoftware.com/swagger.json
+"DSS, Inc.",True,True,True,https://fhirjuno-prod-web.dssinc.com/metadata,https://fhirjuno-prod-web.dssinc.com/.well-known/smart-configuration,https://fhirjuno-prod-web.dssinc.com/api-docs,https://fhirjuno-prod-web.dssinc.com/openapi.json,https://fhirjuno-prod-web.dssinc.com/swagger,https://fhirjuno-prod-web.dssinc.com/swagger.json
+Enable Healthcare Inc.,True,True,True,https://ehifhir.ehiconnect.com/metadata,https://ehifhir.ehiconnect.com/.well-known/smart-configuration,https://ehifhir.ehiconnect.com/api-docs,https://ehifhir.ehiconnect.com/openapi.json,https://ehifhir.ehiconnect.com/swagger,https://ehifhir.ehiconnect.com/swagger.json
+EnableDoc LLC,True,True,True,https://api.enablemyhealth.com/metadata,https://api.enablemyhealth.com/api/r4/.well-known/smart-configuration,https://api.enablemyhealth.com/api/r4/Organization/api-docs,https://api.enablemyhealth.com/api/r4/Organization/openapi.json,https://api.enablemyhealth.com/api/r4/Organization/swagger,https://api.enablemyhealth.com/api/r4/Organization/swagger.json
+"Health Innovation Technologies, Inc.",True,True,True,https://revolutionehr.dynamicfhir.com/metadata,https://revolutionehr.dynamicfhir.com/.well-known/smart-configuration,https://revolutionehr.dynamicfhir.com/api-docs,https://revolutionehr.dynamicfhir.com/openapi.json,https://revolutionehr.dynamicfhir.com/swagger,https://revolutionehr.dynamicfhir.com/swagger.json
+iSALUS Healthcare,True,True,True,https://isalus-fhirpresentation.everhealthsoftware.com/metadata,https://isalus-fhirpresentation.everhealthsoftware.com/.well-known/smart-configuration,https://isalus-fhirpresentation.everhealthsoftware.com/api-docs,https://isalus-fhirpresentation.everhealthsoftware.com/openapi.json,https://isalus-fhirpresentation.everhealthsoftware.com/swagger,https://isalus-fhirpresentation.everhealthsoftware.com/swagger.json
+"MedConnect, Inc.",True,True,True,https://api.medconnecthealth.com/metadata,https://api.medconnecthealth.com/.well-known/smart-configuration,https://api.medconnecthealth.com/api-docs,https://api.medconnecthealth.com/openapi.json,https://api.medconnecthealth.com/swagger,https://api.medconnecthealth.com/swagger.json
+"myhELO, Inc.",True,True,True,https://provider.myhelo.com/metadata,https://provider.myhelo.com/.well-known/smart-configuration,https://provider.myhelo.com/api-docs,https://provider.myhelo.com/openapi.json,https://provider.myhelo.com/swagger,https://provider.myhelo.com/swagger.json
+Streamline Healthcare Solutions,True,True,True,https://dhfhirpresentation.smartcarenet.com/metadata,https://dhfhirpresentation.smartcarenet.com/.well-known/smart-configuration,https://dhfhirpresentation.smartcarenet.com/api-docs,https://dhfhirpresentation.smartcarenet.com/openapi.json,https://dhfhirpresentation.smartcarenet.com/swagger,https://dhfhirpresentation.smartcarenet.com/swagger.json
+Unknown,True,True,True,https://fhir.nextgen.com/nge/prod/fhir-api-r4/fhir/R4/metadata,https://fhir.nextgen.com/nge/prod/fhir-api-r4/fhir/R4/.well-known/smart-configuration,https://ice3.mychn.org/apis/api-docs,https://ice3.mychn.org/apis/openapi.json,https://ice3.mychn.org/swagger,https://ice3.mychn.org/apis/swagger.json
+"EyeMD EMR Healthcare Systems, Inc.",True,True,True,https://smartonfhir.myeyecarerecords.com/fhir/Organization/metadata,https://smartonfhir.myeyecarerecords.com/fhir/Organization/.well-known/smart-configuration,https://smartonfhir.myeyecarerecords.com/fhir/Organization/api-docs,https://smartonfhir.myeyecarerecords.com/fhir/Organization/openapi.json,False,False
+MaxRemind Inc,True,True,True,https://fhir.maximus.care/api/metadata,https://fhir.maximus.care/api/.well-known/smart-configuration,False,False,https://fhir.maximus.care/swagger,False
+Medcare MSO,True,True,True,https://fhirapi.medcaremso.com/api/R4/metadata,https://fhirapi.medcaremso.com/api/R4/.well-known/smart-configuration,False,False,https://fhirapi.medcaremso.com/api/R4/swagger,False
+Mendelson Kornblum Orthopedic & Spine Specialists,True,True,True,https://fhir.mkoss.com/fhir/metadata,https://fhir.mkoss.com/fhir/.well-known/smart-configuration,False,False,https://fhir.mkoss.com/swagger,False
+"TruBridge, Inc.",True,True,True,https://fhir-usa.unify.chbase.com/metadata,https://fhir-usa.unify.chbase.com/.well-known/smart-configuration,False,False,https://fhir-usa.unify.chbase.com/swagger,False
+Avon Health,True,True,True,https://trial.avonhealth.com/fhir/metadata,https://trial.avonhealth.com/fhir/.well-known/smart-configuration,False,False,False,False
+"CureMD.com, Inc.",True,True,True,https://fhirendpoint.curemd.net/fhir/metadata,https://fhirendpoint.curemd.net/fhir/.well-known/smart-configuration,False,False,False,False
+Cyfluent,True,True,True,https://www.cyfluentphr.com/fhirapi/HBSH/r4/metadata,https://www.cyfluentphr.com/fhirapi/HBSH/r4/.well-known/smart-configuration,False,False,False,False
+EDENLAB OÜ,True,True,True,https://staging.pemr.com:93/api/metadata,https://staging.pemr.com:93/api/.well-known/smart-configuration,False,False,False,False
+Flatiron Health,True,True,True,https://fhir.prod.flatiron.io/fhir/metadata,https://fhir.prod.flatiron.io/fhir/.well-known/smart-configuration,False,False,False,False
+"GeniusDoc, Inc.",True,True,True,https://api.geniusdoc.com:4434/GDAPIData/metadata,https://api.geniusdoc.com:4434/GDAPIData/.well-known/smart-configuration,False,False,False,False
+Net Health,True,True,True,https://sfp-fhirprod.azurewebsites.net/fhir/metadata,https://sfp-fhirprod.azurewebsites.net/fhir/.well-known/smart-configuration,False,False,False,False
+"Theoria Medical, PLLC",True,True,True,https://theoriamedical-api.charteasy.com/fhir/metadata,https://theoriamedical-api.charteasy.com/fhir/.well-known/smart-configuration,False,False,False,False
+WRS Health,True,True,True,https://fhir-server.sam.wrs.dev/r4/metadata,https://fhir-server.sam.wrs.dev/r4/.well-known/smart-configuration,False,False,False,False
+InteliChart LLC,True,True,True,False,False,False,False,https://fhirapi.intelichart.com/swagger,False
 AdvancedMD,True,False,True,False,False,False,False,False,False
 agilon health inc.,True,False,True,False,False,False,False,False,False
 AssureCare LLC,False,True,True,False,False,False,False,False,False
