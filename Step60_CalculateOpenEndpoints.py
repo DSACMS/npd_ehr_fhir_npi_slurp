@@ -5,13 +5,15 @@ Step60_CalculateOpenEndpoints.py
 This script enriches the org_fhir_url,npi CSV data by discovering well-known FHIR endpoints
 at various directory levels for each unique domain.
 
+TODO: Need to implement the specific content expectations after getting a 200 message for the following urls
+
 For each domain, it tests directory levels to find:
-- Capability Statement (/metadata)
-- Smart Config (/.well-known/smart-configuration)
+- Capability Statement (/metadata) Request JSON in the headers and Expect JSON with a "resourceType" that should be called "CapabilityStatement"
+- Smart Config (/.well-known/smart-configuration) Request JSON in the headers and Expect JSON with a key called 'capabilities'
 - OpenAPI docs (/api-docs)
-- OpenAPI JSON (/openapi.json)
+- OpenAPI JSON (/openapi.json) Request JSON in the headers and Expect JSON with
 - Swagger (/swagger)
-- Swagger JSON (/swagger.json)
+- Swagger JSON (/swagger.json) Request JSON in the headers and Expect JSON with
 
 Usage:
     python Step60_CalculateOpenEndpoints.py --input_csv_file input.csv --output_csv_file output.csv
@@ -188,6 +190,35 @@ class EndpointCalculator:
         return results
     
     @staticmethod
+    def choose_https_org_url(*, org_fhir_url: str, endpoints: Dict[str, str]) -> str:
+        """Choose the best HTTPS organizational URL from available options"""
+        
+        # First preference: use the original org_fhir_url if it's HTTPS
+        if org_fhir_url.startswith('https://'):
+            return org_fhir_url
+        
+        # Second preference: look for working HTTPS endpoints in priority order
+        endpoint_priority = ['capability_url', 'smart_url', 'openapi_docs_url', 'swagger_url', 'openapi_json_url', 'swagger_json_url']
+        
+        for endpoint_name in endpoint_priority:
+            endpoint_url = endpoints.get(endpoint_name, '')
+            if endpoint_url.startswith('https://'):
+                return endpoint_url
+        
+        # Third preference: use the original org_fhir_url even if it's HTTP
+        if org_fhir_url.startswith('http://'):
+            return org_fhir_url
+        
+        # Fourth preference: look for any working HTTP endpoints
+        for endpoint_name in endpoint_priority:
+            endpoint_url = endpoints.get(endpoint_name, '')
+            if endpoint_url.startswith('http://'):
+                return endpoint_url
+        
+        # Last resort: return the original URL
+        return org_fhir_url
+    
+    @staticmethod
     def generate_enriched_output(*, csv_data: List[Tuple[str, str]], domain_endpoints: Dict[str, Dict[str, str]]) -> List[Dict[str, str]]:
         """Generate enriched output data"""
         enriched_data = []
@@ -200,10 +231,17 @@ class EndpointCalculator:
                 # Get endpoints for this domain
                 endpoints = domain_endpoints.get(domain, {})
                 
+                # Choose the best HTTPS organizational URL
+                https_org_url = EndpointCalculator.choose_https_org_url(
+                    org_fhir_url=org_fhir_url,
+                    endpoints=endpoints
+                )
+                
                 # Create enriched row
                 row = {
                     'org_fhir_url': org_fhir_url,
                     'npi': npi,
+                    'https_org_url': https_org_url,
                     'capability_url': endpoints.get('capability_url', 'Error - failed to find capability url'),
                     'smart_url': endpoints.get('smart_url', 'Error - failed to find smart url'),
                     'openapi_docs_url': endpoints.get('openapi_docs_url', 'Error - failed to find openapi docs url'),
@@ -220,6 +258,7 @@ class EndpointCalculator:
                 row = {
                     'org_fhir_url': org_fhir_url,
                     'npi': npi,
+                    'https_org_url': org_fhir_url,  # Use original URL as fallback
                     'capability_url': 'Error - failed to find capability url',
                     'smart_url': 'Error - failed to find smart url',
                     'openapi_docs_url': 'Error - failed to find openapi docs url',
@@ -236,7 +275,7 @@ class EndpointCalculator:
         """Write enriched data to output CSV file"""
         try:
             fieldnames = [
-                'org_fhir_url', 'npi', 'capability_url', 'smart_url', 
+                'org_fhir_url', 'npi', 'https_org_url', 'capability_url', 'smart_url', 
                 'openapi_docs_url', 'openapi_json_url', 'swagger_url', 'swagger_json_url'
             ]
             

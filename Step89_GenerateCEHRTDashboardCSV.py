@@ -77,7 +77,17 @@ def check_has_onpi(row):
     return is_valid_npi(npi)
 
 def check_https_org_url(row):
-    return row.get("org_fhir_url", "").strip().startswith("https://")
+    """Return the https_org_url if available, otherwise check if org_fhir_url is HTTPS"""
+    https_org_url = row.get("https_org_url", "").strip()
+    if https_org_url and https_org_url.startswith("http"):
+        return https_org_url
+    
+    # Fallback to original logic if https_org_url column is not available
+    org_fhir_url = row.get("org_fhir_url", "").strip()
+    if org_fhir_url.startswith("https://"):
+        return org_fhir_url
+    
+    return ""
 
 def check_endpoint_found(row, col):
     return row.get(col, "").startswith("http")
@@ -123,7 +133,7 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
                 vendor_results[vendor] = {
                     "Reachable": False,
                     "Has ONPI": False,
-                    "HTTPS ORG URL": False,
+                    "HTTPS ORG URL": "",
                     "Findable Metadata": "",
                     "Findable SMART": "",
                     "Findable OpenAPI Docs": "",
@@ -137,8 +147,11 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
                 vendor_results[vendor]["Reachable"] = True
             if check_has_onpi(row):
                 vendor_results[vendor]["Has ONPI"] = True
-            if check_https_org_url(row):
-                vendor_results[vendor]["HTTPS ORG URL"] = True
+            
+            # Update HTTPS ORG URL - store the actual URL if found
+            https_org_url = check_https_org_url(row)
+            if https_org_url:
+                vendor_results[vendor]["HTTPS ORG URL"] = https_org_url
             
             # Update URL checks - store the actual URL if found
             if check_endpoint_found(row, "capability_url"):
@@ -159,7 +172,7 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
         if vendor not in vendor_results:
             reachable = False
             has_onpi = False
-            https_org_url = False
+            https_org_url = ""
             for org_id, npi_value in org_to_npi[vendor]:
                 base_domain = get_base_domain(org_id)
                 if is_domain_responsive(base_domain):
@@ -167,7 +180,7 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
                 if is_valid_npi(npi_value):
                     has_onpi = True
                 if is_valid_https_url(org_id):
-                    https_org_url = True
+                    https_org_url = org_id  # Store the actual URL, not just True
             vendor_results[vendor] = {
                 "Reachable": reachable,
                 "Has ONPI": has_onpi,
@@ -186,7 +199,7 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
             vendor_results[vendor] = {
                 "Reachable": False,
                 "Has ONPI": False,
-                "HTTPS ORG URL": False,
+                "HTTPS ORG URL": "",
                 "Findable Metadata": "",
                 "Findable SMART": "",
                 "Findable OpenAPI Docs": "",
