@@ -13,7 +13,7 @@ For each domain, it tests directory levels to find:
 - Smart Config (/.well-known/smart-configuration) Request JSON in the headers and Expect JSON with a key called 'capabilities'
 - OpenAPI docs (/api-docs)
 - OpenAPI JSON (/openapi.json) Request JSON in the headers and Expect JSON with
-- Swagger (/swagger)
+- Swagger (/swagger) - this will often forward to /swagger/index.html which is fine. 
 - Swagger JSON (/swagger.json) Request JSON in the headers and Expect JSON with
 
 Usage:

@@ -314,6 +314,12 @@ def process_endpoint_file(file_path, vendor_name):
             data = json.load(f)
         
         resource = data.get('resource', {})
+
+        if resource.get('resourceType') != 'Bundle':
+            print(f"WARNING: This resource is a Bundle!! Look at {vendor_name} data for more info!!")
+
+
+
         if resource.get('resourceType') != 'Endpoint':
             return None
         
