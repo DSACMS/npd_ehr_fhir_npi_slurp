@@ -70,7 +70,7 @@ The validator uses the official CMS NPI Registry API:
 Initialize the validator with optional custom cache file path.
 
 **Parameters:**
-- `cache_file_path` (str, optional): Path to CSV cache file. Defaults to `./prod_data/valid_npi_list.csv`
+- `cache_file_path` (str, optional): Path to CSV cache file. Defaults to `./local_data/prod_data/valid_npi_list.csv`
 
 ### `is_this_npi_valid(*, npi_value)`
 

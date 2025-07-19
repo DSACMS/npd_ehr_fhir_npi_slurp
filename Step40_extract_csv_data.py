@@ -24,7 +24,7 @@ Put all of the resulting csv files in ./data/normalized_csv_files
 
 NPI Validation:
 NPIs are validated using the NPIValidator class which provides both format validation and API validation.
-The NPIValidator maintains a cache of previously validated NPIs in ./prod_data/valid_npi_list.csv
+The NPIValidator maintains a cache of previously validated NPIs in ./local_data/prod_data/valid_npi_list.csv
 to avoid repeated API calls. New NPIs are validated against the CMS NPI Registry API and results
 are cached for future use. The is_invalid_npi field indicates: 0=valid NPI, 1=invalid NPI.
 
@@ -495,16 +495,19 @@ def main():
                 
                 # Process NPIs
                 for npi in result['npis']:
+                    if not isinstance(npi, dict):
+                        continue
                     # Use the validation result from NPIValidator
-                    is_invalid = 0 if npi['is_valid'] else 1
+                    is_valid = npi.get('is_valid', False)
+                    is_invalid = 0 if is_valid else 1
                     
                     org_to_npi.append({
                         'org_id': result['org_id'],
-                        'npi_system': npi['system'],
-                        'npi_value': npi['value'],
+                        'npi_system': npi.get('system', ''),
+                        'npi_value': npi.get('value', ''),
                         'is_invalid_npi': is_invalid,
-                        'api_error': npi['api_error'],
-                        'result_count': npi['result_count']
+                        'api_error': npi.get('api_error'),
+                        'result_count': npi.get('result_count', 0)
                     })
                 
                 # Process phones

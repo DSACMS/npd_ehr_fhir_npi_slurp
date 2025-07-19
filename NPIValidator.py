@@ -5,16 +5,16 @@ NPIValidator - A class to validate NPI numbers against the CMS NPI Registry
 This class exists to validate NPI records as described in AI_Instructions/ValidateNPI.md
 
 The class loads a cache of previously validated NPIs from multiple CSV files:
-- /prod_data/valid_npi.1.csv
-- /prod_data/valid_npi.2.csv 
-- /prod_data/valid_npi.3.csv
-- Any files matching the pattern /prod_data/valid_npi.*.csv
+- /local_data/prod_data/valid_npi.1.csv
+- /local_data/prod_data/valid_npi.2.csv 
+- /local_data/prod_data/valid_npi.3.csv
+- Any files matching the pattern /local_data/prod_data/valid_npi.*.csv
 
 The CSV file structure uses the header: npi,is_valid
 Where is_valid is 1 for valid NPIs and 0 for invalid NPIs.
 
 All cache files are loaded to build the full NPI validity cache. New validations
-are saved to /prod_data/valid_npi.3.csv when the program shuts down, using the
+are saved to /local_data/prod_data/valid_npi.3.csv when the program shuts down, using the
 same fallback to API approach as before.
 """
 
@@ -40,10 +40,10 @@ class NPIValidator:
         Initialize the NPIValidator with cache loading.
         
         Args:
-            cache_file_path: Path to the CSV cache file. Defaults to ./prod_data/valid_npi.3.csv
+            cache_file_path: Path to the CSV cache file. Defaults to ./local_data/prod_data/valid_npi.3.csv
         """
         if cache_file_path is None:
-            self.cache_file_path = Path("./prod_data/valid_npi.3.csv")
+            self.cache_file_path = Path("./local_data/prod_data/valid_npi.3.csv")
         else:
             self.cache_file_path = Path(cache_file_path)
         
@@ -58,8 +58,8 @@ class NPIValidator:
     
     def _load_cache(self):
         """Load existing NPI validation results from all CSV cache files."""
-        # Find all cache files with pattern /prod_data/valid_npi.*.csv
-        cache_dir = Path("./prod_data")
+        # Find all cache files with pattern /local_data/prod_data/valid_npi.*.csv
+        cache_dir = Path("./local_data/prod_data")
         cache_files = list(cache_dir.glob("valid_npi.*.csv"))
         
         if not cache_files:

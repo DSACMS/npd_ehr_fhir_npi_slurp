@@ -18,8 +18,8 @@ fi
 # Step 1: Extract list sources from Lantern CSV
 echo "Step 1: Extracting list sources from Lantern CSV..."
 python Step10_extract_list_source_from_lantern_csv.py \
-    --input_file prod_data/fhir_endpoints.csv \
-    --output_file prod_data/list_sources_summary.csv
+    --input_file local_data/prod_data/fhir_endpoints.csv \
+    --output_file local_data/prod_data/list_sources_summary.csv
 
 echo "✓ Step 1 completed"
 echo ""
@@ -27,7 +27,7 @@ echo ""
 # Step 2: Download service JSON files
 echo "Step 2: Downloading service JSON files..."
 python Step20_download_list_source_json.py \
-    --input_file ./prod_data/list_sources_summary.csv \
+    --input_file ./local_data/prod_data/list_sources_summary.csv \
     --output_dir ./data/service_json/ \
     --delay 1.0
 

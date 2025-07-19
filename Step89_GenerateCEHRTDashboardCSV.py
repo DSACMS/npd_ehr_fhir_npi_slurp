@@ -5,7 +5,7 @@ Step89_GenerateCEHRTDashboardCSV.py
 Generates a CSV file (CEHRT_FHIR_Report.csv) with compliance results for each CEHRT vendor.
 This file is used as input for the dashboard markdown generator.
 
-- Reads prod_data/list_sources_summary.csv for vendor info.
+- Reads local_data/prod_data/list_sources_summary.csv for vendor info.
 - Reads data/output_data/enriched_endpoints.csv for endpoint compliance.
 - Reads data/output_data/normalized_csv_files/org_to_npi.csv for partial compliance.
 - Aggregates compliance per vendor.
@@ -212,12 +212,12 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
 
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    list_sources_path = os.path.join(base_dir, "prod_data", "list_sources_summary.csv")
+    list_sources_path = os.path.join(base_dir, "local_data", "prod_data", "list_sources_summary.csv")
     enriched_path = os.path.join(base_dir, "data", "output_data", "enriched_endpoints.csv")
     org_to_npi_path = os.path.join(base_dir, "data", "output_data", "normalized_csv_files", "org_to_npi.csv")
     output_csv = os.path.join(base_dir, "CEHRT_FHIR_Report.csv")
 
-    print("Loading vendor mapping from prod_data/list_sources_summary.csv...")
+    print("Loading vendor mapping from local_data/prod_data/list_sources_summary.csv...")
     vendor_map = load_vendor_mapping(list_sources_path)
     print(f"Loaded {len(vendor_map)} vendor base domains.")
 
