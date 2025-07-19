@@ -1,0 +1,6 @@
+# Ignore everything under this directory
+*
+
+# But allow this .gitignore file itself
+!.gitignore
+!ReadMe.md
