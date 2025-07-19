@@ -1,12 +1,14 @@
 # EHR FHIR Entity Slurp
 
+A comprehensive data processing pipeline for extracting, analyzing, and normalizing EHR (Electronic Health Records) FHIR endpoint data from healthcare providers. This tool helps assess HTI-2 compliance and generates normalized datasets for healthcare interoperability analysis.
+
+
+
 # TODO 
 * We need to streamline the whole process to account for the fact that some entry blocks, like 
 data/service_json/athena-fhir-service-base-urls/entry_a1c9c7fe-6d45-5a92-922c-7bfcd55a062d.json
 "forget" the URL they are sourced from. We need to figure out how to retain that information from a previous step so that we can keep everything in https. 
 
-
-A comprehensive data processing pipeline for extracting, analyzing, and normalizing EHR (Electronic Health Records) FHIR endpoint data from healthcare providers. This tool helps assess HTI-2 compliance and generates normalized datasets for healthcare interoperability analysis.
 
 ## Overview
 
@@ -21,7 +23,7 @@ This project processes FHIR endpoint data through a multi-step pipeline:
 
 - **NPI Validation**: Real-time validation against CMS NPI Registry API
 - **Phone Number Normalization**: International phone number parsing and validation
-- **Address Standardization**: Structured address parsing and normalization  
+- **Address Standardization**: Structured address parsing and normalization (waiting on Smarty Streets for full implementation)  
 - **Data Deduplication**: Hash-based deduplication for efficient storage
 - **Error Handling**: Comprehensive error tracking and reporting
 - **Test Mode**: Limited processing for development and validation
@@ -34,22 +36,13 @@ This project processes FHIR endpoint data through a multi-step pipeline:
 - Python 3.8+
 - Virtual environment (recommended)
 
-### Installation
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd ehr_fhir_npi_slurp
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
 
 ### Basic Usage
+
+First download the endpoint data from the [Lantern Dashboard download page](https://lantern.healthit.gov/?tab=downloads_tab)
+Put that data in local_data/prod_data/fhir_endpoints.csv
+
+Then choose either go.sh or manual runnning of the pipeline step-by-step:
 
 ```bash
 # Run the complete pipeline
@@ -120,8 +113,7 @@ Creates normalized CSV datasets from FHIR Organization resources.
 
 ### NPI Validation
 - Format validation (10-digit requirement)
-- API validation against CMS NPI Registry (currently disabled for performance)
-- Validation columns preserved with placeholder values ('?') for future implementation
+- API validation against the list of valid NPIs in ./npi_validation_data/, which falls back to using the Registery for missing npis. See [NPIValidator_README.md](NPIValidator_README.md) for more info.
 - Invalid NPI flagging based on format validation
 
 ### Phone Number Validation
@@ -145,22 +137,6 @@ export FHIR_REQUEST_TIMEOUT=30
 
 # Optional: Set custom delay between downloads
 export DOWNLOAD_DELAY=1.0
-```
-
-### Command Line Options
-
-**Step 2 - Download Options**:
-```bash
---delay 2.0          # Delay between downloads (seconds)
---timeout 60         # Request timeout (seconds)
---output_dir ./data  # Custom output directory
-```
-
-**Step 4 - Processing Options**:
-```bash
---test               # Process only first 1000 files per vendor
---input_dir ./data   # Custom input directory
---output_dir ./out   # Custom output directory
 ```
 
 ## Output Data Structure
@@ -197,15 +173,6 @@ The pipeline includes comprehensive error handling:
 
 ## Development
 
-### Code Style
-```bash
-# Format code
-black *.py
-
-# Lint code  
-flake8 *.py
-```
-
 ### Testing
 ```bash
 # Run tests
@@ -222,50 +189,7 @@ pytest --cov=.
 4. Update `go.sh` script
 5. Document in README
 
-## Troubleshooting
-
-### Common Issues
-
-**Memory Errors**:
-- Use test mode for development
-- Process smaller batches
-- Monitor system resources
-
-**API Rate Limiting**:
-- Increase delays between requests
-- Check network connectivity
-- Verify API endpoint availability
-
-**File Permission Errors**:
-- Check directory permissions
-- Ensure sufficient disk space
-- Verify file paths are correct
-
-### Debug Mode
-Enable verbose logging by setting:
-```bash
-export DEBUG=1
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make changes with tests
-4. Run code formatting and linting
-5. Submit a pull request
-
 ## License
 
 See LICENSE file for details.
 
-## Support
-
-For issues and questions:
-1. Check existing GitHub issues
-2. Review troubleshooting section
-3. Create new issue with detailed description
-
----
-
-**Note**: This tool processes healthcare data. Ensure compliance with relevant privacy regulations (HIPAA, etc.) when handling real patient data.

@@ -43,7 +43,7 @@ class NPIValidator:
             cache_file_path: Path to the CSV cache file. Defaults to ./local_data/prod_data/valid_npi.3.csv
         """
         if cache_file_path is None:
-            self.cache_file_path = Path("./local_data/prod_data/valid_npi.3.csv")
+            self.cache_file_path = Path("./npi_validation_data/valid_npi.3.csv")
         else:
             self.cache_file_path = Path(cache_file_path)
         
