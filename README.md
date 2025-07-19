@@ -2,13 +2,13 @@
 
 A comprehensive data processing pipeline for extracting, analyzing, and normalizing EHR (Electronic Health Records) FHIR endpoint data from healthcare providers. This tool helps assess HTI-2 compliance and generates normalized datasets for healthcare interoperability analysis.
 
+Current home is [/ftrotter/ehr_fhir_npi_slurp](https://github.com/ftrotter/ehr_fhir_npi_slurp) will likely move to a DSAC repo in the future.
 
+## TODO
 
-# TODO 
-* We need to streamline the whole process to account for the fact that some entry blocks, like 
+* We need to streamline the whole process to account for the fact that some entry blocks, like
 data/service_json/athena-fhir-service-base-urls/entry_a1c9c7fe-6d45-5a92-922c-7bfcd55a062d.json
-"forget" the URL they are sourced from. We need to figure out how to retain that information from a previous step so that we can keep everything in https. 
-
+"forget" the URL they are sourced from. We need to figure out how to retain that information from a previous step so that we can keep everything in https.
 
 ## Overview
 
@@ -35,7 +35,6 @@ This project processes FHIR endpoint data through a multi-step pipeline:
 
 - Python 3.8+
 - Virtual environment (recommended)
-
 
 ### Basic Usage
 
@@ -66,6 +65,7 @@ python Step40_extract_csv_data.py --test
 ## Pipeline Steps
 
 ### Step 1: Extract List Sources
+
 **File**: `Step10_extract_list_source_from_lantern_csv.py`
 
 Processes Lantern FHIR endpoint CSV files to extract unique service list sources by EHR vendor.
@@ -73,29 +73,34 @@ Processes Lantern FHIR endpoint CSV files to extract unique service list sources
 **Input**: CSV with FHIR endpoint data
 **Output**: Summary CSV with distinct list sources and URL counts
 
-### Step 2: Download Service Data  
+### Step 2: Download Service Data
+
 **File**: `Step20_download_list_source_json.py`
 
 Downloads FHIR Bundle JSON files from EHR vendor service endpoints.
 
 **Features**:
+
 - Respectful rate limiting
 - Safe filename generation
 - Error handling and retry logic
 - Progress tracking
 
 ### Step 3: Parse FHIR Bundles
+
 **File**: `Step30_parse_source_bundle.py`
 
 Breaks down large FHIR Bundle files into individual resource entries for easier processing.
 
 **Features**:
+
 - Batch processing of multiple files
 - Resource type categorization
 - Progress reporting
 - Error handling
 
 ### Step 4: Extract & Normalize Data
+
 **File**: `Step40_extract_csv_data.py`
 
 Creates normalized CSV datasets from FHIR Organization resources.
@@ -112,17 +117,20 @@ Creates normalized CSV datasets from FHIR Organization resources.
 ## Data Validation
 
 ### NPI Validation
+
 - Format validation (10-digit requirement)
 - API validation against the list of valid NPIs in ./npi_validation_data/, which falls back to using the Registery for missing npis. See [NPIValidator_README.md](NPIValidator_README.md) for more info.
 - Invalid NPI flagging based on format validation
 
 ### Phone Number Validation
+
 - International format parsing using `phonenumbers` library
 - Extension extraction and normalization
 - Country code standardization
 - Validation status tracking
 
 ### Data Quality Requirements
+
 Organizations must have:
 - At least one valid NPI identifier
 - At least one FHIR endpoint
@@ -131,6 +139,7 @@ Organizations must have:
 ## Configuration
 
 ### Environment Variables
+
 ```bash
 # Optional: Set custom timeout for API requests
 export FHIR_REQUEST_TIMEOUT=30
@@ -142,6 +151,7 @@ export DOWNLOAD_DELAY=1.0
 ## Output Data Structure
 
 ### Organizations Table
+
 - `org_id` - FHIR Organization ID
 - `org_name` - Organization name
 - `vendor_name` - EHR vendor name
@@ -149,7 +159,9 @@ export DOWNLOAD_DELAY=1.0
 - `*_count` - Counts of related data elements
 
 ### Relationship Tables
+
 Link organizations to their associated data:
+
 - NPIs (with validation status)
 - Addresses (normalized)
 - Phone numbers (validated)
@@ -174,6 +186,7 @@ The pipeline includes comprehensive error handling:
 ## Development
 
 ### Testing
+
 ```bash
 # Run tests
 pytest
@@ -183,6 +196,7 @@ pytest --cov=.
 ```
 
 ### Adding New Steps
+
 1. Create new `StepXX_description.py` file
 2. Follow existing patterns for argument parsing
 3. Add comprehensive error handling
@@ -192,4 +206,3 @@ pytest --cov=.
 ## License
 
 See LICENSE file for details.
-
