@@ -1,0 +1,521 @@
+{
+    "id": "bpp",
+    "type": "collection",
+    "timestamp": "2024-11-14T18:20:25+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:cb8483a1-d182-48bd-b480-a575e49a2863",
+            "resource": {
+                "id": "cb8483a1-d182-48bd-b480-a575e49a2863",
+                "extension": [
+                    {
+                        "valueCode": "4.0.1",
+                        "url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version"
+                    }
+                ],
+                "status": "active",
+                "connectionType": {
+                    "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+                    "code": "hl7-fhir-rest"
+                },
+                "name": "FHIR R4 Endpoint for Heart of Texas Community Health Center",
+                "managingOrganization": {
+                    "reference": "Organization/34c0cdef-5e71-459e-bf29-5f15faa2ff94"
+                },
+                "payloadType": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/EndpointPayloadTypeCS",
+                                "code": "NA"
+                            }
+                        ]
+                    }
+                ],
+                "address": "http://bpp.api.prod.bridgepatientportal.com/fhir/r4",
+                "resourceType": "Endpoint"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:34c0cdef-5e71-459e-bf29-5f15faa2ff94",
+            "resource": {
+                "id": "34c0cdef-5e71-459e-bf29-5f15faa2ff9",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "value": "1144221847"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Heart of Texas Community Health Center",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "254-313-4201"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "1600 Providence Dr"
+                        ],
+                        "city": "Waco",
+                        "state": "TX",
+                        "postalCode": "76707",
+                        "country": "USA"
+                    }
+                ],
+                "endpoint": [
+                    {
+                        "reference": "Endpoint/cb8483a1-d182-48bd-b480-a575e49a2863"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:b0914b9c-a31e-484a-ab8a-4c63a74de812",
+            "resource": {
+                "id": "34c0cdef-5e71-459e-bf29-5f15faa2ff",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "value": "1144221847"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Permanente  Washington",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "206-448-2855"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "601 Union St"
+                        ],
+                        "city": "Seattle",
+                        "state": "WA",
+                        "postalCode": "92084",
+                        "country": "USA"
+                    }
+                ],
+                "endpoint": [
+                    {
+                        "reference": "Endpoint/cb8483a1-d182-48bd-b480-a575e49a2863"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:ebf357dc-ed09-4d63-a8a9-08fb776973a4",
+            "resource": {
+                "id": "34c0cdef-5e71-459e-bf29-5f15faa2f",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "value": "1144221847"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Seybold Clinic",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "713-442-01744"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "11511 Shadow Creek Pkwy"
+                        ],
+                        "city": "Pearland",
+                        "state": "TX",
+                        "postalCode": "77584",
+                        "country": "USA"
+                    }
+                ],
+                "endpoint": [
+                    {
+                        "reference": "Endpoint/cb8483a1-d182-48bd-b480-a575e49a2863"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f188b5ce-e3d4-4739-ae7c-459c66730ad1",
+            "resource": {
+                "id": "34c0cdef-5e71-459e-bf29-5f15faa2",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "value": "1144221847"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Childrens Hospital of Chicago",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "312-227-8800"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "2515 N Clark St Ste 801"
+                        ],
+                        "city": "Chicago",
+                        "state": "IL",
+                        "postalCode": "60614",
+                        "country": "USA"
+                    }
+                ],
+                "endpoint": [
+                    {
+                        "reference": "Endpoint/cb8483a1-d182-48bd-b480-a575e49a2863"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0644f8cd-fc7f-46e8-a339-c82b3481eaff",
+            "resource": {
+                "id": "34c0cdef-5e71-459e-bf29-5f15faa",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "value": "1144221847"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Children Hospital Colorado",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "720-777-1234"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "13123 E 16th Ave"
+                        ],
+                        "city": "Aurora",
+                        "state": "CO",
+                        "postalCode": "80045",
+                        "country": "USA"
+                    }
+                ],
+                "endpoint": [
+                    {
+                        "reference": "Endpoint/cb8483a1-d182-48bd-b480-a575e49a2863"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f784f79d-62e6-4f79-aa15-05a7d4be6659",
+            "resource": {
+                "id": "34c0cdef-5e71-459e-bf29-5f15fa",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "value": "1144221847"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Benioff Children's Hospital",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "415-353-3000"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "1825 4th St 6"
+                        ],
+                        "city": "San Francisco",
+                        "state": "CA",
+                        "postalCode": "94158",
+                        "country": "USA"
+                    }
+                ],
+                "endpoint": [
+                    {
+                        "reference": "Endpoint/cb8483a1-d182-48bd-b480-a575e49a2863"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:c3efb5ec-4c03-4354-ad55-390cc74a5414",
+            "resource": {
+                "id": "34c0cdef-5e71-459e-bf29-5f15f",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "value": "1144221847"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Chicago Medicine",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "773-702-1000"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "841 S Maryland Ave"
+                        ],
+                        "city": "Chicago",
+                        "state": "IL",
+                        "postalCode": "60637",
+                        "country": "USA"
+                    }
+                ],
+                "endpoint": [
+                    {
+                        "reference": "Endpoint/cb8483a1-d182-48bd-b480-a575e49a2863"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:774866b3-8512-413f-a775-b13ed1868471",
+            "resource": {
+                "id": "34c0cdef-5e71-459e-bf29-5f15",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "value": "1144221847"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Edward Healthcare",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "630-527-3000"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "801 S Washington Street"
+                        ],
+                        "city": "Naperville",
+                        "state": "IL",
+                        "postalCode": "60540",
+                        "country": "USA"
+                    }
+                ],
+                "endpoint": [
+                    {
+                        "reference": "Endpoint/cb8483a1-d182-48bd-b480-a575e49a2863"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:b1a44e84-4788-45e5-ac57-6d618523b904",
+            "resource": {
+                "id": "34c0cdef-5e71-459e-bf29-5f1",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "value": "1144221847"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ]
+                    }
+                ],
+                "name": "HealthPartners",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "800-551-0859"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "8170 33rd Ave S"
+                        ],
+                        "city": "Bloomington",
+                        "state": "MN",
+                        "postalCode": "55425",
+                        "country": "USA"
+                    }
+                ],
+                "endpoint": [
+                    {
+                        "reference": "Endpoint/cb8483a1-d182-48bd-b480-a575e49a2863"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f01b7da1-5176-4b53-a55f-c731d87916b7",
+            "resource": {
+                "id": "34c0cdef-5e71-459e-bf29-5f",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-npi",
+                        "value": "1144221847"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                                "code": "prov",
+                                "display": "Healthcare Provider"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Permanente Georgia",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "404-365-0966"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "201 W Ponce De Leon Ave"
+                        ],
+                        "city": "Decatur",
+                        "state": "GA",
+                        "postalCode": "30004",
+                        "country": "USA"
+                    }
+                ],
+                "endpoint": [
+                    {
+                        "reference": "Endpoint/cb8483a1-d182-48bd-b480-a575e49a2863"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        }
+    ],
+    "resourceType": "Bundle"
+}

@@ -18,7 +18,7 @@ fi
 # Step 1: Extract list sources from Lantern CSV
 echo "Step 1: Extracting list sources from Lantern CSV..."
 python Step10_extract_list_source_from_lantern_csv.py \
-    --input_file local_data/prod_data/fhir_endpoints.csv \
+    --input_file local_data/lantern_csv/fhir_endpoints.csv \
     --output_file local_data/prod_data/list_sources_summary.csv
 
 echo "✓ Step 1 completed"
