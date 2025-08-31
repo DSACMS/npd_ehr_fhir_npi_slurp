@@ -1,0 +1,6 @@
+file_path,error_type,error_message,timestamp
+/Users/ftrotter/gitgov/DSACMS/npd_ehr_scrape_cache/cehrt_fhir_json/careevolution_inc.json,JSONDecodeError,Invalid JSON in input file: Expecting value: line 1 column 1 (char 0),2025-08-31T11:28:01.172267
+/Users/ftrotter/gitgov/DSACMS/npd_ehr_scrape_cache/cehrt_fhir_json/kaiser_permanente_cids.json,JSONDecodeError,Invalid JSON in input file: Expecting value: line 1 column 1 (char 0),2025-08-31T11:28:24.067930
+/Users/ftrotter/gitgov/DSACMS/npd_ehr_scrape_cache/cehrt_fhir_json/medifusion_llc.json,JSONDecodeError,Invalid JSON in input file: Expecting value: line 1 column 1 (char 0),2025-08-31T11:28:25.629700
+/Users/ftrotter/gitgov/DSACMS/npd_ehr_scrape_cache/cehrt_fhir_json/smile_cdr_inc_doing_business_as_smile_digital_health.json,JSONDecodeError,Invalid JSON in input file: Expecting value: line 1 column 1 (char 0),2025-08-31T11:28:30.223730
+/Users/ftrotter/gitgov/DSACMS/npd_ehr_scrape_cache/cehrt_fhir_json/unknown.json,JSONDecodeError,Invalid JSON in input file: Expecting value: line 2 column 1 (char 1),2025-08-31T11:28:30.475282

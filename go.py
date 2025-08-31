@@ -91,7 +91,9 @@ def main():
     
     # Check virtual environment
     check_virtual_env()
-    
+
+    """
+ 
     # Step 1: Extract list sources from Lantern CSV
     run_step(
         step_num=1,
@@ -114,7 +116,8 @@ def main():
             "--delay", get_env_var(key="DOWNLOAD_DELAY", default_value="1.0")
         ]
     )
-    
+       
+
     # Step 3: Parse FHIR bundles
     run_step(
         step_num=3,
@@ -124,6 +127,7 @@ def main():
             "--input_dir", get_env_var(key="CEHRT_CACHE_DIR", default_value="./data/service_json/")
         ]
     )
+    """
     
     # Step 4: Extract and normalize CSV data
     run_step(
