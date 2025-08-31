@@ -15,6 +15,7 @@ See AI_Instructions/CreateEHrVendorMarkdownReport.md for details.
 
 import csv
 import os
+import argparse
 from urllib.parse import urlparse
 
 # TODO lets replace the word-based table with perfectly square icons use the icon_img_height and width variables to display all of the images in the same size. 
@@ -222,9 +223,14 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
 # (write_markdown_report function removed; all HTML table logic is now in main())
 
 def main():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    input_csv = os.path.join(base_dir, "CEHRT_FHIR_Report.csv")
-    output_path = os.path.join(base_dir, "CEHRT_FHIR_Report.md")
+    parser = argparse.ArgumentParser(description='Generate CEHRT Dashboard Markdown')
+    parser.add_argument('--input_csv_path', required=True, help='Path to input CSV file')
+    parser.add_argument('--output_md_path', required=True, help='Path to output Markdown file')
+    
+    args = parser.parse_args()
+    
+    input_csv = args.input_csv_path
+    output_path = args.output_md_path
 
     # Read CSV
     vendor_results = []

@@ -15,6 +15,7 @@ Columns: Vendor, Reachable, Has ONPI, HTTPS ORG URL, Findable Metadata, Findable
 
 import csv
 import os
+import argparse
 from urllib.parse import urlparse
 import re
 import requests
@@ -211,11 +212,18 @@ def aggregate_vendor_compliance(enriched_path, org_to_npi_path, vendor_map):
     return vendor_results
 
 def main():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    list_sources_path = os.path.join(base_dir, "local_data", "prod_data", "list_sources_summary.csv")
-    enriched_path = os.path.join(base_dir, "data", "output_data", "enriched_endpoints.csv")
-    org_to_npi_path = os.path.join(base_dir, "data", "output_data", "normalized_csv_files", "org_to_npi.csv")
-    output_csv = os.path.join(base_dir, "CEHRT_FHIR_Report.csv")
+    parser = argparse.ArgumentParser(description='Generate CEHRT Dashboard CSV')
+    parser.add_argument('--list_sources_path', required=True, help='Path to list_sources_summary.csv file')
+    parser.add_argument('--enriched_endpoints_path', required=True, help='Path to enriched_endpoints.csv file')
+    parser.add_argument('--org_to_npi_path', required=True, help='Path to org_to_npi.csv file')
+    parser.add_argument('--output_csv_path', required=True, help='Path to output CSV file')
+    
+    args = parser.parse_args()
+    
+    list_sources_path = args.list_sources_path
+    enriched_path = args.enriched_endpoints_path
+    org_to_npi_path = args.org_to_npi_path
+    output_csv = args.output_csv_path
 
     print("Loading vendor mapping from local_data/prod_data/list_sources_summary.csv...")
     vendor_map = load_vendor_mapping(list_sources_path)

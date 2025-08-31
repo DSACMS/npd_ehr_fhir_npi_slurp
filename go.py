@@ -130,7 +130,9 @@ def main():
         step_num=4,
         description="Extracting and normalizing CSV data",
         command_args=[
-            "python", "Step40_extract_csv_data.py"
+            "python", "Step40_extract_csv_data.py",
+            "--input_dir", get_env_var(key="CEHRT_CACHE_DIR", default_value="./data/service_json/"),
+            "--output_dir", get_env_var(key="NORMALIZED_CSV_DIR", default_value="./data/output_data/normalized_csv_files")
         ]
     )
     
@@ -174,7 +176,11 @@ def main():
         step_num=89,
         description="",  # Already printed above
         command_args=[
-            "python", "Step89_GenerateCEHRTDashboardCSV.py"
+            "python", "Step89_GenerateCEHRTDashboardCSV.py",
+            "--list_sources_path", get_env_var(key="LIST_SOURCES_SUMMARY", default_value="local_data/prod_data/list_sources_summary.csv"),
+            "--enriched_endpoints_path", get_env_var(key="ENRICHED_ENDPOINTS", default_value="data/output_data/step60_enriched_endpoints.csv"),
+            "--org_to_npi_path", get_env_var(key="ORG_TO_NPI_RAW", default_value="data/output_data/normalized_csv_files/step40_org_to_npi.csv"),
+            "--output_csv_path", get_env_var(key="CEHRT_FHIR_REPORT_CSV", default_value="CEHRT_FHIR_Report.csv")
         ]
     )
     
@@ -187,7 +193,9 @@ def main():
         step_num=90,
         description="",  # Already printed above
         command_args=[
-            "python", "Step90_MakeCEHRTDashboard.py"
+            "python", "Step90_MakeCEHRTDashboard.py",
+            "--input_csv_path", get_env_var(key="CEHRT_FHIR_REPORT_CSV", default_value="CEHRT_FHIR_Report.csv"),
+            "--output_md_path", get_env_var(key="CEHRT_FHIR_REPORT_MD", default_value="CEHRT_FHIR_Report.md")
         ]
     )
     

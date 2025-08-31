@@ -52,7 +52,7 @@ class EndpointCalculator:
         """Parse command line arguments"""
         parser = argparse.ArgumentParser(description='Calculate open FHIR endpoints for org URLs')
         parser.add_argument('--input_csv_file', required=True, help='Path to input CSV file')
-        parser.add_argument('--output_csv_file', required=True, help='Path to output CSV file')
+        parser.add_argument('--output_csv_file', default='step60_enriched_endpoints.csv', help='Path to output CSV file')
         return parser.parse_args()
     
     @staticmethod

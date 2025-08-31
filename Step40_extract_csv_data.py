@@ -571,7 +571,7 @@ def main():
     print("\nWriting CSV files...")
     
     # Distinct Organizations
-    with open(output_path / 'distinct_organizations.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_distinct_organizations.csv', 'w', newline='', encoding='utf-8') as f:
         fieldnames = ['org_id', 'org_name', 'vendor_name', 'active', 'address_count', 'endpoint_count', 'npi_count', 'phone_count', 'contact_url_count', 'email_count']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -579,7 +579,7 @@ def main():
             writer.writerows(distinct_organizations.values())
     
     # Distinct Addresses
-    with open(output_path / 'distinct_addresses.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_distinct_addresses.csv', 'w', newline='', encoding='utf-8') as f:
         fieldnames = ['address_hash', 'type', 'text', 'address_line1', 'address_line2', 'city', 'state', 'postal_code', 'country', 'use']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -590,7 +590,7 @@ def main():
                 writer.writerow(row)
     
     # Distinct Endpoints
-    with open(output_path / 'distinct_endpoints.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_distinct_endpoints.csv', 'w', newline='', encoding='utf-8') as f:
         fieldnames = ['endpoint_hash', 'reference', 'url']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -601,7 +601,7 @@ def main():
                 writer.writerow(row)
     
     # Distinct Phones
-    with open(output_path / 'distinct_phones.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_distinct_phones.csv', 'w', newline='', encoding='utf-8') as f:
         fieldnames = ['phone_hash', 'original_value', 'normalized_number', 'extension', 'country_code', 'is_valid', 'parse_error', 'use']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -612,7 +612,7 @@ def main():
                 writer.writerow(row)
     
     # Distinct Contact URLs
-    with open(output_path / 'distinct_contact_urls.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_distinct_contact_urls.csv', 'w', newline='', encoding='utf-8') as f:
         fieldnames = ['contact_url_hash', 'system', 'value', 'use']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -623,7 +623,7 @@ def main():
                 writer.writerow(row)
     
     # Distinct Contact Emails
-    with open(output_path / 'distinct_contact_emails.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_distinct_contact_emails.csv', 'w', newline='', encoding='utf-8') as f:
         fieldnames = ['email_hash', 'value', 'use']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -634,67 +634,67 @@ def main():
                 writer.writerow(row)
     
     # Organization to NPI relationships
-    with open(output_path / 'org_to_npi.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_org_to_npi.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['org_id', 'npi_system', 'npi_value', 'is_invalid_npi', 'api_error', 'result_count'])
         writer.writeheader()
         if org_to_npi:
             writer.writerows(org_to_npi)
     
     # Organization to Phone relationships
-    with open(output_path / 'org_to_phone.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_org_to_phone.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['org_id', 'phone_hash'])
         writer.writeheader()
         if org_to_phone:
             writer.writerows(org_to_phone)
     
     # Organization to Address relationships
-    with open(output_path / 'org_to_address.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_org_to_address.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['org_id', 'address_hash'])
         writer.writeheader()
         if org_to_address:
             writer.writerows(org_to_address)
     
     # Organization to Endpoint relationships
-    with open(output_path / 'org_to_endpoint.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_org_to_endpoint.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['org_id', 'endpoint_hash'])
         writer.writeheader()
         if org_to_endpoint:
             writer.writerows(org_to_endpoint)
     
     # Organization to Contact URL relationships
-    with open(output_path / 'org_to_contact_url.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_org_to_contact_url.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['org_id', 'contact_url_hash'])
         writer.writeheader()
         if org_to_contact_url:
             writer.writerows(org_to_contact_url)
     
     # Organization to Email relationships
-    with open(output_path / 'org_to_email.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_org_to_email.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['org_id', 'email_hash'])
         writer.writeheader()
         if org_to_email:
             writer.writerows(org_to_email)
     
     # Error file
-    with open(output_path / 'processing_errors.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_path / 'step40_processing_errors.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['file_path', 'error'])
         writer.writeheader()
         writer.writerows(errors)
     
     print(f"CSV files written to: {output_path}")
-    print(f"- distinct_organizations.csv: {len(distinct_organizations)} records")
-    print(f"- distinct_addresses.csv: {len(distinct_addresses)} records")
-    print(f"- distinct_endpoints.csv: {len(distinct_endpoints)} records")
-    print(f"- distinct_phones.csv: {len(distinct_phones)} records")
-    print(f"- distinct_contact_urls.csv: {len(distinct_contact_urls)} records")
-    print(f"- distinct_contact_emails.csv: {len(distinct_emails)} records")
-    print(f"- org_to_npi.csv: {len(org_to_npi)} records")
-    print(f"- org_to_phone.csv: {len(org_to_phone)} records")
-    print(f"- org_to_address.csv: {len(org_to_address)} records")
-    print(f"- org_to_endpoint.csv: {len(org_to_endpoint)} records")
-    print(f"- org_to_contact_url.csv: {len(org_to_contact_url)} records")
-    print(f"- org_to_email.csv: {len(org_to_email)} records")
-    print(f"- processing_errors.csv: {len(errors)} records")
+    print(f"- step40_distinct_organizations.csv: {len(distinct_organizations)} records")
+    print(f"- step40_distinct_addresses.csv: {len(distinct_addresses)} records")
+    print(f"- step40_distinct_endpoints.csv: {len(distinct_endpoints)} records")
+    print(f"- step40_distinct_phones.csv: {len(distinct_phones)} records")
+    print(f"- step40_distinct_contact_urls.csv: {len(distinct_contact_urls)} records")
+    print(f"- step40_distinct_contact_emails.csv: {len(distinct_emails)} records")
+    print(f"- step40_org_to_npi.csv: {len(org_to_npi)} records")
+    print(f"- step40_org_to_phone.csv: {len(org_to_phone)} records")
+    print(f"- step40_org_to_address.csv: {len(org_to_address)} records")
+    print(f"- step40_org_to_endpoint.csv: {len(org_to_endpoint)} records")
+    print(f"- step40_org_to_contact_url.csv: {len(org_to_contact_url)} records")
+    print(f"- step40_org_to_email.csv: {len(org_to_email)} records")
+    print(f"- step40_processing_errors.csv: {len(errors)} records")
 
 if __name__ == "__main__":
     main()
