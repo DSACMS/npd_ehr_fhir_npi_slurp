@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.DS_Store
 
 # C extensions
 *.so
@@ -194,8 +195,20 @@ cython_debug/
 .cursorindexingignore
 
 # PuffinPyPipe specific ignores
-# Exclude all data directories anywhere in the directory tree (as mentioned in README.md)
-**/data/
+# Exclude all csv, sql, zip and pdf files data directory
+/local_data/**/*.csv
+/local_data/**/*.csv.gz
+/local_data/**/*.sql
+/local_data/**/*.zip
+/local_data/**/*.pdf
+/local_data/**/*.txt
+/local_data/**/*.tsv
+/local_data/**/*.tab
+/local_data/**/*.psv
+/local_data/**/*.asc
+
+
+
 
 # Vim swap files
 *.swp
@@ -205,3 +218,8 @@ cython_debug/
 .*.swp
 .*.swo
 .*.swn
+
+
+out
+
+.env*
