@@ -106,11 +106,11 @@ def main():
     # Step 2: Download service JSON files
     run_step(
         step_num=2,
-        description="Downloading service JSON files",
+        description="Downloading CEHRT JSON files",
         command_args=[
             "python", "Step20_download_list_source_json.py",
             "--input_file", get_env_var(key="LIST_SOURCES_SUMMARY", default_value="./local_data/prod_data/list_sources_summary.csv"),
-            "--output_dir", get_env_var(key="SERVICE_JSON_DIR", default_value="./data/service_json/"),
+            "--output_dir", get_env_var(key="CEHRT_CACHE_DIR", default_value="./data/service_json/"),
             "--delay", get_env_var(key="DOWNLOAD_DELAY", default_value="1.0")
         ]
     )
@@ -121,7 +121,7 @@ def main():
         description="Parsing FHIR bundles",
         command_args=[
             "python", "Step30_parse_source_bundle.py",
-            "--input_dir", get_env_var(key="SERVICE_JSON_DIR", default_value="./data/service_json/")
+            "--input_dir", get_env_var(key="CEHRT_CACHE_DIR", default_value="./data/service_json/")
         ]
     )
     

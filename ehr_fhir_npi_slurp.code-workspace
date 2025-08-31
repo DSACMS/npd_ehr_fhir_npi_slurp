@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../npd_ehr_scrape_cache"
 		}
 	],
 	"settings": {}
