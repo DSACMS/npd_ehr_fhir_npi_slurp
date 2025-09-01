@@ -11,6 +11,7 @@ import sys
 import os
 import subprocess
 import time
+import glob
 from pathlib import Path
 
 
@@ -116,6 +117,7 @@ def main():
     check_virtual_env()
 
 
+    """
 
     # Step 1: Extract list sources from Lantern CSV
     run_step(
@@ -151,7 +153,7 @@ def main():
         ]
     )
 
-
+    """
     # Step 4: Extract and normalize CSV data
     run_step(
         step_num=4,
@@ -178,7 +180,8 @@ def main():
             "--output_file", get_env_var(key="CLEAN_NPI_TO_ORG_FHIR_URL", default_value="../npd_ehr_scrape_cache/cache/summary_data/step50_clean_npi_to_org_fhir_url.csv")
         ]
     )
-    
+    """
+
     # Step 6: Discover FHIR endpoints at multiple directory levels
     print("Step 6: Discovering FHIR endpoints...")
     print("  - Testing multiple directory levels for each domain")
@@ -227,22 +230,34 @@ def main():
         ]
     )
 
-
+    """
+    
     # Final Step: Compress large JSON files for GitHub storage
     print("Final Step: Compressing large JSON files for GitHub storage...")
     
-    # List of files to compress for GitHub storage
-    files_to_compress = [
-        "../npd_ehr_scrape_cache/cehrt_fhir_json/athenahealth_inc.json",
-        "../npd_ehr_scrape_cache/cehrt_fhir_json/epic_systems_corporation.json"
+    # List of file patterns to compress for GitHub storage (supports glob patterns)
+    file_patterns_to_compress = [
+        "../npd_ehr_scrape_cache/cehrt_fhir_json/athenahealth_inc*.json",
+        "../npd_ehr_scrape_cache/cehrt_fhir_json/epic_systems_corporation*.json",
         "../npd_ehr_scrape_cache/cache/summary_data/step40_org_to_npi.csv"
     ]
     
-    # Compress each file in the list
-    for file_path in files_to_compress:
-        filename = os.path.basename(file_path)
-        print(f"  - Compressing {filename}")
-        compress_file(file_path=file_path)
+    # Expand glob patterns and compress each matching file
+    for file_pattern in file_patterns_to_compress:
+        # Use glob to find all files matching the pattern
+        matching_files = glob.glob(file_pattern)
+        
+        if matching_files:
+            # Sort files for consistent processing order
+            matching_files.sort()
+            for file_path in matching_files:
+                filename = os.path.basename(file_path)
+                print(f"  - Compressing {filename}")
+                compress_file(file_path=file_path)
+        else:
+            # Handle case where no files match the pattern
+            pattern_name = os.path.basename(file_pattern)
+            print(f"  ⚠ No files found matching pattern: {pattern_name}")
     
     print("")
 

@@ -7,6 +7,7 @@ This class contains static methods for creating safe filenames and related opera
 """
 
 import re
+import hashlib
 
 
 class FilenameUtils:
@@ -17,15 +18,17 @@ class FilenameUtils:
     """
     
     @staticmethod
-    def create_safe_filename(*, vendor_name):
+    def create_safe_filename(*, vendor_name, list_source):
         """
-        Create a safe filename from the vendor name by:
+        Create a safe filename from the vendor name and list_source by:
         1. Replacing special characters with spaces
         2. Converting groups of spaces to underscores
         3. Converting to lowercase
+        4. Appending MD5 hash of list_source for uniqueness
         
         Args:
             vendor_name (str): The original vendor name to convert
+            list_source (str): The source URL to hash for uniqueness
             
         Returns:
             str: A safe filename string suitable for file system use
@@ -39,4 +42,10 @@ class FilenameUtils:
         # Convert to lowercase
         safe_name = safe_name.lower()
         
-        return safe_name
+        # Create MD5 hash of list_source for uniqueness
+        list_source_hash = hashlib.md5(list_source.encode('utf-8')).hexdigest()
+        
+        # Combine safe name with hash
+        safe_filename = f"{safe_name}_{list_source_hash}"
+        
+        return safe_filename

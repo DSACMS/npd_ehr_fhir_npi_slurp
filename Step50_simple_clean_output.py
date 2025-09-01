@@ -5,10 +5,17 @@ Step50_simple_clean_output.py
 This script cleans the org_to_npi.csv file by:
 1. Filtering for valid HTTPS URLs and 10-digit NPI numbers
 2. Checking if the base domain of each URL is responsive
-3. Outputting clean data to a new CSV file
+3. Preserving EHR vendor information and source URLs from Step40
+4. Outputting clean data to a new CSV file with vendor context
+
+The output CSV now includes:
+- org_fhir_url: The validated FHIR endpoint URL
+- npi: The validated 10-digit NPI number
+- ehr_vendor_name: The EHR vendor name from the CEHRT lookup
+- source_list: The original source URL for the vendor data
 
 Usage:
-    python Step50_simple_clean_output.py --input_file data/output_data/normalized_csv_files/org_to_npi.csv --output_file data/output_data/clean_npi_to_org_fhir_url.csv
+    python Step50_simple_clean_output.py --input_file data/output_data/normalized_csv_files/step40_org_to_npi.csv --output_file data/output_data/clean_npi_to_org_fhir_url.csv
 """
 
 import argparse
@@ -87,7 +94,7 @@ class DataCleaner:
             return False
     
     @staticmethod
-    def load_candidate_data(*, input_file_path: str) -> List[Tuple[str, str]]:
+    def load_candidate_data(*, input_file_path: str) -> List[Tuple[str, str, str, str]]:
         """Load candidate data from CSV file that meets basic criteria"""
         candidates = []
         
@@ -98,8 +105,10 @@ class DataCleaner:
                 for row in reader:
                     org_id = row.get('org_id', '').strip()
                     npi_value = row.get('npi_value', '').strip()
+                    ehr_vendor_name = row.get('ehr_vendor_name', '').strip()
+                    source_list = row.get('source_list', '').strip()
                     
-                    # Skip if either field is empty
+                    # Skip if either required field is empty
                     if not org_id or not npi_value:
                         continue
                     
@@ -111,7 +120,7 @@ class DataCleaner:
                     if not DataCleaner.is_valid_npi(npi_value=npi_value):
                         continue
                     
-                    candidates.append((org_id, npi_value))
+                    candidates.append((org_id, npi_value, ehr_vendor_name, source_list))
                     
         except FileNotFoundError:
             logger.error(f"Input file not found: {input_file_path}")
@@ -124,11 +133,11 @@ class DataCleaner:
         return candidates
     
     @staticmethod
-    def get_unique_domains(*, candidates: List[Tuple[str, str]]) -> Set[str]:
+    def get_unique_domains(*, candidates: List[Tuple[str, str, str, str]]) -> Set[str]:
         """Extract unique base domains from candidate URLs"""
         domains = set()
         
-        for org_url, _ in candidates:
+        for org_url, _, _, _ in candidates:
             base_domain = DataCleaner.extract_base_domain(url=org_url)
             if base_domain:
                 domains.add(base_domain)
@@ -156,32 +165,34 @@ class DataCleaner:
         return responsive_domains
     
     @staticmethod
-    def filter_valid_records(*, candidates: List[Tuple[str, str]], responsive_domains: Set[str]) -> List[Tuple[str, str]]:
+    def filter_valid_records(*, candidates: List[Tuple[str, str, str, str]], responsive_domains: Set[str]) -> List[Tuple[str, str, str, str]]:
         """Filter candidates to only include those with responsive domains"""
         valid_records = []
         
-        for org_url, npi_value in candidates:
+        for org_url, npi_value, ehr_vendor_name, source_list in candidates:
             base_domain = DataCleaner.extract_base_domain(url=org_url)
             if base_domain in responsive_domains:
-                valid_records.append((org_url, npi_value))
+                valid_records.append((org_url, npi_value, ehr_vendor_name, source_list))
         
         logger.info(f"Found {len(valid_records)} valid records with responsive domains")
         return valid_records
     
     @staticmethod
-    def write_output_csv(*, output_file_path: str, valid_records: List[Tuple[str, str]]):
+    def write_output_csv(*, output_file_path: str, valid_records: List[Tuple[str, str, str, str]]):
         """Write valid records to output CSV file"""
         try:
             with open(output_file_path, 'w', newline='', encoding='utf-8') as csvfile:
-                fieldnames = ['org_fhir_url', 'npi']
+                fieldnames = ['org_fhir_url', 'npi', 'ehr_vendor_name', 'source_list']
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 
                 writer.writeheader()
                 
-                for org_url, npi_value in valid_records:
+                for org_url, npi_value, ehr_vendor_name, source_list in valid_records:
                     writer.writerow({
                         'org_fhir_url': org_url,
-                        'npi': npi_value
+                        'npi': npi_value,
+                        'ehr_vendor_name': ehr_vendor_name,
+                        'source_list': source_list
                     })
             
             logger.info(f"Successfully wrote {len(valid_records)} records to {output_file_path}")

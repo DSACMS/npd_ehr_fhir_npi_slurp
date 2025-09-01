@@ -100,6 +100,9 @@ def main():
         successful_downloads = 0
         failed_downloads = 0
         
+        # List to store output information for CSV generation
+        output_records = []
+        
         # Process each row
         for row_num, (idx, row) in enumerate(df.iterrows()):
             list_source = row['list_source']
@@ -120,8 +123,19 @@ def main():
                 continue
             
             # Create safe filename
-            safe_filename = FilenameUtils.create_safe_filename(vendor_name=str(vendor_name))
+            safe_filename = FilenameUtils.create_safe_filename(vendor_name=str(vendor_name), list_source=str(list_source))
             output_path = os.path.join(args.output_dir, f"{safe_filename}.json")
+            
+            # Store record information for CSV output
+            # The output directory should include the safe_filename as a subdirectory
+            # This is where later parsing processes will write to
+            output_directory_with_safe_filename = os.path.join(args.output_dir, safe_filename)
+            output_record = {
+                'certified_api_developer_name': str(vendor_name),
+                'list_source': str(list_source),
+                'output_directory': output_directory_with_safe_filename
+            }
+            output_records.append(output_record)
             
             print(f"[{row_num + 1}/{len(df)}] Downloading from: {list_source}")
             print(f"  Vendor: {vendor_name}")
@@ -146,6 +160,17 @@ def main():
         
         if failed_downloads > 0:
             print(f"\nNote: {failed_downloads} downloads failed. Check the URLs and network connectivity.")
+        
+        # Generate CSV output with the required columns
+        if output_records:
+            output_csv_path = os.path.join(args.output_dir, 'step20_output_summary.csv')
+            output_df = pd.DataFrame(output_records)
+            output_df.to_csv(output_csv_path, index=False)
+            print(f"\nGenerated output summary CSV: {output_csv_path}")
+            print(f"CSV contains {len(output_records)} records with columns:")
+            print(f"  - certified_api_developer_name")
+            print(f"  - list_source") 
+            print(f"  - output_directory")
         
     except Exception as e:
         print(f"Error processing file: {str(e)}")

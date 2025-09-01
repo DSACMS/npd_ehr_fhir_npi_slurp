@@ -52,6 +52,38 @@ import time
 import phonenumbers
 from phonenumbers import NumberParseException
 from NPIValidator import NPIValidator
+def load_vendor_lookup_table():
+    """Load the vendor lookup table from step20_output_summary.csv"""
+    vendor_lookup = {}
+    
+    # Get the CEHRT cache directory from environment
+    cehrt_cache_dir = os.getenv('CEHRT_CACHE_DIR', '../npd_ehr_scrape_cache/cehrt_fhir_json/')
+    lookup_file = Path(cehrt_cache_dir) / 'step20_output_summary.csv'
+    
+    if not lookup_file.exists():
+        print(f"WARNING: Vendor lookup file not found: {lookup_file}")
+        return vendor_lookup
+    
+    try:
+        with open(lookup_file, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                # Extract the vendor directory name from the output_directory path
+                output_dir = row.get('output_directory', '')
+                if output_dir:
+                    # Get the basename (last part) of the path
+                    vendor_dir_name = Path(output_dir).name
+                    vendor_lookup[vendor_dir_name] = {
+                        'ehr_vendor_name': row.get('certified_api_developer_name', 'Unknown'),
+                        'source_list': row.get('list_source', '')
+                    }
+        
+        print(f"Loaded vendor lookup table with {len(vendor_lookup)} entries")
+        return vendor_lookup
+    
+    except Exception as e:
+        print(f"ERROR loading vendor lookup table: {e}")
+        return vendor_lookup
 
 def extract_npi_identifiers(identifiers, npi_validator):
     """Extract NPI identifiers from identifier array with validation"""
@@ -348,9 +380,9 @@ def process_endpoint_file(file_path, vendor_name):
 
 def main():
     parser = argparse.ArgumentParser(description='Extract CSV data from FHIR Organization JSON files')
-    parser.add_argument('--input_dir', default='./data/service_json', 
+    parser.add_argument('--input_dir', required=True, 
                        help='Input directory containing vendor subdirectories with JSON files')
-    parser.add_argument('--output_dir', default='./data/output_data/normalized_csv_files',
+    parser.add_argument('--output_dir', required=True,
                        help='Output directory for CSV files')
     parser.add_argument('--test', action='store_true',
                        help='Test mode: only process first 1000 files per vendor for validation')
@@ -384,6 +416,10 @@ def main():
     
     # Endpoint reference to URL mapping
     endpoint_reference_to_url = {}
+    
+    # Load vendor lookup table
+    print("\nLoading vendor lookup table...")
+    vendor_lookup = load_vendor_lookup_table()
     
     print(f"Processing files from: {input_path}")
     print(f"Output directory: {output_path}")
@@ -464,11 +500,19 @@ def main():
             
             processed_files += 1
             
+            # Get vendor info from lookup table
+            vendor_info = vendor_lookup.get(vendor_name, {
+                'ehr_vendor_name': 'Unknown',
+                'source_list': ''
+            })
+            
             # Extract organization data
             org_data = {
                 'org_id': result['org_id'],
                 'org_name': result['org_name'],
                 'vendor_name': result['vendor_name'],
+                'ehr_vendor_name': vendor_info['ehr_vendor_name'],
+                'source_list': vendor_info['source_list'],
                 'active': result['active'],
                 'address_count': len(result['addresses']),
                 'endpoint_count': len(result['endpoints']),
@@ -490,7 +534,9 @@ def main():
                     
                     org_to_address.append({
                         'org_id': result['org_id'],
-                        'address_hash': addr_hash
+                        'address_hash': addr_hash,
+                        'ehr_vendor_name': vendor_info['ehr_vendor_name'],
+                        'source_list': vendor_info['source_list']
                     })
                 
                 # Process NPIs
@@ -507,7 +553,9 @@ def main():
                         'npi_value': npi.get('value', ''),
                         'is_invalid_npi': is_invalid,
                         'api_error': npi.get('api_error'),
-                        'result_count': npi.get('result_count', 0)
+                        'result_count': npi.get('result_count', 0),
+                        'ehr_vendor_name': vendor_info['ehr_vendor_name'],
+                        'source_list': vendor_info['source_list']
                     })
                 
                 # Process phones
@@ -517,7 +565,9 @@ def main():
                     
                     org_to_phone.append({
                         'org_id': result['org_id'],
-                        'phone_hash': phone_hash
+                        'phone_hash': phone_hash,
+                        'ehr_vendor_name': vendor_info['ehr_vendor_name'],
+                        'source_list': vendor_info['source_list']
                     })
                 
                 # Process contact URLs
@@ -542,12 +592,28 @@ def main():
                 
                 # Process endpoints
                 for endpoint in result['endpoints']:
+                    # Add vendor information to endpoint data
+                    if isinstance(endpoint, dict):
+                        endpoint_with_vendor = endpoint.copy()
+                        endpoint_with_vendor['ehr_vendor_name'] = vendor_info['ehr_vendor_name']
+                        endpoint_with_vendor['source_list'] = vendor_info['source_list']
+                    else:
+                        # Handle case where endpoint might be a string or other type
+                        endpoint_with_vendor = {
+                            'reference': str(endpoint),
+                            'url': str(endpoint),
+                            'ehr_vendor_name': vendor_info['ehr_vendor_name'],
+                            'source_list': vendor_info['source_list']
+                        }
+                    
                     endpoint_hash = generate_hash_id(endpoint)
-                    distinct_endpoints[endpoint_hash] = endpoint
+                    distinct_endpoints[endpoint_hash] = endpoint_with_vendor
                     
                     org_to_endpoint.append({
                         'org_id': result['org_id'],
-                        'endpoint_hash': endpoint_hash
+                        'endpoint_hash': endpoint_hash,
+                        'ehr_vendor_name': vendor_info['ehr_vendor_name'],
+                        'source_list': vendor_info['source_list']
                     })
             
 
@@ -572,7 +638,7 @@ def main():
     
     # Distinct Organizations
     with open(output_path / 'step40_distinct_organizations.csv', 'w', newline='', encoding='utf-8') as f:
-        fieldnames = ['org_id', 'org_name', 'vendor_name', 'active', 'address_count', 'endpoint_count', 'npi_count', 'phone_count', 'contact_url_count', 'email_count']
+        fieldnames = ['org_id', 'org_name', 'vendor_name', 'ehr_vendor_name', 'source_list', 'active', 'address_count', 'endpoint_count', 'npi_count', 'phone_count', 'contact_url_count', 'email_count']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         if distinct_organizations:
@@ -591,7 +657,7 @@ def main():
     
     # Distinct Endpoints
     with open(output_path / 'step40_distinct_endpoints.csv', 'w', newline='', encoding='utf-8') as f:
-        fieldnames = ['endpoint_hash', 'reference', 'url']
+        fieldnames = ['endpoint_hash', 'reference', 'url', 'ehr_vendor_name', 'source_list']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         if distinct_endpoints:
@@ -635,28 +701,28 @@ def main():
     
     # Organization to NPI relationships
     with open(output_path / 'step40_org_to_npi.csv', 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=['org_id', 'npi_system', 'npi_value', 'is_invalid_npi', 'api_error', 'result_count'])
+        writer = csv.DictWriter(f, fieldnames=['org_id', 'npi_system', 'npi_value', 'is_invalid_npi', 'api_error', 'result_count', 'ehr_vendor_name', 'source_list'])
         writer.writeheader()
         if org_to_npi:
             writer.writerows(org_to_npi)
     
     # Organization to Phone relationships
     with open(output_path / 'step40_org_to_phone.csv', 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=['org_id', 'phone_hash'])
+        writer = csv.DictWriter(f, fieldnames=['org_id', 'phone_hash', 'ehr_vendor_name', 'source_list'])
         writer.writeheader()
         if org_to_phone:
             writer.writerows(org_to_phone)
     
     # Organization to Address relationships
     with open(output_path / 'step40_org_to_address.csv', 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=['org_id', 'address_hash'])
+        writer = csv.DictWriter(f, fieldnames=['org_id', 'address_hash', 'ehr_vendor_name', 'source_list'])
         writer.writeheader()
         if org_to_address:
             writer.writerows(org_to_address)
     
     # Organization to Endpoint relationships
     with open(output_path / 'step40_org_to_endpoint.csv', 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=['org_id', 'endpoint_hash'])
+        writer = csv.DictWriter(f, fieldnames=['org_id', 'endpoint_hash', 'ehr_vendor_name', 'source_list'])
         writer.writeheader()
         if org_to_endpoint:
             writer.writerows(org_to_endpoint)
