@@ -118,7 +118,6 @@ class TestPipelineComponents(unittest.TestCase):
         try:
             import Step20_download_list_source_json
             self.assertTrue(hasattr(Step20_download_list_source_json, 'main'))
-            self.assertTrue(hasattr(Step20_download_list_source_json, 'create_safe_filename'))
         except ImportError as e:
             self.fail(f"Could not import Step20 script: {e}")
     
@@ -142,7 +141,7 @@ class TestPipelineComponents(unittest.TestCase):
     def test_safe_filename_creation(self):
         """Test safe filename creation function"""
         try:
-            from Step20_download_list_source_json import create_safe_filename
+            from FilenameUtils import FilenameUtils
             
             test_cases = [
                 ("Test Vendor Inc.", "test_vendor_inc"),
@@ -152,11 +151,11 @@ class TestPipelineComponents(unittest.TestCase):
             ]
             
             for input_name, expected in test_cases:
-                result = create_safe_filename(input_name)
+                result = FilenameUtils.create_safe_filename(vendor_name=input_name)
                 self.assertEqual(result, expected)
                 
         except ImportError:
-            self.skipTest("Step20 not available for testing")
+            self.skipTest("FilenameUtils not available for testing")
     
     def test_directory_structure(self):
         """Test that required directories can be created"""

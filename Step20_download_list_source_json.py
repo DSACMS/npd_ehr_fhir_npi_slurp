@@ -25,23 +25,7 @@ import sys
 import time
 from urllib.parse import urlparse
 
-def create_safe_filename(vendor_name):
-    """
-    Create a safe filename from the vendor name by:
-    1. Replacing special characters with spaces
-    2. Converting groups of spaces to underscores
-    3. Converting to lowercase
-    """
-    # Replace all non-alphanumeric characters with spaces
-    safe_name = re.sub(r'[^a-zA-Z0-9\s]', ' ', vendor_name)
-    
-    # Convert multiple spaces to single spaces, then to underscores
-    safe_name = re.sub(r'\s+', '_', safe_name.strip())
-    
-    # Convert to lowercase
-    safe_name = safe_name.lower()
-    
-    return safe_name
+from FilenameUtils import FilenameUtils
 
 def download_json_file(url, output_path, timeout=30):
     """
@@ -136,7 +120,7 @@ def main():
                 continue
             
             # Create safe filename
-            safe_filename = create_safe_filename(str(vendor_name))
+            safe_filename = FilenameUtils.create_safe_filename(vendor_name=str(vendor_name))
             output_path = os.path.join(args.output_dir, f"{safe_filename}.json")
             
             print(f"[{row_num + 1}/{len(df)}] Downloading from: {list_source}")
