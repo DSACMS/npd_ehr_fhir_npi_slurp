@@ -101,7 +101,7 @@ def main():
         command_args=[
             "python", "Step10_extract_list_source_from_lantern_csv.py",
             "--input_file", get_env_var(key="LANTERN_CSV_INPUT", default_value="local_data/lantern_csv/fhir_endpoints.csv"),
-            "--output_file", get_env_var(key="LIST_SOURCES_SUMMARY", default_value="local_data/prod_data/list_sources_summary.csv")
+            "--output_file", get_env_var(key="LIST_SOURCES_SUMMARY", default_value="../npd_ehr_scrape_cache/list_sources_summary.csv")
         ]
     )
     
@@ -111,8 +111,8 @@ def main():
         description="Downloading CEHRT JSON files",
         command_args=[
             "python", "Step20_download_list_source_json.py",
-            "--input_file", get_env_var(key="LIST_SOURCES_SUMMARY", default_value="./local_data/prod_data/list_sources_summary.csv"),
-            "--output_dir", get_env_var(key="CEHRT_CACHE_DIR", default_value="./data/service_json/"),
+            "--input_file", get_env_var(key="LIST_SOURCES_SUMMARY", default_value="../npd_ehr_scrape_cache/list_sources_summary.csv"),
+            "--output_dir", get_env_var(key="CEHRT_CACHE_DIR", default_value="../npd_ehr_scrape_cache/cehrt_fhir_json/"),
             "--delay", get_env_var(key="DOWNLOAD_DELAY", default_value="1.0")
         ]
     )
@@ -124,7 +124,7 @@ def main():
         description="Parsing FHIR bundles",
         command_args=[
             "python", "Step30_parse_source_bundle.py",
-            "--input_dir", get_env_var(key="CEHRT_CACHE_DIR", default_value="./data/service_json/")
+            "--input_dir", get_env_var(key="SERVICE_JSON_DIR", default_value="../npd_ehr_scrape_cache/cehrt_fhir_json/")
         ]
     )
 
@@ -135,8 +135,8 @@ def main():
         description="Extracting and normalizing CSV data",
         command_args=[
             "python", "Step40_extract_csv_data.py",
-            "--input_dir", get_env_var(key="CEHRT_CACHE_DIR", default_value="./data/service_json/"),
-            "--output_dir", get_env_var(key="NORMALIZED_CSV_DIR", default_value="./data/output_data/normalized_csv_files")
+            "--input_dir", get_env_var(key="SERVICE_JSON_DIR", default_value="../npd_ehr_scrape_cache/cehrt_fhir_json/"),
+            "--output_dir", get_env_var(key="NORMALIZED_CSV_DIR", default_value="../npd_ehr_scrape_cache/cache/summary_data/")
         ]
     )
     
@@ -151,8 +151,8 @@ def main():
         description="",  # Already printed above
         command_args=[
             "python", "Step50_simple_clean_output.py",
-            "--input_file", get_env_var(key="ORG_TO_NPI_RAW", default_value="data/output_data/normalized_csv_files/org_to_npi.csv"),
-            "--output_file", get_env_var(key="CLEAN_NPI_TO_ORG_FHIR_URL", default_value="data/output_data/clean_npi_to_org_fhir_url.csv")
+            "--input_file", get_env_var(key="ORG_TO_NPI_RAW", default_value="../npd_ehr_scrape_cache/cache/summary_data/step40_org_to_npi.csv"),
+            "--output_file", get_env_var(key="CLEAN_NPI_TO_ORG_FHIR_URL", default_value="../npd_ehr_scrape_cache/cache/summary_data/step50_clean_npi_to_org_fhir_url.csv")
         ]
     )
     
@@ -166,8 +166,8 @@ def main():
         description="",  # Already printed above
         command_args=[
             "python", "Step60_CalculateOpenEndpoints.py",
-            "--input_csv_file", get_env_var(key="CLEAN_NPI_TO_ORG_FHIR_URL", default_value="data/output_data/clean_npi_to_org_fhir_url.csv"),
-            "--output_csv_file", get_env_var(key="ENRICHED_ENDPOINTS", default_value="data/output_data/enriched_endpoints.csv")
+            "--input_csv_file", get_env_var(key="CLEAN_NPI_TO_ORG_FHIR_URL", default_value="../npd_ehr_scrape_cache/cache/summary_data/step50_clean_npi_to_org_fhir_url.csv"),
+            "--output_csv_file", get_env_var(key="ENRICHED_ENDPOINTS", default_value="../npd_ehr_scrape_cache/cache/summary_data/step60_enriched_endpoints.csv")
         ]
     )
     
@@ -182,10 +182,10 @@ def main():
         description="",  # Already printed above
         command_args=[
             "python", "Step89_GenerateCEHRTDashboardCSV.py",
-            "--list_sources_path", get_env_var(key="LIST_SOURCES_SUMMARY", default_value="local_data/prod_data/list_sources_summary.csv"),
-            "--enriched_endpoints_path", get_env_var(key="ENRICHED_ENDPOINTS", default_value="data/output_data/step60_enriched_endpoints.csv"),
-            "--org_to_npi_path", get_env_var(key="ORG_TO_NPI_RAW", default_value="data/output_data/normalized_csv_files/step40_org_to_npi.csv"),
-            "--output_csv_path", get_env_var(key="CEHRT_FHIR_REPORT_CSV", default_value="CEHRT_FHIR_Report.csv")
+            "--list_sources_path", get_env_var(key="LIST_SOURCES_SUMMARY", default_value="../npd_ehr_scrape_cache/list_sources_summary.csv"),
+            "--enriched_endpoints_path", get_env_var(key="ENRICHED_ENDPOINTS", default_value="../npd_ehr_scrape_cache/cache/summary_data/step60_enriched_endpoints.csv"),
+            "--org_to_npi_path", get_env_var(key="ORG_TO_NPI_RAW", default_value="../npd_ehr_scrape_cache/cache/summary_data/step40_org_to_npi.csv"),
+            "--output_csv_path", get_env_var(key="CEHRT_FHIR_REPORT_CSV", default_value="../npd_ehr_scrape_cache/cache/summary_data/step89_CEHRT_FHIR_Report.csv")
         ]
     )
     
@@ -199,8 +199,8 @@ def main():
         description="",  # Already printed above
         command_args=[
             "python", "Step90_MakeCEHRTDashboard.py",
-            "--input_csv_path", get_env_var(key="CEHRT_FHIR_REPORT_CSV", default_value="CEHRT_FHIR_Report.csv"),
-            "--output_md_path", get_env_var(key="CEHRT_FHIR_REPORT_MD", default_value="CEHRT_FHIR_Report.md")
+            "--input_csv_path", get_env_var(key="CEHRT_FHIR_REPORT_CSV", default_value="../npd_ehr_scrape_cache/cache/summary_data/step89_CEHRT_FHIR_Report.csv"),
+            "--output_md_path", get_env_var(key="CEHRT_FHIR_REPORT_MD", default_value="../npd_ehr_scrape_cache/cache/summary_data/step90_CEHRT_FHIR_Report.md")
         ]
     )
 
@@ -210,20 +210,20 @@ def main():
     print("Pipeline completed successfully!")
     print("")
     print("Output files are available in:")
-    print(f"  - {get_env_var(key='NORMALIZED_CSV_DIR', default_value='./data/output_data/normalized_csv_files')}/ (raw extracted data)")
-    print(f"  - {get_env_var(key='CLEAN_NPI_TO_ORG_FHIR_URL', default_value='./data/output_data/clean_npi_to_org_fhir_url.csv')} (cleaned org/NPI data)")
-    print(f"  - {get_env_var(key='ENRICHED_ENDPOINTS', default_value='./data/output_data/enriched_endpoints.csv')} (with FHIR endpoint discovery)")
-    print(f"  - {get_env_var(key='CEHRT_FHIR_REPORT_CSV', default_value='./CEHRT_FHIR_Report.csv')} (compliance summary by vendor)")
-    print(f"  - {get_env_var(key='CEHRT_FHIR_REPORT_MD', default_value='./CEHRT_FHIR_Report.md')} (visual compliance dashboard)")
+    print(f"  - {get_env_var(key='NORMALIZED_CSV_DIR', default_value='../npd_ehr_scrape_cache/cache/summary_data/')}/ (raw extracted data)")
+    print(f"  - {get_env_var(key='CLEAN_NPI_TO_ORG_FHIR_URL', default_value='../npd_ehr_scrape_cache/cache/summary_data/step50_clean_npi_to_org_fhir_url.csv')} (cleaned org/NPI data)")
+    print(f"  - {get_env_var(key='ENRICHED_ENDPOINTS', default_value='../npd_ehr_scrape_cache/cache/summary_data/step60_enriched_endpoints.csv')} (with FHIR endpoint discovery)")
+    print(f"  - {get_env_var(key='CEHRT_FHIR_REPORT_CSV', default_value='../npd_ehr_scrape_cache/cache/summary_data/step89_CEHRT_FHIR_Report.csv')} (compliance summary by vendor)")
+    print(f"  - {get_env_var(key='CEHRT_FHIR_REPORT_MD', default_value='../npd_ehr_scrape_cache/cache/summary_data/step90_CEHRT_FHIR_Report.md')} (visual compliance dashboard)")
     print("")
     print("Key deliverables:")
-    print(f"  - {get_env_var(key='CEHRT_FHIR_REPORT_MD', default_value='CEHRT_FHIR_Report.md')}: Visual dashboard showing vendor compliance")
-    print(f"  - {get_env_var(key='ENRICHED_ENDPOINTS', default_value='enriched_endpoints.csv')}: Complete dataset with endpoint discovery")
+    print(f"  - {get_env_var(key='CEHRT_FHIR_REPORT_MD', default_value='../npd_ehr_scrape_cache/cache/summary_data/step90_CEHRT_FHIR_Report.md')}: Visual dashboard showing vendor compliance")
+    print(f"  - {get_env_var(key='ENRICHED_ENDPOINTS', default_value='../npd_ehr_scrape_cache/cache/summary_data/step60_enriched_endpoints.csv')}: Complete dataset with endpoint discovery")
     print("")
     print("Additional options:")
     print(f"  - Run tests: python {get_env_var(key='TEST_PIPELINE', default_value='test_pipeline.py')}")
     print("  - Test mode (faster): python Step40_extract_csv_data.py --test")
-    print(f"  - View dashboard: open {get_env_var(key='CEHRT_FHIR_REPORT_MD', default_value='CEHRT_FHIR_Report.md')}")
+    print(f"  - View dashboard: open {get_env_var(key='CEHRT_FHIR_REPORT_MD', default_value='../npd_ehr_scrape_cache/cache/summary_data/step90_CEHRT_FHIR_Report.md')}")
 
 
 if __name__ == "__main__":
