@@ -56,7 +56,6 @@ python go.py
 
 Or you can look inside py to understand what specific steps should be run in.
 
-
 ## Pipeline Steps
 
 ### Step 1: Extract List Sources
@@ -65,8 +64,8 @@ Or you can look inside py to understand what specific steps should be run in.
 
 Processes Lantern FHIR endpoint CSV files to extract unique service list sources by EHR vendor.
 
-**Input**: CSV with FHIR endpoint data
-**Output**: Summary CSV with distinct list sources and URL counts
+**Input**: CSV with FHIR endpoint data from Lantern
+**Output**: `list_sources_summary.csv` with distinct list sources and URL counts
 
 ### Step 2: Download Service Data
 
@@ -75,11 +74,11 @@ Processes Lantern FHIR endpoint CSV files to extract unique service list sources
 Downloads FHIR Bundle JSON files from EHR vendor service endpoints.
 
 **Features**:
-
-* Respectful rate limiting
-* Safe filename generation
+* Respectful rate limiting with configurable delays
+* Safe filename generation from vendor names
 * Error handling and retry logic
 * Progress tracking
+* Creates JSON files in CEHRT cache directory
 
 ### Step 3: Parse FHIR Bundles
 
@@ -88,26 +87,114 @@ Downloads FHIR Bundle JSON files from EHR vendor service endpoints.
 Breaks down large FHIR Bundle files into individual resource entries for easier processing.
 
 **Features**:
-
-* Batch processing of multiple files
+* Batch processing of multiple JSON files
+* Extracts individual FHIR Bundle entries into separate JSON files
 * Resource type categorization
+* Comprehensive error reporting with CSV logs
 * Progress reporting
-* Error handling
 
 ### Step 4: Extract & Normalize Data
 
 **File**: `Step40_extract_csv_data.py`
 
-Creates normalized CSV datasets from FHIR Organization resources.
+Creates normalized CSV datasets from FHIR Organization resources with NPI validation.
+
+**Features**:
+* Two-pass processing for endpoint reference mapping
+* NPI validation using NPIValidator class
+* Phone number normalization using international standards
+* Hash-based deduplication
+* Test mode support (first 1000 files per vendor)
 
 **Output Files**:
-* `distinct_organizations.csv` - Unique organizations with counts
-* `distinct_addresses.csv` - Normalized address data
-* `distinct_endpoints.csv` - FHIR endpoint references
-* `distinct_phones.csv` - Validated phone numbers
-* `distinct_contact_urls.csv` - Contact URLs and emails
-* `org_to_*.csv` - Relationship mapping files
-* `processing_errors.csv` - Error log
+* `step40_distinct_organizations.csv` - Valid organizations (with NPI + endpoint)
+* `step40_distinct_addresses.csv` - Normalized address data
+* `step40_distinct_endpoints.csv` - FHIR endpoint references
+* `step40_distinct_phones.csv` - Validated phone numbers with international formatting
+* `step40_distinct_contact_urls.csv` - Contact URLs
+* `step40_distinct_contact_emails.csv` - Email addresses
+* `step40_org_to_*.csv` - Relationship mapping files
+* `step40_processing_errors.csv` - Error log
+
+### Step 5: Clean and Validate Data
+
+**File**: `Step50_simple_clean_output.py`
+
+Cleans the org_to_npi data by filtering for valid HTTPS URLs and 10-digit NPIs, then checks domain responsiveness.
+
+**Features**:
+* Filters for valid HTTPS URLs and 10-digit NPI numbers
+* Tests domain responsiveness (accepts 200-499 status codes)
+* Respectful rate limiting between domain checks
+* Comprehensive logging
+
+**Input**: `step40_org_to_npi.csv`
+**Output**: `step50_clean_npi_to_org_fhir_url.csv` with cleaned data
+
+### Step 6: Discover FHIR Endpoints
+
+**File**: `Step60_CalculateOpenEndpoints.py`
+
+Enriches data by discovering well-known FHIR endpoints at multiple directory levels for each domain.
+
+**Features**:
+* Tests multiple directory levels for each domain
+* Discovers 6 endpoint types: Capability Statement, SMART Config, OpenAPI docs/JSON, Swagger docs/JSON
+* Chooses best HTTPS organizational URL
+* Rate limiting between requests
+
+**Endpoint Discovery**:
+* `/metadata` - FHIR Capability Statement
+* `/.well-known/smart-configuration` - SMART on FHIR configuration
+* `/api-docs` - OpenAPI documentation
+* `/openapi.json` - OpenAPI specification
+* `/swagger` - Swagger documentation  
+* `/swagger.json` - Swagger specification
+
+**Input**: `step50_clean_npi_to_org_fhir_url.csv`
+**Output**: `step60_enriched_endpoints.csv` with endpoint discovery results
+
+### Step 89: Generate CEHRT Dashboard CSV
+
+**File**: `Step89_GenerateCEHRTDashboardCSV.py`
+
+Aggregates compliance results per CEHRT vendor for dashboard visualization.
+
+**Features**:
+* Reads vendor mapping from list sources summary
+* Combines endpoint discovery with partial compliance data
+* Aggregates per-vendor compliance across all endpoints
+* Handles vendors with data in different pipeline stages
+
+**Compliance Checks**:
+* Reachable (domain responsive)
+* Has ONPI (valid 10-digit NPI)
+* HTTPS ORG URL (secure endpoint available)
+* Findable endpoints (Metadata, SMART, OpenAPI, Swagger)
+
+**Input**: Multiple CSV files from previous steps
+**Output**: `step89_CEHRT_FHIR_Report.csv` with vendor compliance summary
+
+### Step 90: Create CEHRT Dashboard
+
+**File**: `Step90_MakeCEHRTDashboard.py`
+
+Creates a visual HTML dashboard showing CEHRT vendor compliance with icons.
+
+**Features**:
+* Converts CSV compliance data to visual HTML table
+* Uses green icons for passing checks, red X for failures
+* Makes successful endpoint URLs clickable links
+* Sorts vendors by compliance score (most compliant first)
+
+**Icon Mapping**:
+* Green check marks for basic compliance (Up, ONPI)
+* Themed icons for different endpoint types (FHIR fire icons)
+* Red X for all failures
+* Clickable links to actual discovered endpoints
+
+**Input**: `step89_CEHRT_FHIR_Report.csv`
+**Output**: `step90_CEHRT_FHIR_Report.md` - Visual compliance dashboard
 
 ## Data Validation
 
