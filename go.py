@@ -81,6 +81,29 @@ def run_step(*, step_num, description, command_args, success_message=None):
         sys.exit(1)
 
 
+def compress_json_file(*, file_path):
+    """
+    Compress a JSON file using gzip if it exists.
+    
+    Args:
+        file_path: Path to the JSON file to compress
+    """
+    if os.path.exists(file_path):
+        try:
+            with open(f"{file_path}.gz", "wb") as gz_file:
+                result = subprocess.run([
+                    "gzip", "-c", file_path
+                ], stdout=gz_file, check=True)
+            filename = os.path.basename(file_path)
+            print(f"  ✓ {filename}.gz created")
+        except subprocess.CalledProcessError as e:
+            filename = os.path.basename(file_path)
+            print(f"  ❌ Failed to compress {filename}: {e}")
+    else:
+        filename = os.path.basename(file_path)
+        print(f"  ⚠ {filename} not found, skipping compression")
+
+
 def main():
     """Main pipeline execution."""
     print("Starting EHR FHIR NPI Slurp Pipeline...")
@@ -204,6 +227,23 @@ def main():
         ]
     )
 
+
+    # Final Step: Compress large JSON files for GitHub storage
+    print("Final Step: Compressing large JSON files for GitHub storage...")
+    
+    # List of files to compress for GitHub storage
+    files_to_compress = [
+        "../npd_ehr_scrape_cache/cehrt_fhir_json/athenahealth_inc.json",
+        "../npd_ehr_scrape_cache/cehrt_fhir_json/epic_systems_corporation.json"
+    ]
+    
+    # Compress each file in the list
+    for file_path in files_to_compress:
+        filename = os.path.basename(file_path)
+        print(f"  - Compressing {filename}")
+        compress_json_file(file_path=file_path)
+    
+    print("")
 
     # Success summary
     print("========================================")
