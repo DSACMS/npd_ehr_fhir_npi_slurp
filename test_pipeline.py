@@ -211,21 +211,21 @@ class TestDataValidation(unittest.TestCase):
     def test_npi_format_validation(self):
         """Test NPI format validation"""
         try:
-            from Step40_extract_csv_data import is_valid_npi_format
+            from NPIValidator import NPIValidator
             
             # Valid NPIs
-            self.assertTrue(is_valid_npi_format("1234567890"))
-            self.assertTrue(is_valid_npi_format("0123456789"))
+            self.assertTrue(NPIValidator._is_valid_npi_format(npi_value="1234567890"))
+            self.assertTrue(NPIValidator._is_valid_npi_format(npi_value="0123456789"))
             
             # Invalid NPIs
-            self.assertFalse(is_valid_npi_format("123456789"))  # Too short
-            self.assertFalse(is_valid_npi_format("12345678901"))  # Too long
-            self.assertFalse(is_valid_npi_format("123456789a"))  # Contains letter
-            self.assertFalse(is_valid_npi_format(""))  # Empty
-            self.assertFalse(is_valid_npi_format(None))  # None
+            self.assertFalse(NPIValidator._is_valid_npi_format(npi_value="123456789"))  # Too short
+            self.assertFalse(NPIValidator._is_valid_npi_format(npi_value="12345678901"))  # Too long
+            self.assertFalse(NPIValidator._is_valid_npi_format(npi_value="123456789a"))  # Contains letter
+            self.assertFalse(NPIValidator._is_valid_npi_format(npi_value=""))  # Empty
+            self.assertFalse(NPIValidator._is_valid_npi_format(npi_value=""))  # Empty string to test None case
             
         except ImportError:
-            self.skipTest("Step40 functions not available")
+            self.skipTest("NPIValidator not available")
 
 def run_basic_tests():
     """Run basic functionality tests"""
