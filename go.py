@@ -81,9 +81,9 @@ def run_step(*, step_num, description, command_args, success_message=None):
         sys.exit(1)
 
 
-def compress_json_file(*, file_path):
+def compress_file(*, file_path):
     """
-    Compress a JSON file using gzip if it exists.
+    Compress a big file using gzip if it exists.
     
     Args:
         file_path: Path to the JSON file to compress
@@ -235,13 +235,14 @@ def main():
     files_to_compress = [
         "../npd_ehr_scrape_cache/cehrt_fhir_json/athenahealth_inc.json",
         "../npd_ehr_scrape_cache/cehrt_fhir_json/epic_systems_corporation.json"
+        "../npd_ehr_scrape_cache/cache/summary_data/step40_org_to_npi.csv"
     ]
     
     # Compress each file in the list
     for file_path in files_to_compress:
         filename = os.path.basename(file_path)
         print(f"  - Compressing {filename}")
-        compress_json_file(file_path=file_path)
+        compress_file(file_path=file_path)
     
     print("")
 
