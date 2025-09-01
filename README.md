@@ -2,13 +2,12 @@
 
 A comprehensive data processing pipeline for extracting, analyzing, and normalizing EHR (Electronic Health Records) FHIR endpoint data from healthcare providers. This tool helps assess HTI-2 compliance and generates normalized datasets for healthcare interoperability analysis.
 
-Current home is [/ftrotter/ehr_fhir_npi_slurp](https://github.com/ftrotter/ehr_fhir_npi_slurp) will likely move to a DSAC repo in the future.
+Current home is [/DSACMS/npd_ehr_fhir_npi_slurp](https://github.com/DSACMS/npd_ehr_fhir_npi_slurp).
+Assumes that the json data is being saved to [https://github.com/ftrotter-gov/npd_ehr_scrape_cache](https://github.com/ftrotter-gov/npd_ehr_scrape_cache)
 
-## TODO
+## Problem Documentaion
 
-* We need to streamline the whole process to account for the fact that some entry blocks, like
-data/service_json/athena-fhir-service-base-urls/entry_a1c9c7fe-6d45-5a92-922c-7bfcd55a062d.json
-"forget" the URL they are sourced from. We need to figure out how to retain that information from a previous step so that we can keep everything in https.
+* [Understanding Endpoints in SAAS vs on-prem EHR instances](./docs/fhir_tenancy_explained.md)
 
 ## Overview
 
@@ -21,46 +20,42 @@ This project processes FHIR endpoint data through a multi-step pipeline:
 
 ## Features
 
-- **NPI Validation**: Real-time validation against CMS NPI Registry API
-- **Phone Number Normalization**: International phone number parsing and validation
-- **Address Standardization**: Structured address parsing and normalization (waiting on Smarty Streets for full implementation)  
-- **Data Deduplication**: Hash-based deduplication for efficient storage
-- **Error Handling**: Comprehensive error tracking and reporting
-- **Test Mode**: Limited processing for development and validation
-- **Progress Tracking**: Visual progress indicators for long-running operations
+### Now
+
+* **NPI Validation**: Real-time validation against CMS NPI Registry API
+* **Data Deduplication**: Hash-based deduplication for efficient storage
+* **Error Handling**: Comprehensive error tracking and reporting
+* **Test Mode**: Limited processing for development and validation
+* **Progress Tracking**: Visual progress indicators for long-running operations
+
+### Future
+
+We can and will handle these later on in the process, so we are not implementing them up-front for now.
+
+* **Phone Number Normalization**: International phone number parsing and validation
+* **Address Standardization**: Structured address parsing and normalization (waiting on Smarty Streets for full implementation)  
 
 ## Quick Start
 
 ### Prerequisites
 
-- Python 3.8+
-- Virtual environment (recommended)
+* Python 3.8+
+* Virtual environment (recommended)
 
 ### Basic Usage
 
 First download the endpoint data from the [Lantern Dashboard download page](https://lantern.healthit.gov/?tab=downloads_tab)
 Put that data in local_data/prod_data/fhir_endpoints.csv
 
-Then choose either go.sh or manual runnning of the pipeline step-by-step:
+Then choose either go.py or manual runnning of the pipeline step-by-step:
 
 ```bash
 # Run the complete pipeline
-./go.sh
-
-# Or run individual steps:
-python Step10_extract_list_source_from_lantern_csv.py --input_file local_data/prod_data/fhir_endpoints.csv --output_file local_data/prod_data/list_sources_summary.csv
-python Step20_download_list_source_json.py --input_file local_data/prod_data/list_sources_summary.csv --output_dir ./data/service_json/
-python Step30_parse_source_bundle.py --input_dir ./data/service_json/
-python Step40_extract_csv_data.py
+python go.py
 ```
 
-### Test Mode
+Or you can look inside py to understand what specific steps should be run in.
 
-For development and validation, use test mode to process only a subset of data:
-
-```bash
-python Step40_extract_csv_data.py --test
-```
 
 ## Pipeline Steps
 
@@ -81,10 +76,10 @@ Downloads FHIR Bundle JSON files from EHR vendor service endpoints.
 
 **Features**:
 
-- Respectful rate limiting
-- Safe filename generation
-- Error handling and retry logic
-- Progress tracking
+* Respectful rate limiting
+* Safe filename generation
+* Error handling and retry logic
+* Progress tracking
 
 ### Step 3: Parse FHIR Bundles
 
@@ -94,10 +89,10 @@ Breaks down large FHIR Bundle files into individual resource entries for easier 
 
 **Features**:
 
-- Batch processing of multiple files
-- Resource type categorization
-- Progress reporting
-- Error handling
+* Batch processing of multiple files
+* Resource type categorization
+* Progress reporting
+* Error handling
 
 ### Step 4: Extract & Normalize Data
 
@@ -106,35 +101,35 @@ Breaks down large FHIR Bundle files into individual resource entries for easier 
 Creates normalized CSV datasets from FHIR Organization resources.
 
 **Output Files**:
-- `distinct_organizations.csv` - Unique organizations with counts
-- `distinct_addresses.csv` - Normalized address data
-- `distinct_endpoints.csv` - FHIR endpoint references
-- `distinct_phones.csv` - Validated phone numbers
-- `distinct_contact_urls.csv` - Contact URLs and emails
-- `org_to_*.csv` - Relationship mapping files
-- `processing_errors.csv` - Error log
+* `distinct_organizations.csv` - Unique organizations with counts
+* `distinct_addresses.csv` - Normalized address data
+* `distinct_endpoints.csv` - FHIR endpoint references
+* `distinct_phones.csv` - Validated phone numbers
+* `distinct_contact_urls.csv` - Contact URLs and emails
+* `org_to_*.csv` - Relationship mapping files
+* `processing_errors.csv` - Error log
 
 ## Data Validation
 
 ### NPI Validation
 
-- Format validation (10-digit requirement)
-- API validation against the list of valid NPIs in ./npi_validation_data/, which falls back to using the Registery for missing npis. See [NPIValidator_README.md](NPIValidator_README.md) for more info.
-- Invalid NPI flagging based on format validation
+* Format validation (10-digit requirement)
+* API validation against the list of valid NPIs in ./npi_validation_data/, which falls back to using the Registery for missing npis. See [NPIValidator_README.md](NPIValidator_README.md) for more info.
+* Invalid NPI flagging based on format validation
 
 ### Phone Number Validation
 
-- International format parsing using `phonenumbers` library
-- Extension extraction and normalization
-- Country code standardization
-- Validation status tracking
+* International format parsing using `phonenumbers` library
+* Extension extraction and normalization
+* Country code standardization
+* Validation status tracking
 
 ### Data Quality Requirements
 
 Organizations must have:
-- At least one valid NPI identifier
-- At least one FHIR endpoint
-- Valid organizational name
+* At least one valid NPI identifier
+* At least one FHIR endpoint
+* Valid organizational name
 
 ## Configuration
 
@@ -152,36 +147,36 @@ export DOWNLOAD_DELAY=1.0
 
 ### Organizations Table
 
-- `org_id` - FHIR Organization ID
-- `org_name` - Organization name
-- `vendor_name` - EHR vendor name
-- `active` - Organization status
-- `*_count` - Counts of related data elements
+* `org_id` - FHIR Organization ID
+* `org_name` - Organization name
+* `vendor_name` - EHR vendor name
+* `active` - Organization status
+* `*_count` - Counts of related data elements
 
 ### Relationship Tables
 
 Link organizations to their associated data:
 
-- NPIs (with validation status)
-- Addresses (normalized)
-- Phone numbers (validated)
-- Endpoints (FHIR references)
-- Contact information
+* NPIs (with validation status)
+* Addresses (normalized)
+* Phone numbers (validated)
+* Endpoints (FHIR references)
+* Contact information
 
 ## Error Handling
 
 The pipeline includes comprehensive error handling:
-- File processing errors logged to `processing_errors.csv`
-- API validation errors tracked per NPI
-- Network timeout handling with retries
-- Malformed data detection and reporting
+* File processing errors logged to `processing_errors.csv`
+* API validation errors tracked per NPI
+* Network timeout handling with retries
+* Malformed data detection and reporting
 
 ## Performance Considerations
 
-- **Memory Usage**: Large FHIR bundles are processed incrementally
-- **API Rate Limiting**: Built-in delays for NPI validation API
-- **Disk Space**: Intermediate files can be large; monitor disk usage
-- **Processing Time**: Full pipeline may take several hours for large datasets
+* **Memory Usage**: Large FHIR bundles are processed incrementally
+* **API Rate Limiting**: Built-in delays for NPI validation API
+* **Disk Space**: Intermediate files can be large; monitor disk usage
+* **Processing Time**: Full pipeline may take several hours for large datasets
 
 ## Development
 
@@ -217,13 +212,12 @@ _Submit a vulnerability:_ Vulnerability reports can be submitted through [Bugcro
 
 A Software Bill of Materials (SBOM) is a formal record containing the details and supply chain relationships of various components used in building software.
 
-In the spirit of [Executive Order 14028 - Improving the Nation's Cyber Security](https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/information-technology-category/it-security/executive-order-14028), a SBOM for this repository is provided here: https://github.com/{{ cookiecutter.project_org }}/{{ cookiecutter.project_repo_name }}/network/dependencies.
+In the spirit of [Executive Order 14028 - Improving the Nation's Cyber Security](https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/information-technology-category/it-security/executive-order-14028), a SBOM for this repository is provided here: <https://github.com/{{> cookiecutter.project_org }}/{{ cookiecutter.project_repo_name }}/network/dependencies.
 
-For more information and resources about SBOMs, visit: https://www.cisa.gov/sbom.
+For more information and resources about SBOMs, visit: <https://www.cisa.gov/sbom>.
 
 ## Public domain
 
 This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/) as indicated in [LICENSE](LICENSE).
 
 All contributions to this project will be released under the CC0 dedication. By submitting a pull request or issue, you are agreeing to comply with this waiver of copyright interest.
-
