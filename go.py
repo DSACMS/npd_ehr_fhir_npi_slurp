@@ -92,8 +92,8 @@ def main():
     # Check virtual environment
     check_virtual_env()
 
-    """
- 
+
+
     # Step 1: Extract list sources from Lantern CSV
     run_step(
         step_num=1,
@@ -116,7 +116,7 @@ def main():
             "--delay", get_env_var(key="DOWNLOAD_DELAY", default_value="1.0")
         ]
     )
-       
+
 
     # Step 3: Parse FHIR bundles
     run_step(
@@ -127,8 +127,8 @@ def main():
             "--input_dir", get_env_var(key="CEHRT_CACHE_DIR", default_value="./data/service_json/")
         ]
     )
-    """
-    
+
+
     # Step 4: Extract and normalize CSV data
     run_step(
         step_num=4,
@@ -140,6 +140,7 @@ def main():
         ]
     )
     
+
     # Step 5: Clean and validate org_to_npi data
     print("Step 5: Cleaning and validating org_to_npi data...")
     print("  - Filtering for valid HTTPS URLs and 10-digit NPI numbers")
@@ -202,7 +203,8 @@ def main():
             "--output_md_path", get_env_var(key="CEHRT_FHIR_REPORT_MD", default_value="CEHRT_FHIR_Report.md")
         ]
     )
-    
+
+
     # Success summary
     print("========================================")
     print("Pipeline completed successfully!")

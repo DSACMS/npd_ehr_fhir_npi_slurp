@@ -380,17 +380,9 @@ Examples:
             }
             all_errors.append(error_detail)
             print(f"Error: Input directory '{input_dir}' does not exist")
-            # Generate error report and exit
-            error_log_dir = os.getenv('ERROR_LOG_DIR', './logs')
-            error_log_path = Path(error_log_dir)
-            error_log_path.mkdir(parents=True, exist_ok=True)
-            timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-            error_csv_filename = error_log_path / f"Step30_processing_errors_{timestamp_str}.csv"
-            write_error_report_csv(all_errors, str(error_csv_filename))
-            print_error_summary_table(all_errors)
-            sys.exit(1)
-        
-        if not os.path.isdir(input_dir):
+            total_files = 0
+            failed_files = 1
+        elif not os.path.isdir(input_dir):
             error_detail = {
                 'file_path': os.path.abspath(input_dir),
                 'error_type': 'NotADirectoryError',
@@ -399,57 +391,43 @@ Examples:
             }
             all_errors.append(error_detail)
             print(f"Error: '{input_dir}' is not a directory")
-            # Generate error report and exit
-            error_log_dir = os.getenv('ERROR_LOG_DIR', './logs')
-            error_log_path = Path(error_log_dir)
-            error_log_path.mkdir(parents=True, exist_ok=True)
-            timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-            error_csv_filename = error_log_path / f"Step30_processing_errors_{timestamp_str}.csv"
-            write_error_report_csv(all_errors, str(error_csv_filename))
-            print_error_summary_table(all_errors)
-            sys.exit(1)
-        
-        # Find all JSON files in the directory
-        json_pattern = os.path.join(input_dir, "*.json")
-        json_files = glob.glob(json_pattern)
-        
-        if not json_files:
-            error_detail = {
-                'file_path': os.path.abspath(input_dir),
-                'error_type': 'NoFilesFoundError',
-                'error_message': f"No JSON files found in directory: {input_dir}",
-                'timestamp': datetime.now().isoformat()
-            }
-            all_errors.append(error_detail)
-            print(f"No JSON files found in directory: {input_dir}")
-            # Generate error report and exit
-            error_log_dir = os.getenv('ERROR_LOG_DIR', './logs')
-            error_log_path = Path(error_log_dir)
-            error_log_path.mkdir(parents=True, exist_ok=True)
-            timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-            error_csv_filename = error_log_path / f"Step30_processing_errors_{timestamp_str}.csv"
-            write_error_report_csv(all_errors, str(error_csv_filename))
-            print_error_summary_table(all_errors)
-            sys.exit(1)
-        
-        # Sort files for consistent processing order
-        json_files.sort()
-        total_files = len(json_files)
-        
-        print(f"Found {total_files} JSON files to process")
-        print()
-        
-        # Process each JSON file
-        for i, json_file in enumerate(json_files, 1):
-            print(f"[{i}/{total_files}] Processing: {os.path.basename(json_file)}")
+            total_files = 0
+            failed_files = 1
+        else:
+            # Find all JSON files in the directory
+            json_pattern = os.path.join(input_dir, "*.json")
+            json_files = glob.glob(json_pattern)
             
-            success, file_errors = process_single_file(json_file, all_errors)
-            if success:
-                successful_files += 1
-                print("✓ Success")
+            if not json_files:
+                error_detail = {
+                    'file_path': os.path.abspath(input_dir),
+                    'error_type': 'NoFilesFoundError',
+                    'error_message': f"No JSON files found in directory: {input_dir}",
+                    'timestamp': datetime.now().isoformat()
+                }
+                all_errors.append(error_detail)
+                print(f"No JSON files found in directory: {input_dir}")
+                total_files = 0
+                failed_files = 1
             else:
-                failed_files += 1
-                print("✗ Failed")
+                # Sort files for consistent processing order
+                json_files.sort()
+                total_files = len(json_files)
+                
+                print(f"Found {total_files} JSON files to process")
+                print()
+                
+                # Process each JSON file
+                for i, json_file in enumerate(json_files, 1):
+                    print(f"[{i}/{total_files}] Processing: {os.path.basename(json_file)}")
+                    
+                    success, file_errors = process_single_file(json_file, all_errors)
+                    if success:
+                        successful_files += 1
+                        print("✓ Success")
+                    else:
+                        failed_files += 1
+                        print("✗ Failed")
     
     # Print final summary
     print("\n" + "=" * 50)
@@ -483,10 +461,14 @@ Examples:
         if all_errors:
             error_log_dir = os.getenv('ERROR_LOG_DIR', './logs')
             print(f"Detailed error information saved to: {error_log_dir}/Step30_processing_errors_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
-        sys.exit(1)
+        print("Note: Individual file processing errors do not stop the pipeline.")
+        print("Errors have been logged for investigation.")
     else:
         print("\nAll files processed successfully!")
-        sys.exit(0)
+    
+    # Always exit successfully to allow pipeline to continue
+    # Individual file errors should not stop the overall processing
+    sys.exit(0)
 
 if __name__ == "__main__":
     main()
