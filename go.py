@@ -180,6 +180,7 @@ def main():
             "--output_file", get_env_var(key="CLEAN_NPI_TO_ORG_FHIR_URL", default_value="../npd_ehr_scrape_cache/cache/summary_data/step50_clean_npi_to_org_fhir_url.csv")
         ]
     )
+    
     """
 
     # Step 6: Discover FHIR endpoints at multiple directory levels
@@ -231,7 +232,7 @@ def main():
     )
 
     """
-    
+
     # Final Step: Compress large JSON files for GitHub storage
     print("Final Step: Compressing large JSON files for GitHub storage...")
     

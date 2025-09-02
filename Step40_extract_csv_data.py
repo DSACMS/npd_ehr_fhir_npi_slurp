@@ -666,18 +666,22 @@ def main():
                 
                 # Process endpoints
                 for endpoint in result['endpoints']:
-                    # Add vendor information to endpoint data
+                    # Add vendor information and resource tracking to endpoint data
                     if isinstance(endpoint, dict):
                         endpoint_with_vendor = endpoint.copy()
                         endpoint_with_vendor['ehr_vendor_name'] = vendor_info['ehr_vendor_name']
                         endpoint_with_vendor['source_list'] = vendor_info['source_list']
+                        endpoint_with_vendor['resource_id'] = result['resource_id']
+                        endpoint_with_vendor['url'] = result['url']
                     else:
                         # Handle case where endpoint might be a string or other type
                         endpoint_with_vendor = {
                             'reference': str(endpoint),
-                            'url': str(endpoint),
+                            'endpoint_url': str(endpoint),
                             'ehr_vendor_name': vendor_info['ehr_vendor_name'],
-                            'source_list': vendor_info['source_list']
+                            'source_list': vendor_info['source_list'],
+                            'resource_id': result['resource_id'],
+                            'url': result['url']
                         }
                     
                     endpoint_hash = generate_hash_id(endpoint)
@@ -731,7 +735,7 @@ def main():
     
     # Distinct Endpoints
     with open(output_path / 'step40_distinct_endpoints.csv', 'w', newline='', encoding='utf-8') as f:
-        fieldnames = ['endpoint_hash', 'reference', 'url', 'ehr_vendor_name', 'source_list']
+        fieldnames = ['endpoint_hash', 'reference', 'endpoint_url', 'ehr_vendor_name', 'source_list', 'resource_id', 'url']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         if distinct_endpoints:
