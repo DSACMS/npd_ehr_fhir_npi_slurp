@@ -52,6 +52,24 @@ import time
 import phonenumbers
 from phonenumbers import NumberParseException
 from NPIValidator import NPIValidator
+
+def transform_path_to_github_url(*, file_path: str) -> str:
+    """Transform local file path to GitHub URL"""
+    # Convert Path object to string if needed
+    path_str = str(file_path)
+    
+    # Replace the local cache path with GitHub URL
+    github_url = path_str.replace('../npd_ehr_scrape_cache/', 'https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/')
+    
+    # Ensure forward slashes for URL
+    github_url = github_url.replace('\\', '/')
+    
+    return github_url
+
+def extract_resource_id_from_json(*, data: dict) -> str:
+    """Extract resource ID from JSON data"""
+    resource = data.get('resource', {})
+    return resource.get('id', '')
 def load_vendor_lookup_table():
     """Load the vendor lookup table from step20_output_summary.csv"""
     vendor_lookup = {}
@@ -306,6 +324,10 @@ def process_organization_file(file_path, vendor_name, npi_validator, endpoint_re
             # Skip entries that don't have fullUrl
             return None
         
+        # Extract resource ID and generate GitHub URL
+        resource_id = extract_resource_id_from_json(data=data)
+        github_url = transform_path_to_github_url(file_path=str(file_path))
+        
         org_id = full_url
         org_name = resource.get('name', '')
         active = resource.get('active', False)
@@ -333,7 +355,9 @@ def process_organization_file(file_path, vendor_name, npi_validator, endpoint_re
             'contact_urls': contact_urls,
             'emails': emails,
             'endpoints': endpoint_list,
-            'file_path': str(file_path)
+            'file_path': str(file_path),
+            'resource_id': resource_id,
+            'url': github_url
         }
         
     except Exception as e:
@@ -519,7 +543,9 @@ def main():
                 'npi_count': len(result['npis']),
                 'phone_count': len(result['phones']),
                 'contact_url_count': len(result['contact_urls']),
-                'email_count': len(result['emails'])
+                'email_count': len(result['emails']),
+                'resource_id': result['resource_id'],
+                'url': result['url']
             }
             
             # Only include organizations with at least one NPI and one endpoint
@@ -529,8 +555,20 @@ def main():
                 
                 # Process addresses
                 for addr in result['addresses']:
+                    # Add resource tracking information to address data
+                    if isinstance(addr, dict):
+                        addr_with_source = addr.copy()
+                        addr_with_source['resource_id'] = result['resource_id']
+                        addr_with_source['url'] = result['url']
+                    else:
+                        addr_with_source = {
+                            'address_data': str(addr),
+                            'resource_id': result['resource_id'],
+                            'url': result['url']
+                        }
+                    
                     addr_hash = generate_hash_id(addr)
-                    distinct_addresses[addr_hash] = addr
+                    distinct_addresses[addr_hash] = addr_with_source
                     
                     org_to_address.append({
                         'org_id': result['org_id'],
@@ -560,8 +598,20 @@ def main():
                 
                 # Process phones
                 for phone in result['phones']:
+                    # Add resource tracking information to phone data
+                    if isinstance(phone, dict):
+                        phone_with_source = phone.copy()
+                        phone_with_source['resource_id'] = result['resource_id']
+                        phone_with_source['url'] = result['url']
+                    else:
+                        phone_with_source = {
+                            'phone_data': str(phone),
+                            'resource_id': result['resource_id'],
+                            'url': result['url']
+                        }
+                    
                     phone_hash = generate_hash_id(phone)
-                    distinct_phones[phone_hash] = phone
+                    distinct_phones[phone_hash] = phone_with_source
                     
                     org_to_phone.append({
                         'org_id': result['org_id'],
@@ -572,8 +622,20 @@ def main():
                 
                 # Process contact URLs
                 for contact_url in result['contact_urls']:
+                    # Add resource tracking information to contact URL data
+                    if isinstance(contact_url, dict):
+                        url_with_source = contact_url.copy()
+                        url_with_source['resource_id'] = result['resource_id']
+                        url_with_source['url'] = result['url']
+                    else:
+                        url_with_source = {
+                            'contact_url_data': str(contact_url),
+                            'resource_id': result['resource_id'],
+                            'url': result['url']
+                        }
+                    
                     url_hash = generate_hash_id(contact_url)
-                    distinct_contact_urls[url_hash] = contact_url
+                    distinct_contact_urls[url_hash] = url_with_source
                     
                     org_to_contact_url.append({
                         'org_id': result['org_id'],
@@ -582,8 +644,20 @@ def main():
                 
                 # Process emails
                 for email in result['emails']:
+                    # Add resource tracking information to email data
+                    if isinstance(email, dict):
+                        email_with_source = email.copy()
+                        email_with_source['resource_id'] = result['resource_id']
+                        email_with_source['url'] = result['url']
+                    else:
+                        email_with_source = {
+                            'email_data': str(email),
+                            'resource_id': result['resource_id'],
+                            'url': result['url']
+                        }
+                    
                     email_hash = generate_hash_id(email)
-                    distinct_emails[email_hash] = email
+                    distinct_emails[email_hash] = email_with_source
                     
                     org_to_email.append({
                         'org_id': result['org_id'],
@@ -638,7 +712,7 @@ def main():
     
     # Distinct Organizations
     with open(output_path / 'step40_distinct_organizations.csv', 'w', newline='', encoding='utf-8') as f:
-        fieldnames = ['org_id', 'org_name', 'vendor_name', 'ehr_vendor_name', 'source_list', 'active', 'address_count', 'endpoint_count', 'npi_count', 'phone_count', 'contact_url_count', 'email_count']
+        fieldnames = ['org_id', 'org_name', 'vendor_name', 'ehr_vendor_name', 'source_list', 'active', 'address_count', 'endpoint_count', 'npi_count', 'phone_count', 'contact_url_count', 'email_count', 'resource_id', 'url']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         if distinct_organizations:
@@ -646,7 +720,7 @@ def main():
     
     # Distinct Addresses
     with open(output_path / 'step40_distinct_addresses.csv', 'w', newline='', encoding='utf-8') as f:
-        fieldnames = ['address_hash', 'type', 'text', 'address_line1', 'address_line2', 'city', 'state', 'postal_code', 'country', 'use']
+        fieldnames = ['address_hash', 'type', 'text', 'address_line1', 'address_line2', 'city', 'state', 'postal_code', 'country', 'use', 'resource_id', 'url']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         if distinct_addresses:
@@ -668,7 +742,7 @@ def main():
     
     # Distinct Phones
     with open(output_path / 'step40_distinct_phones.csv', 'w', newline='', encoding='utf-8') as f:
-        fieldnames = ['phone_hash', 'original_value', 'normalized_number', 'extension', 'country_code', 'is_valid', 'parse_error', 'use']
+        fieldnames = ['phone_hash', 'original_value', 'normalized_number', 'extension', 'country_code', 'is_valid', 'parse_error', 'use', 'resource_id', 'url']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         if distinct_phones:
@@ -679,7 +753,7 @@ def main():
     
     # Distinct Contact URLs
     with open(output_path / 'step40_distinct_contact_urls.csv', 'w', newline='', encoding='utf-8') as f:
-        fieldnames = ['contact_url_hash', 'system', 'value', 'use']
+        fieldnames = ['contact_url_hash', 'system', 'value', 'use', 'resource_id', 'url']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         if distinct_contact_urls:
@@ -690,7 +764,7 @@ def main():
     
     # Distinct Contact Emails
     with open(output_path / 'step40_distinct_contact_emails.csv', 'w', newline='', encoding='utf-8') as f:
-        fieldnames = ['email_hash', 'value', 'use']
+        fieldnames = ['email_hash', 'value', 'use', 'resource_id', 'url']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         if distinct_emails:

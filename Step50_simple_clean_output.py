@@ -94,7 +94,7 @@ class DataCleaner:
             return False
     
     @staticmethod
-    def load_candidate_data(*, input_file_path: str) -> List[Tuple[str, str, str, str]]:
+    def load_candidate_data(*, input_file_path: str) -> List[Tuple[str, str, str, str, str, str]]:
         """Load candidate data from CSV file that meets basic criteria"""
         candidates = []
         
@@ -107,6 +107,8 @@ class DataCleaner:
                     npi_value = row.get('npi_value', '').strip()
                     ehr_vendor_name = row.get('ehr_vendor_name', '').strip()
                     source_list = row.get('source_list', '').strip()
+                    resource_id = row.get('resource_id', '').strip()
+                    url = row.get('url', '').strip()
                     
                     # Skip if either required field is empty
                     if not org_id or not npi_value:
@@ -120,7 +122,7 @@ class DataCleaner:
                     if not DataCleaner.is_valid_npi(npi_value=npi_value):
                         continue
                     
-                    candidates.append((org_id, npi_value, ehr_vendor_name, source_list))
+                    candidates.append((org_id, npi_value, ehr_vendor_name, source_list, resource_id, url))
                     
         except FileNotFoundError:
             logger.error(f"Input file not found: {input_file_path}")
@@ -133,11 +135,11 @@ class DataCleaner:
         return candidates
     
     @staticmethod
-    def get_unique_domains(*, candidates: List[Tuple[str, str, str, str]]) -> Set[str]:
+    def get_unique_domains(*, candidates: List[Tuple[str, str, str, str, str, str]]) -> Set[str]:
         """Extract unique base domains from candidate URLs"""
         domains = set()
         
-        for org_url, _, _, _ in candidates:
+        for org_url, _, _, _, _, _ in candidates:
             base_domain = DataCleaner.extract_base_domain(url=org_url)
             if base_domain:
                 domains.add(base_domain)
@@ -165,34 +167,36 @@ class DataCleaner:
         return responsive_domains
     
     @staticmethod
-    def filter_valid_records(*, candidates: List[Tuple[str, str, str, str]], responsive_domains: Set[str]) -> List[Tuple[str, str, str, str]]:
+    def filter_valid_records(*, candidates: List[Tuple[str, str, str, str, str, str]], responsive_domains: Set[str]) -> List[Tuple[str, str, str, str, str, str]]:
         """Filter candidates to only include those with responsive domains"""
         valid_records = []
         
-        for org_url, npi_value, ehr_vendor_name, source_list in candidates:
+        for org_url, npi_value, ehr_vendor_name, source_list, resource_id, url in candidates:
             base_domain = DataCleaner.extract_base_domain(url=org_url)
             if base_domain in responsive_domains:
-                valid_records.append((org_url, npi_value, ehr_vendor_name, source_list))
+                valid_records.append((org_url, npi_value, ehr_vendor_name, source_list, resource_id, url))
         
         logger.info(f"Found {len(valid_records)} valid records with responsive domains")
         return valid_records
     
     @staticmethod
-    def write_output_csv(*, output_file_path: str, valid_records: List[Tuple[str, str, str, str]]):
+    def write_output_csv(*, output_file_path: str, valid_records: List[Tuple[str, str, str, str, str, str]]):
         """Write valid records to output CSV file"""
         try:
             with open(output_file_path, 'w', newline='', encoding='utf-8') as csvfile:
-                fieldnames = ['org_fhir_url', 'npi', 'ehr_vendor_name', 'source_list']
+                fieldnames = ['org_fhir_url', 'npi', 'ehr_vendor_name', 'source_list', 'resource_id', 'url']
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 
                 writer.writeheader()
                 
-                for org_url, npi_value, ehr_vendor_name, source_list in valid_records:
+                for org_url, npi_value, ehr_vendor_name, source_list, resource_id, url in valid_records:
                     writer.writerow({
                         'org_fhir_url': org_url,
                         'npi': npi_value,
                         'ehr_vendor_name': ehr_vendor_name,
-                        'source_list': source_list
+                        'source_list': source_list,
+                        'resource_id': resource_id,
+                        'url': url
                     })
             
             logger.info(f"Successfully wrote {len(valid_records)} records to {output_file_path}")
