@@ -593,7 +593,9 @@ def main():
                         'api_error': npi.get('api_error'),
                         'result_count': npi.get('result_count', 0),
                         'ehr_vendor_name': vendor_info['ehr_vendor_name'],
-                        'source_list': vendor_info['source_list']
+                        'source_list': vendor_info['source_list'],
+                        'resource_id': result['resource_id'],
+                        'url': result['url']
                     })
                 
                 # Process phones
@@ -779,7 +781,7 @@ def main():
     
     # Organization to NPI relationships
     with open(output_path / 'step40_org_to_npi.csv', 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=['org_id', 'npi_system', 'npi_value', 'is_invalid_npi', 'api_error', 'result_count', 'ehr_vendor_name', 'source_list'])
+        writer = csv.DictWriter(f, fieldnames=['org_id', 'npi_system', 'npi_value', 'is_invalid_npi', 'api_error', 'result_count', 'ehr_vendor_name', 'source_list', 'resource_id', 'url'])
         writer.writeheader()
         if org_to_npi:
             writer.writerows(org_to_npi)
