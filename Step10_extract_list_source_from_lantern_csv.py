@@ -25,6 +25,22 @@ import argparse
 import pandas as pd
 import sys
 import os
+from urllib.parse import urlparse
+
+def is_valid_url(url):
+    """
+    Validate if a string is a valid URL.
+    Returns True if valid, False otherwise.
+    """
+    if not url or not isinstance(url, str):
+        return False
+    
+    try:
+        parsed = urlparse(url.strip())
+        # Must have scheme (http/https) and netloc (domain)
+        return bool(parsed.scheme and parsed.netloc and parsed.scheme in ['http', 'https'])
+    except Exception:
+        return False
 
 def main():
     # Set up argument parser
@@ -38,13 +54,14 @@ def main():
     if not os.path.exists(args.input_file):
         print(f"Error: Input file '{args.input_file}' does not exist.")
         sys.exit(1)
-    
+
+
     # Expected column headers
     expected_headers = [
         "url", "api_information_source_name", "created_at", "updated", 
         "list_source", "certified_api_developer_name", "capability_fhir_version", 
         "format", "http_response", "http_response_time_second", "smart_http_response", 
-        "errors", "cap_stat_exists", "kind", "requested_fhir_version", "is_chpl"
+        "errors", "kind", "requested_fhir_version", "is_chpl","cap_stat_exists"
     ]
     
     try:
@@ -59,8 +76,18 @@ def main():
             print(f"Actual: {actual_headers}")
             sys.exit(1)
         
+        # Filter out rows with invalid list_source URLs
+        initial_row_count = len(df)
+        df['is_valid_list_source'] = df['list_source'].apply(is_valid_url)
+        df_valid = df[df['is_valid_list_source']].copy()
+        df_valid = df_valid.drop('is_valid_list_source', axis=1)
+        
+        invalid_count = initial_row_count - len(df_valid)
+        if invalid_count > 0:
+            print(f"Warning: Filtered out {invalid_count} rows with invalid list_source URLs")
+        
         # Group by list_source and certified_api_developer_name, count distinct URLs
-        result = df.groupby(['list_source', 'certified_api_developer_name'])['url'].nunique().reset_index()
+        result = df_valid.groupby(['list_source', 'certified_api_developer_name'])['url'].nunique().reset_index()
         result.rename(columns={'url': 'distinct_url_count'}, inplace=True)
         
         # Sort by list_source for consistent output
@@ -69,7 +96,7 @@ def main():
         # Write results to output file
         result.to_csv(args.output_file, index=False)
         
-        print(f"Successfully processed {len(df)} rows from '{args.input_file}'")
+        print(f"Successfully processed {len(df_valid)} valid rows (out of {initial_row_count} total) from '{args.input_file}'")
         print(f"Generated {len(result)} distinct list_source entries in '{args.output_file}'")
         
     except Exception as e:
