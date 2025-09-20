@@ -117,8 +117,6 @@ def main():
     check_virtual_env()
 
 
-    """
-
     # Step 1: Extract list sources from Lantern CSV
     run_step(
         step_num=1,
@@ -153,7 +151,7 @@ def main():
         ]
     )
 
-    """
+   
     # Step 4: Extract and normalize CSV data
     run_step(
         step_num=4,
@@ -181,7 +179,7 @@ def main():
         ]
     )
     
-    """
+   
 
     # Step 6: Discover FHIR endpoints at multiple directory levels
     print("Step 6: Discovering FHIR endpoints...")
@@ -231,7 +229,7 @@ def main():
         ]
     )
 
-    """
+   
 
     # Final Step: Compress large JSON files for GitHub storage
     print("Final Step: Compressing large JSON files for GitHub storage...")

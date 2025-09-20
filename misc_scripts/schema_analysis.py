@@ -164,12 +164,17 @@ class FHIRSchemaAnalyzer:
                     value_trackers=value_trackers
                 )
                 
-        elif isinstance(json_data, list):
-            for i, item in enumerate(json_data):
-                array_path = f"{key_path}[{i}]" if key_path else f"[{i}]"
+        elif isinstance(json_data, list) and json_data:
+            # For arrays, use normalized path with [] instead of specific indices
+            # This helps us understand the structure of objects within arrays
+            normalized_array_path = f"{key_path}[]" if key_path else "[]"
+            
+            # Process each item in the array to discover all possible keys
+            # But use the normalized path to avoid index-specific conflicts
+            for item in json_data:
                 FHIRSchemaAnalyzer.extract_keys_and_values(
                     json_data=item,
-                    key_path=array_path,
+                    key_path=normalized_array_path,
                     key_registry=key_registry,
                     value_trackers=value_trackers
                 )
@@ -243,55 +248,41 @@ class FHIRSchemaAnalyzer:
         
         Args:
             structure: The structure to add the key to
-            key_path: Dot-separated key path (e.g., "resource.resourceType")
+            key_path: Dot-separated key path (e.g., "resource.resourceType" or "resource.telecom[].system")
         """
         parts = key_path.split('.')
         current = structure
         
-        try:
-            for i, part in enumerate(parts[:-1]):
-                # Handle array indices
-                if '[' in part and ']' in part:
-                    base_key = part.split('[')[0]
-                    if base_key not in current:
-                        current[base_key] = []
-                    # For arrays, we use a placeholder object
-                    if not current[base_key]:
-                        current[base_key] = [{}]
-                    current = current[base_key][0]
-                else:
-                    if part not in current:
-                        current[part] = {}
-                    elif not isinstance(current[part], dict):
-                        # If it was previously set to a value, convert to dict
-                        current[part] = {}
-                    
-                    # Ensure current is still a dict before navigating
-                    if not isinstance(current, dict):
-                        print(f"FHIRSchemaAnalyzer Warning: Current is not dict at part {i} '{part}' for path '{key_path}', type: {type(current)}")
-                        return
-                    
-                    current = current[part]
-            
-            # Add the final key
-            if not isinstance(current, dict):
-                print(f"FHIRSchemaAnalyzer Warning: Cannot add final key to non-dict for path '{key_path}', type: {type(current)}")
-                return
-                
-            final_key = parts[-1]
-            if '[' in final_key and ']' in final_key:
-                base_key = final_key.split('[')[0]
+        for i, part in enumerate(parts[:-1]):
+            # Handle normalized array notation []
+            if part.endswith('[]'):
+                base_key = part[:-2]  # Remove the [] suffix
                 if base_key not in current:
                     current[base_key] = []
-                if not current[base_key]:
-                    current[base_key] = ["<value>"]
+                # For arrays, we use a placeholder object to represent array items
+                if not isinstance(current[base_key], list) or not current[base_key]:
+                    current[base_key] = [{}]
+                # Navigate into the array item placeholder
+                current = current[base_key][0]
             else:
-                # Only set to "<value>" if it doesn't already exist or isn't a dict
-                if final_key not in current or not isinstance(current[final_key], (dict, list)):
-                    current[final_key] = "<value>"
-                    
-        except Exception as e:
-            print(f"FHIRSchemaAnalyzer Warning: Error processing key path '{key_path}': {str(e)}")
+                if part not in current:
+                    current[part] = {}
+                elif not isinstance(current[part], dict):
+                    # If it was previously set to a value, convert to dict
+                    current[part] = {}
+                current = current[part]
+        
+        # Add the final key
+        final_key = parts[-1]
+        if final_key.endswith('[]'):
+            # Final key is an array itself
+            base_key = final_key[:-2]
+            if base_key not in current:
+                current[base_key] = []
+        else:
+            # Regular final key - only set if it doesn't exist or isn't a complex structure
+            if final_key not in current or not isinstance(current[final_key], (dict, list)):
+                current[final_key] = "<value>"
 
     @staticmethod
     def generate_inferred_schema(*, key_registry: Set[str], value_trackers: Dict[str, ValueTracker]) -> Dict[str, Any]:
