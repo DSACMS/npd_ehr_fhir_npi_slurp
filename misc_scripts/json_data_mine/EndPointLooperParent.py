@@ -26,8 +26,8 @@ https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json/c
 
 This will be use to create markdown links to files in the summary printouts. 
 
-In fact, go ahead and have the function return the url as a markdown link with the filename as the link text, that has a working target="_blank" attribute.
-This will require the use of the html <a> tag instead of the markdown link syntax.
+In fact, go ahead and have the function return the url as a markdown link with the filename as the link text, 
+
 
 """
 
@@ -65,7 +65,7 @@ class EndPointLooperParent(ABC):
                           Example: "citiustech_inc_dddab3b714c651b71131540f5d1afbaf/entry_Endpoint-2.json"
         
         Returns:
-            HTML link string with target="_blank" attribute
+            Markdown link
         """
         # Base GitHub URL for the scrape cache repository
         base_github_url = "https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json"
@@ -76,8 +76,8 @@ class EndPointLooperParent(ABC):
         # Construct the full GitHub URL
         github_url = f"{base_github_url}/{relative_path}"
         
-        # Return as HTML link with target="_blank"
-        return f'<a href="{github_url}" target="_blank">{filename}</a>'
+        # Return aa standard markdown link
+        return f'[{filename}]({github_url})'
 
     @staticmethod
     def load_environment_config() -> str:
