@@ -77,7 +77,19 @@ class EndpointIDLooper(EndPointLooperParent):
         self._compile_regex_patterns()
     
     def _compile_regex_patterns(self) -> None:
-        """Compile all regex patterns for ID categorization."""
+        """
+        Compile all regex patterns for ID categorization.
+        
+        UUID Version Descriptions:
+        • v1 — Time-based
+        • v2 — DCE Security
+        • v3 — Name-based (MD5 hash)
+        • v4 — Random
+        • v5 — Name-based (SHA-1 hash)
+        • v6 — Reordered time-based
+        • v7 — Time-ordered with random bits
+        • v8 — Custom layout
+        """
         self.patterns = {
             'http_url': re.compile(r'^http://[^\s:]+(?::[0-9]+)?(?:/.*)?$', re.IGNORECASE),
             'https_url': re.compile(r'^https://[^\s:]+(?::[0-9]+)?(?:/.*)?$', re.IGNORECASE),
@@ -88,7 +100,10 @@ class EndpointIDLooper(EndPointLooperParent):
             'uuid_v3': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-3[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
             'uuid_v4': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
             'uuid_v5': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
-            'uuid_invalid_version': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[6-9a-f][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_v6': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-6[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_v7': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_v8': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_invalid_version': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[9a-f][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$', re.IGNORECASE),
             'uuid_invalid_format': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$', re.IGNORECASE),
             'email_address': re.compile(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'),
             'simple_alphanumeric': re.compile(r'^[a-zA-Z0-9_-]+$'),
@@ -135,6 +150,12 @@ class EndpointIDLooper(EndPointLooperParent):
             return 'uuid_v4'
         elif self.patterns['uuid_v5'].match(id_value):
             return 'uuid_v5'
+        elif self.patterns['uuid_v6'].match(id_value):
+            return 'uuid_v6'
+        elif self.patterns['uuid_v7'].match(id_value):
+            return 'uuid_v7'
+        elif self.patterns['uuid_v8'].match(id_value):
+            return 'uuid_v8'
         elif self.patterns['uuid_invalid_version'].match(id_value):
             return 'uuid_invalid_version'
         elif self.patterns['uuid_invalid_format'].match(id_value) and not self._is_valid_uuid_format(id_value=id_value):
