@@ -222,7 +222,7 @@ class ResourceTypeLooper(EndPointLooperParent):
         for resource_type, count in sorted_resource_types:
             longest, shortest, random_example = self._get_example_files(resource_type=resource_type)
             
-            lines.append(f"| `{resource_type}` | {count} | `{longest}` | `{shortest}` | `{random_example}` |")
+            lines.append(f"| `{resource_type}` | {count} | {longest} | {shortest} | {random_example} |")
         
         lines.append("")
         lines.append(f"**Total Files Analyzed:** {sum(self.resource_type_counts.values())}")
