@@ -38,8 +38,11 @@ import os
 import sys
 import random
 import argparse
+import re
+import uuid
+import base64
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from abc import ABC, abstractmethod
 
 
@@ -54,6 +57,218 @@ class EndPointLooperParent(ABC):
         self.failure_count = 0
         self.processed_count = 0
         self.total_files_found = 0
+    
+    @staticmethod
+    def classify_id_content(*, content: str) -> Optional[str]:
+        """
+        Classify ID/URL content using regex patterns from EndpointIDLooper.
+        
+        Args:
+            content: The content string to classify
+            
+        Returns:
+            Category name if matched, None if no match
+        """
+        if not content or not isinstance(content, str):
+            return None
+        
+        # Define regex patterns for ID classification
+        patterns = {
+            'test_related': re.compile(r'^test$|^test.*|.*test$', re.IGNORECASE),
+            'http_url': re.compile(r'^http://[^\s:]+(?::[0-9]+)?(?:/.*)?$', re.IGNORECASE),
+            'https_url': re.compile(r'^https://[^\s:]+(?::[0-9]+)?(?:/.*)?$', re.IGNORECASE),
+            'http_nonstandard_port': re.compile(r'^http://[^\s:]+:(?!80(?:/|$))[0-9]+(?:/.*)?$', re.IGNORECASE),
+            'https_nonstandard_port': re.compile(r'^https://[^\s:]+:(?!443(?:/|$))[0-9]+(?:/.*)?$', re.IGNORECASE),
+            'uuid_v1': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-1[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_v2': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-2[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_v3': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-3[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_v4': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_v5': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_v6': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-6[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_v7': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_v8': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_invalid_version': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[9a-f][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$', re.IGNORECASE),
+            'uuid_invalid_format': re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$', re.IGNORECASE),
+            'email_address': re.compile(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'),
+            'simple_alphanumeric': re.compile(r'^[a-zA-Z0-9_-]+$'),
+            'special_characters': re.compile(r'[!@#$%^&*()+=\[\]{}|;:\'",.<>?/`~]'),
+            'contains_spaces': re.compile(r'\s'),
+            'unicode_characters': re.compile(r'[^\x00-\x7F]'),
+            'hexadecimal': re.compile(r'^[0-9a-fA-F]+$'),
+            'base64_encoded': re.compile(r'^[A-Za-z0-9+/]*={0,2}$')
+        }
+        
+        # Helper functions
+        def _is_valid_uuid_format(value):
+            try:
+                uuid.UUID(value)
+                return True
+            except ValueError:
+                return False
+        
+        def _is_likely_base64(value):
+            try:
+                missing_padding = len(value) % 4
+                if missing_padding:
+                    value += '=' * (4 - missing_padding)
+                base64.b64decode(value)
+                return len(value) >= 8 and any(c.islower() for c in value) and any(c.isupper() for c in value)
+            except Exception:
+                return False
+        
+        # Check patterns in priority order
+        if patterns['test_related'].match(content):
+            return 'test_related'
+        elif patterns['https_nonstandard_port'].match(content):
+            return 'https_nonstandard_port'
+        elif patterns['http_nonstandard_port'].match(content):
+            return 'http_nonstandard_port'
+        elif patterns['https_url'].match(content):
+            return 'https_url'
+        elif patterns['http_url'].match(content):
+            return 'http_url'
+        elif patterns['uuid_v1'].match(content):
+            return 'uuid_v1'
+        elif patterns['uuid_v2'].match(content):
+            return 'uuid_v2'
+        elif patterns['uuid_v3'].match(content):
+            return 'uuid_v3'
+        elif patterns['uuid_v4'].match(content):
+            return 'uuid_v4'
+        elif patterns['uuid_v5'].match(content):
+            return 'uuid_v5'
+        elif patterns['uuid_v6'].match(content):
+            return 'uuid_v6'
+        elif patterns['uuid_v7'].match(content):
+            return 'uuid_v7'
+        elif patterns['uuid_v8'].match(content):
+            return 'uuid_v8'
+        elif patterns['uuid_invalid_version'].match(content):
+            return 'uuid_invalid_version'
+        elif patterns['uuid_invalid_format'].match(content) and not _is_valid_uuid_format(content):
+            return 'uuid_invalid_format'
+        elif patterns['email_address'].match(content):
+            return 'email_address'
+        elif patterns['contains_spaces'].search(content):
+            return 'contains_spaces'
+        elif patterns['unicode_characters'].search(content):
+            return 'unicode_characters'
+        elif patterns['special_characters'].search(content):
+            return 'special_characters'
+        elif len(content) % 4 == 0 and len(content) >= 4 and patterns['base64_encoded'].match(content) and _is_likely_base64(content):
+            return 'base64_encoded'
+        elif len(content) > 0 and patterns['hexadecimal'].match(content) and not content.isdigit():
+            return 'hexadecimal'
+        elif patterns['simple_alphanumeric'].match(content):
+            return 'simple_alphanumeric'
+        
+        return None
+    
+    @staticmethod
+    def validate_email(*, email: str) -> bool:
+        """
+        Validate email address using regex.
+        
+        Args:
+            email: Email address to validate
+            
+        Returns:
+            True if valid email format, False otherwise
+        """
+        if not email or not isinstance(email, str):
+            return False
+        
+        email_pattern = re.compile(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
+        return bool(email_pattern.match(email))
+    
+    @staticmethod
+    def validate_phone(*, phone: str) -> Optional[str]:
+        """
+        Validate phone number format (10-11 digits total).
+        
+        Args:
+            phone: Phone number to validate
+            
+        Returns:
+            'valid_10_digit', 'valid_11_digit', or 'invalid'
+        """
+        if not phone or not isinstance(phone, str):
+            return 'invalid'
+        
+        # Extract only digits
+        digits_only = re.sub(r'[^\d]', '', phone)
+        
+        if len(digits_only) == 10:
+            return 'valid_10_digit'
+        elif len(digits_only) == 11:
+            return 'valid_11_digit'
+        else:
+            return 'invalid'
+    
+    @staticmethod
+    def validate_npi(*, npi: str) -> bool:
+        """
+        Validate NPI format (10 digits starting with '1').
+        
+        Args:
+            npi: NPI to validate
+            
+        Returns:
+            True if valid NPI format, False otherwise
+        """
+        if not npi or not isinstance(npi, str):
+            return False
+        
+        # Remove any non-digits
+        digits_only = re.sub(r'[^\d]', '', npi)
+        
+        # Check if it's 10 digits and starts with '1'
+        return len(digits_only) == 10 and digits_only.startswith('1')
+    
+    @staticmethod
+    def classify_address_content(*, content: str) -> Optional[str]:
+        """
+        Classify address content using patterns specific to addresses.
+        
+        Args:
+            content: The address content string to classify
+            
+        Returns:
+            Category name if matched, None if no match
+        """
+        if not content or not isinstance(content, str):
+            return None
+        
+        address_patterns = {
+            'po_box': re.compile(r'^(po|p\.o\.?|post office)\s*box\s*\d+', re.IGNORECASE),
+            'suite_unit': re.compile(r'\b(suite|ste|unit|apt|apartment|#)\s*\w+', re.IGNORECASE),
+            'street_number': re.compile(r'^\d+\s+[a-zA-Z]', re.IGNORECASE),
+            'directional': re.compile(r'\b(north|south|east|west|n|s|e|w|ne|nw|se|sw|northeast|northwest|southeast|southwest)\b', re.IGNORECASE),
+            'street_type': re.compile(r'\b(street|st|avenue|ave|road|rd|drive|dr|lane|ln|boulevard|blvd|court|ct|place|pl|circle|cir|way)\b', re.IGNORECASE),
+            'zip_code': re.compile(r'\b\d{5}(-\d{4})?\b'),
+            'international': re.compile(r'[^\x00-\x7F]'),  # Non-ASCII characters
+            'simple_text': re.compile(r'^[a-zA-Z0-9\s,.-]+$')
+        }
+        
+        # Check patterns in priority order
+        if address_patterns['po_box'].search(content):
+            return 'po_box'
+        elif address_patterns['suite_unit'].search(content):
+            return 'suite_unit'
+        elif address_patterns['street_number'].match(content):
+            return 'street_number'
+        elif address_patterns['zip_code'].search(content):
+            return 'zip_code'
+        elif address_patterns['directional'].search(content):
+            return 'directional'
+        elif address_patterns['street_type'].search(content):
+            return 'street_type'
+        elif address_patterns['international'].search(content):
+            return 'international'
+        elif address_patterns['simple_text'].match(content):
+            return 'simple_text'
+        
+        return 'unclassified'
     
     @staticmethod
     def get_web_url_of_cache_file(*, relative_path: str) -> str:

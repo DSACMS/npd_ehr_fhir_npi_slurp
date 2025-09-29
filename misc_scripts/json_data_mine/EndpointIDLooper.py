@@ -60,9 +60,9 @@ class EndpointIDLooper(EndPointLooperParent):
         # Track counts for each ID category
         self.id_category_counts: Dict[str, int] = defaultdict(int)
         
-        # Track example files for each category with their relative paths
-        # Structure: {category: [(id_value, filename, relative_path), ...]}
-        self.id_category_examples: Dict[str, List[Tuple[str, str, str]]] = defaultdict(list)
+        # Track example files for each category with their ID lengths and relative paths
+        # Structure: {category: [(id_value, id_length, filename, relative_path), ...]}
+        self.id_category_examples: Dict[str, List[Tuple[str, int, str, str]]] = defaultdict(list)
         
         # Track files with IDs that don't match any regex
         self.unmatched_files: List[Tuple[str, str, str]] = []  # (id_value, filename, relative_path)
@@ -91,6 +91,7 @@ class EndpointIDLooper(EndPointLooperParent):
         • v8 — Custom layout
         """
         self.patterns = {
+            'test_related': re.compile(r'^test$|^test.*|.*test$', re.IGNORECASE),
             'http_url': re.compile(r'^http://[^\s:]+(?::[0-9]+)?(?:/.*)?$', re.IGNORECASE),
             'https_url': re.compile(r'^https://[^\s:]+(?::[0-9]+)?(?:/.*)?$', re.IGNORECASE),
             'http_nonstandard_port': re.compile(r'^http://[^\s:]+:(?!80(?:/|$))[0-9]+(?:/.*)?$', re.IGNORECASE),
@@ -129,8 +130,12 @@ class EndpointIDLooper(EndPointLooperParent):
         
         # Check patterns in priority order to avoid conflicts
         
-        # URLs first (more specific)
-        if self.patterns['https_nonstandard_port'].match(id_value):
+        # Test-related IDs first (very specific pattern we want to catch early)
+        if self.patterns['test_related'].match(id_value):
+            return 'test_related'
+        
+        # URLs (more specific)
+        elif self.patterns['https_nonstandard_port'].match(id_value):
             return 'https_nonstandard_port'
         elif self.patterns['http_nonstandard_port'].match(id_value):
             return 'http_nonstandard_port'
@@ -247,10 +252,11 @@ class EndpointIDLooper(EndPointLooperParent):
                 # Count this category
                 self.id_category_counts[category] += 1
                 
-                # Store example (limit to prevent memory issues)
+                # Store example with ID length (limit to prevent memory issues)
                 if len(self.id_category_examples[category]) < 10:
                     self.id_category_examples[category].append((
                         str(id_value),
+                        len(str(id_value)),
                         source_filename,
                         self.current_relative_path
                     ))
@@ -349,33 +355,74 @@ class EndpointIDLooper(EndPointLooperParent):
             print(f"EndPointLooperParent Error: Processing failed: {str(e)}")
             raise
 
-    def _get_example_files(self, *, category: str, max_examples: int = 3) -> List[str]:
+    def _get_example_files(self, *, category: str) -> Tuple[str, str, str]:
         """
-        Get example files for a category as web URLs.
+        Get three example files for a category as web URLs: longest, shortest, and random.
         
         Args:
             category: The category to get examples for
-            max_examples: Maximum number of examples to return
             
         Returns:
-            List of web URLs
+            Tuple of (longest_web_url, shortest_web_url, random_web_url)
         """
-        examples = self.id_category_examples[category]
+        examples_with_lengths = self.id_category_examples[category]
         
-        if not examples:
-            return []
+        if not examples_with_lengths:
+            return "None", "None", "None"
         
-        # Get up to max_examples, shuffle for variety
-        selected_examples = random.sample(examples, min(len(examples), max_examples))
+        # Sort by ID length to find longest and shortest
+        sorted_examples = sorted(examples_with_lengths, key=lambda x: x[1])
         
-        # Convert to web URLs
-        web_urls = []
-        for id_value, filename, relative_path in selected_examples:
-            web_url = self.get_web_url_of_cache_file(relative_path=relative_path)
-            # Include the ID value in the display
-            web_urls.append(f"{web_url} (ID: `{id_value}`)")
+        # Get longest (last in sorted list) - (id_value, id_length, filename, relative_path)
+        longest_entry = sorted_examples[-1]
+        longest_url = self.get_web_url_of_cache_file(relative_path=longest_entry[3])
         
-        return web_urls
+        # Get shortest (first in sorted list)
+        shortest_entry = sorted_examples[0]
+        shortest_url = self.get_web_url_of_cache_file(relative_path=shortest_entry[3])
+        
+        # Get random example
+        random_entry = random.choice(examples_with_lengths)
+        random_url = self.get_web_url_of_cache_file(relative_path=random_entry[3])
+        
+        return longest_url, shortest_url, random_url
+    
+    def _get_descriptive_category_name(self, *, category: str) -> str:
+        """
+        Get a descriptive name for a category that includes UUID type descriptions.
+        
+        Args:
+            category: The internal category name
+            
+        Returns:
+            Descriptive category name for display
+        """
+        category_descriptions = {
+            'test_related': 'Test Related IDs',
+            'http_url': 'HTTP URL',
+            'https_url': 'HTTPS URL',
+            'http_nonstandard_port': 'HTTP URL (Non-standard Port)',
+            'https_nonstandard_port': 'HTTPS URL (Non-standard Port)',
+            'uuid_v1': 'UUID v1 (Time-based)',
+            'uuid_v2': 'UUID v2 (DCE Security)',
+            'uuid_v3': 'UUID v3 (Name-based MD5 hash)',
+            'uuid_v4': 'UUID v4 (Random)',
+            'uuid_v5': 'UUID v5 (Name-based SHA-1 hash)',
+            'uuid_v6': 'UUID v6 (Reordered time-based)',
+            'uuid_v7': 'UUID v7 (Time-ordered with random bits)',
+            'uuid_v8': 'UUID v8 (Custom layout)',
+            'uuid_invalid_version': 'UUID (Invalid version)',
+            'uuid_invalid_format': 'UUID (Invalid format)',
+            'email_address': 'Email Address',
+            'simple_alphanumeric': 'Simple Alphanumeric',
+            'special_characters': 'Contains Special Characters',
+            'contains_spaces': 'Contains Spaces',
+            'unicode_characters': 'Contains Unicode Characters',
+            'hexadecimal': 'Hexadecimal',
+            'base64_encoded': 'Base64 Encoded'
+        }
+        
+        return category_descriptions.get(category, category.replace('_', ' ').title())
     
     def generate_summary_markdown(self) -> str:
         """
@@ -385,7 +432,13 @@ class EndpointIDLooper(EndPointLooperParent):
             String containing the markdown report
         """
         lines = []
+
+
+
         lines.append("# Endpoint ID Analysis Summary")
+
+        lines.append("Loops over the `id` field under the `resource` element in FHIR JSON files, categorizing IDs using regex patterns. Listing the ones we found, along with examples of files containing those IDs. And a list of unmatched values")
+
         lines.append(f"**Files Processed:** {self.processed_count}")
         lines.append(f"**Files Failed:** {self.failure_count}")
         lines.append(f"**Files Without ID:** {self.files_without_id}")
@@ -398,8 +451,8 @@ class EndpointIDLooper(EndPointLooperParent):
         else:
             lines.append("## ID Category Distribution")
             lines.append("")
-            lines.append("| Category | Count | Examples |")
-            lines.append("|----------|-------|----------|")
+            lines.append("| Category | Count | Longest Example | Shortest Example | Random Example |")
+            lines.append("|----------|-------|-----------------|------------------|----------------|")
             
             # Sort by count (descending) then by category name
             sorted_categories = sorted(
@@ -408,13 +461,12 @@ class EndpointIDLooper(EndPointLooperParent):
             )
             
             for category, count in sorted_categories:
-                examples = self._get_example_files(category=category, max_examples=3)
-                examples_str = "<br>".join(examples) if examples else "No examples stored"
+                longest, shortest, random_example = self._get_example_files(category=category)
                 
-                # Create readable category names
-                category_display = category.replace('_', ' ').title()
+                # Create descriptive category names
+                category_display = self._get_descriptive_category_name(category=category)
                 
-                lines.append(f"| {category_display} | {count} | {examples_str} |")
+                lines.append(f"| {category_display} | {count} | {longest} | {shortest} | {random_example} |")
             
             lines.append("")
             lines.append(f"**Total Categorized IDs:** {sum(self.id_category_counts.values())}")
@@ -422,9 +474,9 @@ class EndpointIDLooper(EndPointLooperParent):
         # Add section for unmatched files
         if self.unmatched_files:
             lines.append("")
-            lines.append("## Files with Unmatched IDs")
+            lines.append("## Unmatched IDs")
             lines.append("")
-            lines.append("The following files contain IDs that don't match any of our regex patterns:")
+            lines.append("The following IDs don't match any of our regex patterns:")
             lines.append("")
             
             # Get up to 100 random unmatched files
@@ -432,6 +484,16 @@ class EndpointIDLooper(EndPointLooperParent):
                 self.unmatched_files,
                 min(len(self.unmatched_files), 100)
             )
+            
+            # List just the IDs
+            for id_value, filename, relative_path in random_unmatched:
+                lines.append(f"* `{id_value}`")
+            
+            lines.append("")
+            lines.append("## Files with Unmatched IDs")
+            lines.append("")
+            lines.append("The following files contain IDs that don't match any of our regex patterns:")
+            lines.append("")
             
             for id_value, filename, relative_path in random_unmatched:
                 web_url = self.get_web_url_of_cache_file(relative_path=relative_path)
