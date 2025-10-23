@@ -147,7 +147,7 @@ def main():
         description="Parsing FHIR bundles",
         command_args=[
             "python", "Step30_parse_source_bundle.py",
-            "--input_dir", get_env_var(key="SERVICE_JSON_DIR", default_value="../npd_ehr_scrape_cache/cehrt_fhir_json/")
+            "--input_dir", get_env_var(key="SERVICE_JSON_DIR", default_value="../npd_ehr_scrape_cache/cache/fhir_json_cache/")
         ]
     )
 
@@ -158,7 +158,7 @@ def main():
         description="Extracting and normalizing CSV data",
         command_args=[
             "python", "Step40_extract_csv_data.py",
-            "--input_dir", get_env_var(key="SERVICE_JSON_DIR", default_value="../npd_ehr_scrape_cache/cehrt_fhir_json/"),
+            "--input_dir", get_env_var(key="SERVICE_JSON_DIR", default_value="../npd_ehr_scrape_cache/cache/fhir_json_cache/"),
             "--output_dir", get_env_var(key="NORMALIZED_CSV_DIR", default_value="../npd_ehr_scrape_cache/cache/summary_data/")
         ]
     )
