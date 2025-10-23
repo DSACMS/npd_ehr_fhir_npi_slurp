@@ -135,7 +135,7 @@ def main():
         command_args=[
             "python", "Step20_download_list_source_json.py",
             "--input_file", get_env_var(key="LIST_SOURCES_SUMMARY", default_value="../npd_ehr_scrape_cache/list_sources_summary.csv"),
-            "--output_dir", get_env_var(key="CEHRT_CACHE_DIR", default_value="../npd_ehr_scrape_cache/cehrt_fhir_json/"),
+            "--output_dir", get_env_var(key="CEHRT_CACHE_DIR", default_value="../npd_ehr_scrape_cache/cache/fhir_json_cache/"),
             "--delay", get_env_var(key="DOWNLOAD_DELAY", default_value="1.0")
         ]
     )
