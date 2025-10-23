@@ -27,6 +27,43 @@ from dotenv import load_dotenv
 # Load environment variables from data_files.env
 load_dotenv('data_files.env')
 
+def sanitize_directory_name(name):
+    """
+    Sanitize a string to make it safe for use as a directory name.
+    
+    Args:
+        name (str): The original name (e.g., resource type)
+        
+    Returns:
+        str: Sanitized directory name
+    """
+    if not name:
+        return "unknown"
+    
+    # Convert to string and strip whitespace
+    sanitized = str(name).strip()
+    
+    # Replace problematic characters with underscores
+    # Keep alphanumeric, hyphens, and underscores
+    import re
+    sanitized = re.sub(r'[^a-zA-Z0-9_-]', '_', sanitized)
+    
+    # Remove multiple consecutive underscores
+    sanitized = re.sub(r'_+', '_', sanitized)
+    
+    # Remove leading/trailing underscores
+    sanitized = sanitized.strip('_')
+    
+    # Handle edge case where nothing is left after sanitization
+    if not sanitized:
+        return "unknown"
+    
+    # Ensure it doesn't start with a number (some filesystems don't like this)
+    if sanitized[0].isdigit():
+        sanitized = f"type_{sanitized}"
+    
+    return sanitized.lower()
+
 def parse_fhir_bundle(input_file, output_dir, error_tracker=None):
     """
     Parse a FHIR Bundle and extract individual entries to separate files.
@@ -88,9 +125,14 @@ def parse_fhir_bundle(input_file, output_dir, error_tracker=None):
                 # Count resource types
                 resource_counts[resource_type] = resource_counts.get(resource_type, 0) + 1
                 
+                # Create subdirectory for this resource type
+                sanitized_resource_type = sanitize_directory_name(resource_type)
+                resource_type_dir = output_path / sanitized_resource_type
+                resource_type_dir.mkdir(parents=True, exist_ok=True)
+
                 # Create filename: entry_{resource_id}.json
-                filename = f"entry_{resource_id}.json"
-                filepath = output_path / filename
+                filename = f"entry_{resource_type}_{resource_id}.json"
+                filepath = resource_type_dir / filename
                 
                 # Save the individual entry (including both resource and fullUrl if present)
                 entry_data = {
