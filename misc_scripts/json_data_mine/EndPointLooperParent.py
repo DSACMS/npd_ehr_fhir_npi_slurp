@@ -42,7 +42,7 @@ import re
 import uuid
 import base64
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 from abc import ABC, abstractmethod
 
 
@@ -338,10 +338,13 @@ class EndPointLooperParent(ABC):
         if not cache_path.exists():
             # Try alternative path locations based on current working directory
             alternative_paths = [
-                Path("../../../npd_ehr_scrape_cache/cehrt_fhir_json/"),  # From json_data_mine subdirectory
-                Path("../../npd_ehr_scrape_cache/cehrt_fhir_json/"),    # From misc_scripts directory  
-                Path("../npd_ehr_scrape_cache/cehrt_fhir_json/"),       # From root directory
-                Path("npd_ehr_scrape_cache/cehrt_fhir_json/"),          # Alternative from root
+                Path("../../npd_ehr_scrape_cache/cache/fhir_json_cache/"),  # From json_data_mine subdirectory
+                Path("../npd_ehr_scrape_cache/cache/fhir_json_cache/"),     # From misc_scripts directory  
+                Path("npd_ehr_scrape_cache/cache/fhir_json_cache/"),        # From root directory
+                Path("../../../npd_ehr_scrape_cache/cehrt_fhir_json/"),     # Legacy path structure
+                Path("../../npd_ehr_scrape_cache/cehrt_fhir_json/"),        # Legacy path structure
+                Path("../npd_ehr_scrape_cache/cehrt_fhir_json/"),           # Legacy path structure
+                Path("npd_ehr_scrape_cache/cehrt_fhir_json/"),              # Legacy path structure
             ]
             
             cache_path_found = False
@@ -373,10 +376,20 @@ class EndPointLooperParent(ABC):
                 subdirectories = random.sample(subdirectories, num_subdirs)
         
         for subdirectory in subdirectories:
-            subdir_json_files = list(subdirectory.glob("*.json"))
+            subdir_json_files = []
+            
+            # Look for JSON files in endpoint/ subdirectory
+            endpoint_dir = subdirectory / "endpoint"
+            if endpoint_dir.exists() and endpoint_dir.is_dir():
+                subdir_json_files.extend(list(endpoint_dir.glob("*.json")))
+            
+            # Look for JSON files in organization/ subdirectory  
+            organization_dir = subdirectory / "organization"
+            if organization_dir.exists() and organization_dir.is_dir():
+                subdir_json_files.extend(list(organization_dir.glob("*.json")))
             
             if test_mode:
-                # Take only first 4 JSON files from each subdirectory
+                # Take only first 4 JSON files from each subdirectory (combined from both resource types)
                 subdir_json_files = subdir_json_files[:4]
             
             json_files.extend(subdir_json_files)
@@ -411,6 +424,76 @@ class EndPointLooperParent(ABC):
         """
         pass
     
+    def _resolve_relative_path(self, *, json_file_path: Path) -> str:
+        """
+        Extract relative path for web URL generation with fallback logic.
+        
+        Args:
+            json_file_path: Path to the JSON file
+            
+        Returns:
+            Relative path string suitable for GitHub URL generation
+        """
+        try:
+            cache_directory = self.load_environment_config()
+            cache_path = Path(cache_directory)
+            if not cache_path.exists():
+                # Use the same logic as discover_json_files
+                alternative_paths = [
+                    Path("../../npd_ehr_scrape_cache/cache/fhir_json_cache/"),  
+                    Path("../npd_ehr_scrape_cache/cache/fhir_json_cache/"),     
+                    Path("npd_ehr_scrape_cache/cache/fhir_json_cache/"),        
+                    Path("../../../npd_ehr_scrape_cache/cehrt_fhir_json/"),     
+                    Path("../../npd_ehr_scrape_cache/cehrt_fhir_json/"),        
+                    Path("../npd_ehr_scrape_cache/cehrt_fhir_json/"),           
+                    Path("npd_ehr_scrape_cache/cehrt_fhir_json/"),              
+                ]
+                for alt_path in alternative_paths:
+                    if alt_path.exists():
+                        cache_path = alt_path
+                        break
+            
+            relative_path = str(json_file_path.relative_to(cache_path))
+            return relative_path
+        except ValueError:
+            # Fallback: construct path as company_dir/resource_type/filename.json
+            resource_type_dir = json_file_path.parent.name  # "endpoint" or "organization"
+            company_dir = json_file_path.parent.parent.name  # company directory
+            filename = json_file_path.name
+            return f"{company_dir}/{resource_type_dir}/{filename}"
+
+    def get_example_files_by_metric(self, *, examples: List[tuple], metric_index: int, relative_path_index: int) -> Tuple[str, str, str]:
+        """
+        Generic method to get longest/shortest/random examples by any metric.
+        
+        Args:
+            examples: List of tuples containing example data
+            metric_index: Index in tuple that contains the metric to sort by (e.g., length)
+            relative_path_index: Index in tuple that contains the relative_path for web URL generation
+            
+        Returns:
+            Tuple of (longest_web_url, shortest_web_url, random_web_url)
+        """
+        if not examples:
+            return "None", "None", "None"
+        
+        # Sort by the specified metric to find longest and shortest
+        sorted_examples = sorted(examples, key=lambda x: x[metric_index])
+        
+        # Get longest (last in sorted list)
+        longest_entry = sorted_examples[-1]
+        longest_url = self.get_web_url_of_cache_file(relative_path=longest_entry[relative_path_index])
+        
+        # Get shortest (first in sorted list)
+        shortest_entry = sorted_examples[0]
+        shortest_url = self.get_web_url_of_cache_file(relative_path=shortest_entry[relative_path_index])
+        
+        # Get random example
+        random_entry = random.choice(examples)
+        random_url = self.get_web_url_of_cache_file(relative_path=random_entry[relative_path_index])
+        
+        return longest_url, shortest_url, random_url
+
     def run_loop(self, *, test_mode: bool = False) -> None:
         """
         Main method to run the complete JSON processing loop
@@ -443,6 +526,10 @@ class EndPointLooperParent(ABC):
             print("Processing JSON files...")
             for json_file_path in json_files:
                 try:
+                    # Set current relative path for child classes to use
+                    if hasattr(self, 'current_relative_path'):
+                        self.current_relative_path = self._resolve_relative_path(json_file_path=json_file_path)
+                    
                     with open(json_file_path, 'r', encoding='utf-8') as file:
                         json_data = json.load(file)
                     
