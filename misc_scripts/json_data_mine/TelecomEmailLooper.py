@@ -109,79 +109,6 @@ class TelecomEmailLooper(EndPointLooperParent):
             # Track files without email telecoms
             self.files_without_email += 1
     
-    def run_loop(self, *, test_mode: bool = False) -> None:
-        """
-        Override parent run_loop to track relative paths for web URLs.
-        """
-        print("Starting JSON processing...")
-        print(f"Test mode: {'Enabled' if test_mode else 'Disabled'}")
-        
-        try:
-            # Load configuration
-            cache_directory = self.load_environment_config()
-            print(f"Cache directory: {cache_directory}")
-            
-            # Discover JSON files
-            print("Discovering JSON files...")
-            json_files = self.discover_json_files(
-                cache_directory=cache_directory,
-                test_mode=test_mode
-            )
-            print(f"Found {self.total_files_found} JSON files to process")
-            
-            if not json_files:
-                print("EndPointLooperParent Warning: No JSON files found to process")
-                self.print_summary()
-                return
-            
-            # Process files
-            print("Processing JSON files...")
-            for json_file_path in json_files:
-                try:
-                    # Extract relative path for web URL generation
-                    cache_path = Path(cache_directory)
-                    if not cache_path.exists():
-                        alternative_paths = [
-                            Path("../../../npd_ehr_scrape_cache/cehrt_fhir_json/"),  
-                            Path("../../npd_ehr_scrape_cache/cehrt_fhir_json/"),    
-                            Path("../npd_ehr_scrape_cache/cehrt_fhir_json/"),       
-                            Path("npd_ehr_scrape_cache/cehrt_fhir_json/"),          
-                        ]
-                        for alt_path in alternative_paths:
-                            if alt_path.exists():
-                                cache_path = alt_path
-                                break
-                    
-                    try:
-                        relative_path = str(json_file_path.relative_to(cache_path))
-                        self.current_relative_path = relative_path
-                    except ValueError:
-                        self.current_relative_path = f"{json_file_path.parent.name}/{json_file_path.name}"
-                    
-                    with open(json_file_path, 'r', encoding='utf-8') as file:
-                        json_data = json.load(file)
-                    
-                    # Call the child's analysis method
-                    self.analyze_this_json_data(
-                        json_data=json_data,
-                        source_filename=str(json_file_path.name)
-                    )
-                    
-                    self.processed_count += 1
-                    
-                    if self.processed_count % 100 == 0:
-                        print(f"Processed {self.processed_count} files...")
-                        
-                except (json.JSONDecodeError, UnicodeDecodeError, IOError):
-                    self.failure_count += 1
-                    continue
-            
-            print(f"\nProcessing complete: {self.processed_count} files processed, {self.failure_count} failures")
-            self.print_summary()
-            
-        except Exception as e:
-            print(f"EndPointLooperParent Error: Processing failed: {str(e)}")
-            raise
     
     def _get_example_files(self, *, category: str) -> Tuple[str, str, str]:
         """
@@ -193,27 +120,14 @@ class TelecomEmailLooper(EndPointLooperParent):
         Returns:
             Tuple of (longest_web_url, shortest_web_url, random_web_url)
         """
-        examples_with_lengths = self.email_examples[category]
-        
-        if not examples_with_lengths:
-            return "None", "None", "None"
-        
-        # Sort by email length to find longest and shortest
-        sorted_examples = sorted(examples_with_lengths, key=lambda x: x[1])
-        
-        # Get longest (last in sorted list)
-        longest_entry = sorted_examples[-1]
-        longest_url = self.get_web_url_of_cache_file(relative_path=longest_entry[3])
-        
-        # Get shortest (first in sorted list)
-        shortest_entry = sorted_examples[0]
-        shortest_url = self.get_web_url_of_cache_file(relative_path=shortest_entry[3])
-        
-        # Get random example
-        random_entry = random.choice(examples_with_lengths)
-        random_url = self.get_web_url_of_cache_file(relative_path=random_entry[3])
-        
-        return longest_url, shortest_url, random_url
+        # Use the parent's generic method
+        # Tuple structure: (email_value, email_length, filename, relative_path)
+        # metric_index=1 (email_length), relative_path_index=3
+        return self.get_example_files_by_metric(
+            examples=self.email_examples[category], 
+            metric_index=1, 
+            relative_path_index=3
+        )
     
     def generate_summary_markdown(self) -> str:
         """
