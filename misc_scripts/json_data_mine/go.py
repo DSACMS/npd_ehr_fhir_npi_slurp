@@ -246,7 +246,7 @@ class AnalysisRunner:
             print(f"⚠️  Report generation failed for {script}: {str(e)}")
     
     def run_all_analyses(self, *, test_mode: bool = False, generate_reports: bool = False, 
-                        report_directory: str = "reports", max_workers: int = None) -> None:
+                        report_directory: str = "reports", max_workers: int = 1) -> None:
         """
         Run all analysis loopers in parallel.
         
