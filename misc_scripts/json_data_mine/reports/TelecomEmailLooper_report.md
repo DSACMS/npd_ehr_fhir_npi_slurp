@@ -10,15 +10,15 @@ as valid or invalid. Files without any email telecoms are also tracked.
 - **Examples:** Longest/shortest/random by email character length
 
 ## Processing Results
-**Files Processed:** 24
+**Files Processed:** 362222
 **Files Failed:** 0
-**Files Without Email Telecoms:** 23
+**Files Without Email Telecoms:** 361127
 **Total Email Categories Found:** 1
 
 ## Email Validation Results
 
 | Email Category | Count | Longest Example | Shortest Example | Random Example |
 |----------------|-------|-----------------|------------------|----------------|
-| Valid Email | 1 | [entry_Organization_id4RuGBx9NgSyfDyY1AQo1UA.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json/varian_medical_systems_fe4a364477dca33cd3e28929702a7bba/organization/entry_Organization_id4RuGBx9NgSyfDyY1AQo1UA.json) | [entry_Organization_id4RuGBx9NgSyfDyY1AQo1UA.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json/varian_medical_systems_fe4a364477dca33cd3e28929702a7bba/organization/entry_Organization_id4RuGBx9NgSyfDyY1AQo1UA.json) | [entry_Organization_id4RuGBx9NgSyfDyY1AQo1UA.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json/varian_medical_systems_fe4a364477dca33cd3e28929702a7bba/organization/entry_Organization_id4RuGBx9NgSyfDyY1AQo1UA.json) |
+| Valid Email | 1098 | [entry_Organization_CMD-CMZCC-Organization-2.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/tree/main/cache/fhir_json_cache/curemd_com_inc_3e771a3e2122c9fa913e71a26259cca2/organization/entry_Organization_CMD-CMZCC-Organization-2.json) | [entry_Organization_idFA6NjJ01p.WnqGN2lfXufQ.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/tree/main/cache/fhir_json_cache/aarista_technology_llc_98dd118c306868b25684644c95fe4c75/organization/entry_Organization_idFA6NjJ01p.WnqGN2lfXufQ.json) | [entry_Organization_CMD-CM09M-Organization-3.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/tree/main/cache/fhir_json_cache/curemd_com_inc_3e771a3e2122c9fa913e71a26259cca2/organization/entry_Organization_CMD-CM09M-Organization-3.json) |
 
-**Total Email Telecoms Found:** 1
+**Total Email Telecoms Found:** 1098

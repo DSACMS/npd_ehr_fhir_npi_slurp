@@ -277,13 +277,13 @@ class EndPointLooperParent(ABC):
         
         Args:
             relative_path: Path relative to the cache directory, including subdirectory and filename
-                          Example: "citiustech_inc_dddab3b714c651b71131540f5d1afbaf/entry_Endpoint-2.json"
+                          Example: "1life_healthcare_inc_b8bf6b68b0098021b1122dda499a9ab0/endpoint/entry_Endpoint-2.json"
         
         Returns:
             Markdown link
         """
-        # Base GitHub URL for the scrape cache repository
-        base_github_url = "https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json"
+        # Base GitHub URL for the scrape cache repository with correct directory structure
+        base_github_url = "https://github.com/ftrotter-gov/npd_ehr_scrape_cache/tree/main/cache/fhir_json_cache"
         
         # Extract just the filename for the link text
         filename = Path(relative_path).name
@@ -291,7 +291,7 @@ class EndPointLooperParent(ABC):
         # Construct the full GitHub URL
         github_url = f"{base_github_url}/{relative_path}"
         
-        # Return aa standard markdown link
+        # Return a standard markdown link
         return f'[{filename}]({github_url})'
 
     @staticmethod

@@ -1,5 +1,5 @@
 # Resource Type Analysis Summary
-**Files Processed:** 24
+**Files Processed:** 362222
 **Files Failed:** 0
 **Files Without resourceType:** 0
 **Total Resource Types Found:** 2
@@ -8,7 +8,7 @@
 
 | Resource Type | Count | Longest Example | Shortest Example | Random Example |
 |---------------|-------|-----------------|------------------|----------------|
-| `Endpoint` | 15 | [entry_Endpoint_39436.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json/tebra_technologies_inc_d22e0b93242b41b3617df2faa309ea5e/endpoint/entry_Endpoint_39436.json) | [entry_Endpoint_Endpoint-57863765426180.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json/elation_health_inc_01e07016b78ca3b99dce8bcfb8da7ce0/endpoint/entry_Endpoint_Endpoint-57863765426180.json) | [entry_Endpoint_Endpoint-379854391214084.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json/elation_health_inc_01e07016b78ca3b99dce8bcfb8da7ce0/endpoint/entry_Endpoint_Endpoint-379854391214084.json) |
-| `Organization` | 9 | [entry_Organization_100.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json/carecloud_health_inc_6301f3eb4ca8b39856c253e9a38405d6/organization/entry_Organization_100.json) | [entry_Organization_1.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json/braintree_health_1dfe916cd12ba20816fbaaec5f025002/organization/entry_Organization_1.json) | [entry_Organization_idFA6NjJ01p.WnqGN2lfXufQ.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/blob/main/cehrt_fhir_json/aarista_technology_llc_98dd118c306868b25684644c95fe4c75/organization/entry_Organization_idFA6NjJ01p.WnqGN2lfXufQ.json) |
+| `Organization` | 271726 | [entry_Organization_OR.GH--0818045850--14.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/tree/main/cache/fhir_json_cache/flatiron_health_8fae89a0ebb741d8264bbb38419c03a0/organization/entry_Organization_OR.GH--0818045850--14.json) | [entry_Organization_PRIMECARE.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/tree/main/cache/fhir_json_cache/glenwood_systems_llc_013bf8769057370ea8b1f06eefc33bb5/organization/entry_Organization_PRIMECARE.json) | [entry_Organization_412bb047-1d28-5fbf-bafb-bc655881e034.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/tree/main/cache/fhir_json_cache/athenahealth_inc_53f1f907e6919c0dd81ced0591b93f43/organization/entry_Organization_412bb047-1d28-5fbf-bafb-bc655881e034.json) |
+| `Endpoint` | 90496 | [entry_Endpoint_fhir.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/tree/main/cache/fhir_json_cache/systemedx_inc_106578b04bf86dc308e2c3b6bd34d16c/endpoint/entry_Endpoint_fhir.json) | [entry_Endpoint_f91c26ae-ad04-4d02-af1d-f9e367f6f876.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/tree/main/cache/fhir_json_cache/canvas_medical_inc_ac9d025266a298190ac28296d0db345d/endpoint/entry_Endpoint_f91c26ae-ad04-4d02-af1d-f9e367f6f876.json) | [entry_Endpoint_1770538001.json](https://github.com/ftrotter-gov/npd_ehr_scrape_cache/tree/main/cache/fhir_json_cache/streamline_healthcare_solutions_e2d0c2171f9c96bbac4742605cfcb731/endpoint/entry_Endpoint_1770538001.json) |
 
-**Total Files Analyzed:** 24
+**Total Files Analyzed:** 362222
