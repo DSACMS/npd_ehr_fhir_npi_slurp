@@ -1,0 +1,11 @@
+id,display,definition
+dicom-wado-rs,DICOM WADO-RS,DICOMweb RESTful Image Retrieve - http://dicom.nema.org/medical/dicom/current/output/chtml/part18/sect_6.5.html
+dicom-qido-rs,DICOM QIDO-RS,DICOMweb RESTful Image query - http://dicom.nema.org/medical/dicom/current/output/chtml/part18/sect_6.7.html
+dicom-stow-rs,DICOM STOW-RS,DICOMweb RESTful image sending and storage - http://dicom.nema.org/medical/dicom/current/output/chtml/part18/sect_6.6.html
+dicom-wado-uri,DICOM WADO-URI,DICOMweb Image Retrieve - http://dicom.nema.org/dicom/2013/output/chtml/part18/sect_6.3.html
+hl7-fhir-rest,HL7 FHIR,Interact with the server interface using FHIR's RESTful interface. For details on its version/capabilities you should connect the value in Endpoint.address and retrieve the FHIR CapabilityStatement.
+hl7-fhir-msg,HL7 FHIR Messaging,Use the servers FHIR Messaging interface. Details can be found on the messaging.html page in the FHIR Specification. The FHIR server's base address is specified in the Endpoint.address property.
+hl7v2-mllp,HL7 v2 MLLP,HL7v2 messages over an LLP TCP connection
+secure-email,Secure email,"Email delivery using a digital certificate to encrypt the content using the public key, receiver must have the private key to decrypt the content"
+direct-project,Direct Project,Direct Project information - http://wiki.directproject.org/
+cds-hooks-service,CDS Hooks Service,A CDS Hooks Service connection. The address will be the base URL of the service as described in the CDS specification https://cds-hooks.hl7.org

@@ -1,0 +1,6 @@
+id,display,definition
+prod,Prodcution,Production environment and is expected to contain real data and should be protected appropriately
+staging,Staging,Staging environment typically used while preparing for a release to production
+dev,Development,Development environment used while building systems
+test,Testing,"Test environment, it is not intended for production usage."
+train,Training,"Training environment, it is not intended for production usage and typically contains data specifically prepared for training usage."
