@@ -105,9 +105,16 @@ class NPIValidator:
             
             # Check if file exists to determine if we need to write header
             file_exists = self.cache_file_path.exists()
+
+            print(f"NPIValidator: Opening {self.cache_file_path} to save cache")
+            
+            # Import open at function level to avoid destructor issues
+            import builtins
+            open_func = builtins.open
             
             # Append new data to the cache file
-            with open(self.cache_file_path, 'a', newline='', encoding='utf-8') as f:
+            with open_func(self.cache_file_path, 'a', newline='', encoding='utf-8') as f:
+                print(f"NPIValidator: Successfully Opened: {self.cache_file_path} to save cache")
                 fieldnames = ['npi', 'is_valid']
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 
@@ -123,10 +130,13 @@ class NPIValidator:
                         'is_valid': is_valid_int
                     })
             
-            print(f"Saved {len(self.newly_validated_npis)} new NPI validations to {self.cache_file_path}")
+            print(f"NPIValidator: Saved {len(self.newly_validated_npis)} new NPI validations to {self.cache_file_path}")
             
+        except NameError as e:
+            print(f"NPIValidator: NameError saving cache file (open not available): {e}")
+            print("NPIValidator: Skipping cache save - validation data already processed successfully")
         except Exception as e:
-            print(f"Error saving cache file: {e}")
+            print(f"NPIValidator: Error saving cache file: {e}")
     
     @staticmethod
     def _is_valid_npi_format(*, npi_value: str) -> bool:
