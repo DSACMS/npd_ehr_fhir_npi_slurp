@@ -76,7 +76,7 @@ class FHIREndpoint(FHIRResource):
         # Validate the endpoint URL
         url_validation = self.validator.validate_url(self.address)
         
-        # Base endpoint_instance record
+        # Base endpoint_instance record (FHIR-focused)
         base_endpoint_record = {
             'id': self.uuid_id,  # UUID5 for referential integrity
             'original_id': self._clean_string_value(self.original_id, 200),
@@ -96,9 +96,22 @@ class FHIREndpoint(FHIRResource):
             'created_at': datetime.now().isoformat()
         }
         
+        # NPD endpoint_instance record (matches full_npd.sql schema exactly)
+        npd_endpoint_record = {
+            'id': self.uuid_id,
+            'ehr_vendor_id': None,  # Will be populated by the processor
+            'address': self._clean_string_value(self.address, 200),
+            'endpoint_connection_type_id': self._get_connection_type_id(),
+            'name': self._clean_string_value(self.name, 200),
+            'description': self._clean_string_value(self.description, 1000),
+            'environment_type_id': self._determine_environment_type()
+        }
+        
         return {
             'endpoint_instance': [base_endpoint_record],
+            'npd_endpoint_instance': [npd_endpoint_record],
             'endpoint_instance_to_payload': self._extract_payload_records(),
+            'npd_endpoint_instance_to_payload': self._extract_npd_payload_records(),
             'data_lineage': [self.get_data_lineage_info()],
         }
     
@@ -158,6 +171,33 @@ class FHIREndpoint(FHIRResource):
                         'mime_type_id': None,  # Will be populated separately
                         'system': self._clean_string_value(system, 200),
                         'sequence': len(payload_records)  # Track order
+                    }
+                    payload_records.append(payload_record)
+        
+        return payload_records
+    
+    def _extract_npd_payload_records(self) -> List[Dict[str, Any]]:
+        """Extract NPD payload type records (matches full_npd.sql schema)"""
+        payload_records = []
+        
+        # Process payload types from payloadType field
+        for payload_type in self.payload_types:
+            if not isinstance(payload_type, dict):
+                continue
+            
+            codings = payload_type.get('coding', [])
+            for coding in codings:
+                if not isinstance(coding, dict):
+                    continue
+                
+                code = coding.get('code', '')
+                
+                if code:  # Only create record if we have a code
+                    # NPD record with only schema-compliant columns
+                    payload_record = {
+                        'endpoint_instance_id': self.uuid_id,
+                        'mime_type_id': None,  # Will be populated separately via MIME type processing
+                        'payload_type_id': self._clean_string_value(code, 200)
                     }
                     payload_records.append(payload_record)
         

@@ -79,7 +79,7 @@ class FHIROrganization(FHIRResource):
     def to_postgres_records(self) -> Dict[str, List[Dict[str, Any]]]:
         """Returns records for multiple PostgreSQL tables"""
         
-        # Base organization record
+        # Base organization record (FHIR-focused)
         base_org_record = {
             'id': self.uuid_id,  # UUID5 for referential integrity
             'original_id': self._clean_string_value(self.original_id, 200),
@@ -90,12 +90,15 @@ class FHIROrganization(FHIRResource):
             'created_at': datetime.now().isoformat()
         }
         
+        # NPD organization record (matches full_npd.sql schema)
+        # Note: FHIR Organizations don't have authorized_official_id, so we skip NPD organization records
+        # or create placeholder records. For now, we skip them since we can't properly map the relationships.
+        
         return {
             'organization': [base_org_record],
             'endpoint_instance_to_other_id': self._extract_npi_records(),
+            'npd_endpoint_instance_to_other_id': self._extract_npd_npi_records(),
             'data_lineage': [self.get_data_lineage_info()],
-            # Note: addresses, phones, and emails will be handled separately
-            # as they need their own tables or different relationships
         }
     
     def _extract_npi_records(self) -> List[Dict[str, Any]]:
@@ -135,6 +138,38 @@ class FHIROrganization(FHIRResource):
                     'validation_error': self._clean_string_value(
                         validation_result.get('validation_error', ''), 500
                     )
+                }
+                
+                npi_records.append(npi_record)
+        
+        return npi_records
+    
+    def _extract_npd_npi_records(self) -> List[Dict[str, Any]]:
+        """Extract NPI records that match NPD schema (no validation columns)"""
+        npi_records = []
+        
+        for identifier in self.identifiers:
+            if not isinstance(identifier, dict):
+                continue
+                
+            system = identifier.get('system', '')
+            value = identifier.get('value', '')
+            
+            # Check if this looks like an NPI
+            if ('npi' in system.lower() or 
+                self.validator._is_valid_npi_format(str(value))):
+                
+                # Generate issuer UUID
+                issuer_uuid = DeterministicUUIDGenerator.generate_npi_issuer_uuid(
+                    npi_system=system
+                )
+                
+                # NPD record with only schema-compliant columns
+                npi_record = {
+                    'endpoint_instance_id': self.uuid_id,  # Using org UUID as foreign key
+                    'other_id': self._clean_string_value(value, 100),
+                    'system': self._clean_string_value(system, 200),
+                    'issuer_id': issuer_uuid
                 }
                 
                 npi_records.append(npi_record)

@@ -14,6 +14,7 @@ class PostgreSQLTableManager:
     """Manages pandas DataFrames for each PostgreSQL table"""
     
     def __init__(self):
+        # Original FHIR-focused tables for analysis and debugging
         self.tables = {
             'ehr_vendor': pd.DataFrame(columns=['id', 'name', 'is_cms_aligned_network']),
             'organization': pd.DataFrame(columns=['id', 'original_id', 'full_url', 'name', 'active', 'vendor_name', 'created_at']),
@@ -23,7 +24,23 @@ class PostgreSQLTableManager:
             'endpoint_connection_type': pd.DataFrame(columns=['id', 'display', 'definition']),
             'environment_type': pd.DataFrame(columns=['id', 'description']),
             'data_lineage': pd.DataFrame(columns=['entity_uuid', 'entity_type', 'original_id', 'full_url', 'vendor_name', 'generation_method', 'created_at']),
-            'field_coverage_log': pd.DataFrame(columns=['vendor_name', 'resource_type', 'total_fields_seen', 'fields_processed', 'fields_ignored', 'coverage_percentage', 'ignored_fields_json', 'created_at'])
+            'field_coverage_log': pd.DataFrame(columns=['vendor_name', 'resource_type', 'total_fields_seen', 'fields_processed', 'fields_ignored', 'coverage_percentage', 'ignored_fields_json', 'created_at']),
+            
+            # NPD-focused tables matching full_npd.sql schema exactly
+            'npd_ehr_vendor': pd.DataFrame(columns=['id', 'name', 'is_cms_aligned_network']),
+            'npd_endpoint_connection_type': pd.DataFrame(columns=['id', 'display', 'definition']),
+            'npd_environment_type': pd.DataFrame(columns=['id', 'display', 'definition']),
+            'npd_endpoint_instance': pd.DataFrame(columns=['id', 'ehr_vendor_id', 'address', 'endpoint_connection_type_id', 'name', 'description', 'environment_type_id']),
+            'npd_endpoint_instance_to_other_id': pd.DataFrame(columns=['endpoint_instance_id', 'other_id', 'system', 'issuer_id']),
+            'npd_endpoint_instance_to_payload': pd.DataFrame(columns=['endpoint_instance_id', 'mime_type_id', 'payload_type_id']),
+            'npd_organization': pd.DataFrame(columns=['id', 'authorized_official_id', 'ein_id', 'parent_id']),
+            'npd_fhir_address_use': pd.DataFrame(columns=['id', 'value']),
+            'npd_fhir_email_use': pd.DataFrame(columns=['id', 'value']),
+            'npd_fhir_name_use': pd.DataFrame(columns=['id', 'value']),
+            'npd_fhir_phone_system': pd.DataFrame(columns=['id', 'value']),
+            'npd_fhir_phone_use': pd.DataFrame(columns=['id', 'value']),
+            'npd_payload_type': pd.DataFrame(columns=['id', 'value', 'description']),
+            'npd_mime_type': pd.DataFrame(columns=['id', 'value'])
         }
         
         self._vendor_cache = {}  # Cache vendor UUIDs
