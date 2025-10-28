@@ -1,0 +1,11 @@
+{
+  "run_id": "56b0dd86-f09d-4a79-adf7-afd1bd41a6b4",
+  "start_time": "2025-10-28T15:17:28.223108",
+  "end_time": "2025-10-28T15:17:39.704055",
+  "vendors_processed": 0,
+  "files_processed": 0,
+  "files_failed": 0,
+  "total_files": 0,
+  "success_rate": 0,
+  "vendor_coverage": {}
+}

@@ -20,7 +20,7 @@ class CSVExporter:
             df.to_csv(
                 file_path,
                 index=False,
-                na_rep='\\N',  # PostgreSQL NULL representation
+                na_rep='',  # Empty string for NULL values
                 quoting=csv.QUOTE_MINIMAL,
                 date_format='%Y-%m-%d %H:%M:%S',
                 encoding='utf-8'
@@ -52,11 +52,11 @@ class CSVExporter:
                 writer.writeheader()
                 
                 for record in records:
-                    # Convert None values to PostgreSQL NULL representation
+                    # Convert None values to empty strings
                     cleaned_record = {}
                     for key, value in record.items():
                         if value is None:
-                            cleaned_record[key] = '\\N'
+                            cleaned_record[key] = ''
                         elif isinstance(value, datetime):
                             cleaned_record[key] = value.strftime('%Y-%m-%d %H:%M:%S')
                         else:
