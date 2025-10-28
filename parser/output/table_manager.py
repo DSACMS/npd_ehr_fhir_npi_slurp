@@ -34,13 +34,25 @@ class PostgreSQLTableManager:
             'npd_endpoint_instance_to_other_id': pd.DataFrame(columns=['endpoint_instance_id', 'other_id', 'system', 'issuer_id']),
             'npd_endpoint_instance_to_payload': pd.DataFrame(columns=['endpoint_instance_id', 'mime_type_id', 'payload_type_id']),
             'npd_organization': pd.DataFrame(columns=['id', 'authorized_official_id', 'ein_id', 'parent_id']),
+            'npd_organization_to_address': pd.DataFrame(columns=['organization_id', 'address_id', 'address_use_id']),
+            'npd_organization_to_phone': pd.DataFrame(columns=['organization_id', 'phone_number', 'extension', 'phone_use_id', 'id']),
+            'npd_address_us': pd.DataFrame(columns=['id', 'addressee', 'delivery_line_1', 'delivery_line_2', 'last_line', 'city_name', 'state_code', 'zipcode', 'plus4_code', 'latitude', 'longitude']),
+            'npd_address_international': pd.DataFrame(columns=['id', 'country_code', 'address1', 'address2', 'address3', 'address4', 'locality', 'administrative_area', 'postal_code', 'latitude', 'longitude']),
+            'npd_address_nonstandard': pd.DataFrame(columns=['id', 'addressee', 'delivery_line_1', 'delivery_line_2', 'last_line', 'address_type', 'raw_address', 'latitude', 'longitude']),
+            'npd_address': pd.DataFrame(columns=['id', 'address_us_id', 'address_international_id', 'address_nonstandard_id']),
             'npd_fhir_address_use': pd.DataFrame(columns=['id', 'value']),
             'npd_fhir_email_use': pd.DataFrame(columns=['id', 'value']),
             'npd_fhir_name_use': pd.DataFrame(columns=['id', 'value']),
             'npd_fhir_phone_system': pd.DataFrame(columns=['id', 'value']),
             'npd_fhir_phone_use': pd.DataFrame(columns=['id', 'value']),
             'npd_payload_type': pd.DataFrame(columns=['id', 'value', 'description']),
-            'npd_mime_type': pd.DataFrame(columns=['id', 'value'])
+            'npd_mime_type': pd.DataFrame(columns=['id', 'value']),
+            
+            # Native FHIR contact tables (full metadata preservation)
+            'fhir_organization_address': pd.DataFrame(columns=['organization_id', 'organization_original_id', 'address_type', 'text', 'address_line1', 'address_line2', 'city', 'state', 'postal_code', 'country', 'use', 'sequence', 'created_at']),
+            'fhir_organization_phone': pd.DataFrame(columns=['organization_id', 'organization_original_id', 'original_value', 'normalized_number', 'extension', 'country_code', 'is_valid', 'parse_error', 'use', 'sequence', 'created_at']),
+            'fhir_organization_email': pd.DataFrame(columns=['organization_id', 'organization_original_id', 'email_value', 'use', 'is_valid', 'validation_error', 'sequence', 'created_at']),
+            'fhir_organization_contact_url': pd.DataFrame(columns=['organization_id', 'organization_original_id', 'url_value', 'use', 'is_valid', 'validation_error', 'sequence', 'created_at'])
         }
         
         self._vendor_cache = {}  # Cache vendor UUIDs

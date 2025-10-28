@@ -94,11 +94,35 @@ class FHIROrganization(FHIRResource):
         # Note: FHIR Organizations don't have authorized_official_id, so we skip NPD organization records
         # or create placeholder records. For now, we skip them since we can't properly map the relationships.
         
+        # Extract contact data
+        address_records = self.get_address_records()
+        telecom_records = self.get_telecom_records()
+        
+        # Extract NPD contact data
+        npd_contact_data = self._extract_npd_contact_data()
+        
         return {
             'organization': [base_org_record],
             'endpoint_instance_to_other_id': self._extract_npi_records(),
             'npd_endpoint_instance_to_other_id': self._extract_npd_npi_records(),
             'data_lineage': [self.get_data_lineage_info()],
+            
+            # Native FHIR contact tables
+            'fhir_organization_address': self._format_fhir_address_records(address_records),
+            'fhir_organization_phone': self._format_fhir_phone_records(telecom_records['phones']),
+            'fhir_organization_email': self._format_fhir_email_records(telecom_records['emails']),
+            'fhir_organization_contact_url': self._format_fhir_url_records(telecom_records['urls']),
+            
+            # NPD contact tables
+            'npd_organization_to_address': npd_contact_data['addresses'],
+            'npd_organization_to_phone': npd_contact_data['phones'],
+            'npd_address': npd_contact_data['address_entities'],
+            'npd_address_us': npd_contact_data['address_us'],
+            'npd_address_international': npd_contact_data['address_international'],
+            'npd_address_nonstandard': npd_contact_data['address_nonstandard'],
+            'npd_fhir_address_use': npd_contact_data['address_use_codes'],
+            'npd_fhir_phone_use': npd_contact_data['phone_use_codes'],
+            'npd_fhir_email_use': npd_contact_data['email_use_codes']
         }
     
     def _extract_npi_records(self) -> List[Dict[str, Any]]:
@@ -289,3 +313,275 @@ class FHIROrganization(FHIRResource):
             endpoint_refs.append(endpoint_record)
         
         return endpoint_refs
+    
+    def _format_fhir_address_records(self, address_records: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Format address records for FHIR table with timestamps and original IDs"""
+        formatted_records = []
+        
+        for addr in address_records:
+            formatted_record = addr.copy()
+            formatted_record['organization_original_id'] = self._clean_string_value(self.original_id, 200)
+            formatted_record['created_at'] = datetime.now().isoformat()
+            formatted_records.append(formatted_record)
+        
+        return formatted_records
+    
+    def _extract_npd_contact_data(self) -> Dict[str, List[Dict[str, Any]]]:
+        """Extract contact data in NPD format"""
+        import uuid
+        
+        npd_data = {
+            'addresses': [],
+            'phones': [],
+            'address_entities': [],
+            'address_us': [],
+            'address_international': [],
+            'address_nonstandard': [],
+            'address_use_codes': [],
+            'phone_use_codes': [],
+            'email_use_codes': []
+        }
+        
+        # Process addresses
+        for i, address in enumerate(self.addresses):
+            if not isinstance(address, dict):
+                continue
+                
+            # Generate address UUID
+            address_uuid = str(uuid.uuid5(uuid.NAMESPACE_DNS, f"{self.uuid_id}:address:{i}"))
+            
+            # Extract address components
+            lines = address.get('line', [])
+            address_line1 = lines[0] if len(lines) > 0 else ''
+            address_line2 = lines[1] if len(lines) > 1 else ''
+            city = address.get('city', '')
+            state = address.get('state', '')
+            postal_code = address.get('postalCode', '')
+            country = address.get('country', '')
+            use = address.get('use', '')
+            
+            # Determine address type - default to US if no country or country is US
+            # Handle case where country might be a list or other type
+            country_str = ''
+            if isinstance(country, list) and country:
+                country_str = str(country[0])
+            elif isinstance(country, str):
+                country_str = country
+            else:
+                country_str = str(country) if country else ''
+            
+            is_us_address = not country_str or country_str.upper() in ['US', 'USA', 'UNITED STATES']
+            
+            if is_us_address and city and state:
+                # US Address
+                us_address_id = f"US_{address_uuid[:10]}"
+                
+                us_address_record = {
+                    'id': us_address_id,
+                    'addressee': '',
+                    'delivery_line_1': self._clean_string_value(address_line1, 64),
+                    'delivery_line_2': self._clean_string_value(address_line2, 64),
+                    'last_line': '',
+                    'city_name': self._clean_string_value(city, 64),
+                    'state_code': self._clean_string_value(state, 2),
+                    'zipcode': self._clean_string_value(postal_code[:5], 5) if postal_code else '',
+                    'plus4_code': self._clean_string_value(postal_code[6:10], 4) if len(postal_code) > 5 else '',
+                    'latitude': None,
+                    'longitude': None
+                }
+                npd_data['address_us'].append(us_address_record)
+                
+                # Address entity
+                address_entity = {
+                    'id': address_uuid,
+                    'address_us_id': us_address_id,
+                    'address_international_id': None,
+                    'address_nonstandard_id': None
+                }
+                npd_data['address_entities'].append(address_entity)
+                
+            elif country and not is_us_address:
+                # International Address
+                intl_address_id = f"INTL_{address_uuid[:10]}"
+                
+                intl_address_record = {
+                    'id': intl_address_id,
+                    'country_code': self._clean_string_value(country_str[:2].upper(), 2),
+                    'address1': self._clean_string_value(address_line1, 64),
+                    'address2': self._clean_string_value(address_line2, 64),
+                    'address3': '',
+                    'address4': '',
+                    'locality': self._clean_string_value(city, 64),
+                    'administrative_area': self._clean_string_value(state, 32),
+                    'postal_code': self._clean_string_value(postal_code, 16),
+                    'latitude': None,
+                    'longitude': None
+                }
+                npd_data['address_international'].append(intl_address_record)
+                
+                # Address entity
+                address_entity = {
+                    'id': address_uuid,
+                    'address_us_id': None,
+                    'address_international_id': intl_address_id,
+                    'address_nonstandard_id': None
+                }
+                npd_data['address_entities'].append(address_entity)
+                
+            else:
+                # Nonstandard Address
+                nonstandard_address_id = f"NS_{address_uuid[:10]}"
+                
+                # Combine address lines for raw address
+                raw_address_parts = [address_line1, address_line2, city, state, postal_code, country]
+                raw_address = ', '.join([part for part in raw_address_parts if part])
+                
+                nonstandard_address_record = {
+                    'id': nonstandard_address_id,
+                    'addressee': '',
+                    'delivery_line_1': self._clean_string_value(address_line1, 64),
+                    'delivery_line_2': self._clean_string_value(address_line2, 64),
+                    'last_line': self._clean_string_value(f"{city}, {state} {postal_code}", 64),
+                    'address_type': 'fhir_organization',
+                    'raw_address': self._clean_string_value(raw_address, 1000),
+                    'latitude': None,
+                    'longitude': None
+                }
+                npd_data['address_nonstandard'].append(nonstandard_address_record)
+                
+                # Address entity
+                address_entity = {
+                    'id': address_uuid,
+                    'address_us_id': None,
+                    'address_international_id': None,
+                    'address_nonstandard_id': nonstandard_address_id
+                }
+                npd_data['address_entities'].append(address_entity)
+            
+            # Organization to address relationship
+            if use:
+                # Add use code to lookup table
+                use_code_record = {
+                    'id': len(npd_data['address_use_codes']) + 1,
+                    'value': self._clean_string_value(use, 20)
+                }
+                # Check for duplicates
+                if not any(code['value'] == use_code_record['value'] for code in npd_data['address_use_codes']):
+                    npd_data['address_use_codes'].append(use_code_record)
+                
+                # Get use code ID
+                use_id = next((code['id'] for code in npd_data['address_use_codes'] if code['value'] == use_code_record['value']), 1)
+            else:
+                use_id = 1  # Default use code
+            
+            org_to_address = {
+                'organization_id': self.uuid_id,
+                'address_id': address_uuid,
+                'address_use_id': use_id
+            }
+            npd_data['addresses'].append(org_to_address)
+        
+        # Process phones
+        phone_id_counter = 1
+        for i, telecom in enumerate(self.telecoms):
+            if not isinstance(telecom, dict):
+                continue
+                
+            system = telecom.get('system', '').lower()
+            if system != 'phone':
+                continue
+                
+            value = telecom.get('value', '')
+            use = telecom.get('use', '')
+            
+            # Normalize phone number
+            phone_validation = self.validator.normalize_phone_number(value)
+            normalized_number = phone_validation.get('normalized_number', value)
+            extension = phone_validation.get('extension', '')
+            
+            # Add use code to lookup table
+            if use:
+                use_code_record = {
+                    'id': len(npd_data['phone_use_codes']) + 1,
+                    'value': self._clean_string_value(use, 20)
+                }
+                # Check for duplicates
+                if not any(code['value'] == use_code_record['value'] for code in npd_data['phone_use_codes']):
+                    npd_data['phone_use_codes'].append(use_code_record)
+                
+                # Get use code ID
+                use_id = next((code['id'] for code in npd_data['phone_use_codes'] if code['value'] == use_code_record['value']), 1)
+            else:
+                use_id = 1  # Default use code
+            
+            # Generate phone UUID
+            phone_uuid = str(uuid.uuid5(uuid.NAMESPACE_DNS, f"{self.uuid_id}:phone:{i}"))
+            
+            org_to_phone = {
+                'organization_id': self.uuid_id,
+                'phone_number': self._clean_string_value(normalized_number, 20),
+                'extension': self._clean_string_value(extension, 10) if extension else None,
+                'phone_use_id': use_id,
+                'id': phone_uuid
+            }
+            npd_data['phones'].append(org_to_phone)
+            phone_id_counter += 1
+        
+        # Process emails for lookup codes (NPD doesn't have organization_to_email in schema)
+        for i, telecom in enumerate(self.telecoms):
+            if not isinstance(telecom, dict):
+                continue
+                
+            system = telecom.get('system', '').lower()
+            if system != 'email':
+                continue
+                
+            use = telecom.get('use', '')
+            
+            # Add use code to lookup table
+            if use:
+                use_code_record = {
+                    'id': len(npd_data['email_use_codes']) + 1,
+                    'value': self._clean_string_value(use, 20)
+                }
+                # Check for duplicates
+                if not any(code['value'] == use_code_record['value'] for code in npd_data['email_use_codes']):
+                    npd_data['email_use_codes'].append(use_code_record)
+        
+        return npd_data
+    
+    def _format_fhir_phone_records(self, phone_records: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Format phone records for FHIR table with timestamps and original IDs"""
+        formatted_records = []
+        
+        for phone in phone_records:
+            formatted_record = phone.copy()
+            formatted_record['organization_original_id'] = self._clean_string_value(self.original_id, 200)
+            formatted_record['created_at'] = datetime.now().isoformat()
+            formatted_records.append(formatted_record)
+        
+        return formatted_records
+    
+    def _format_fhir_email_records(self, email_records: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Format email records for FHIR table with timestamps and original IDs"""
+        formatted_records = []
+        
+        for email in email_records:
+            formatted_record = email.copy()
+            formatted_record['organization_original_id'] = self._clean_string_value(self.original_id, 200)
+            formatted_record['created_at'] = datetime.now().isoformat()
+            formatted_records.append(formatted_record)
+        
+        return formatted_records
+    
+    def _format_fhir_url_records(self, url_records: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Format URL records for FHIR table with timestamps and original IDs"""
+        formatted_records = []
+        
+        for url in url_records:
+            formatted_record = url.copy()
+            formatted_record['organization_original_id'] = self._clean_string_value(self.original_id, 200)
+            formatted_record['created_at'] = datetime.now().isoformat()
+            formatted_records.append(formatted_record)
+        
+        return formatted_records
