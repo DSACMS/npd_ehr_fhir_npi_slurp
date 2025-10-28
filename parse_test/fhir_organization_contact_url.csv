@@ -1,0 +1,240 @@
+organization_id,url_value,use,is_valid,validation_error,sequence,organization_original_id,created_at
+42a64b96-6541-579d-9ccf-d59995e062dd,https://chartmakerapidoc.sticomputer.com/index.html,,True,,0,Chartmaker-API,2025-10-28T01:45:23.163910
+fb7aea68-b3b9-5eb5-880f-7aa3625dc8ae,https://hayscountytx.com/departments/local-health-,,True,,2,CMD-CM1EF-Organization-2,2025-10-28T01:45:24.401143
+c37a5b7a-c8d8-5033-8104-1e12668628f9,www.clayhdnc.us,,False,Invalid URL format,1,CMD-CM08R-Organization-2,2025-10-28T01:45:24.403815
+f903cd55-aa11-5538-8557-53fef4c0afd0,https://laclinicasc.com,,True,,2,CMD-CM1HB-Organization-6,2025-10-28T01:45:24.406028
+746fe2d7-cb6d-5f12-9986-cf976d124e8e,https://omcsp.com,,True,,2,CMD-CM14N-Organization-2,2025-10-28T01:45:24.408384
+cffd1c23-dd22-586d-93bc-58705d93915f,www.cherokeecounty-nc.gov,,False,Invalid URL format,2,CMD-CM0MB-Organization-2,2025-10-28T01:45:24.410406
+7f83eac9-c7b9-5487-90b6-024bce429bfa,admin@ewimarehab.com,,False,Invalid URL format,2,CMD-CM1JE-Organization-2,2025-10-28T01:45:24.414306
+13d0011c-7d86-56d9-b392-62357b7e00eb,www.co.randolph.nc.us/ph,,False,Invalid URL format,2,CMD-CM0N5-Organization-2,2025-10-28T01:45:24.416534
+f9670a07-0b80-5ab2-a408-178dbff832e6,drcoray.com,,False,Invalid URL format,2,CMD-CM07Q-Organization-2,2025-10-28T01:45:24.418523
+b2247cf0-2083-5e97-8d03-e0305c1e088e,welllifemedctr.com,,False,Invalid URL format,2,CMD-CM1C0-Organization-2,2025-10-28T01:45:24.420530
+4618802a-cddc-54d0-bcaf-993d95c5b318,swaincountync.gov,,False,Invalid URL format,2,CMD-CM0P3-Organization-2,2025-10-28T01:45:24.422523
+acc474c1-5387-5f4d-acc5-bcc727797719,www.prospecthc.com,,False,Invalid URL format,2,CMD-CM067-Organization-7,2025-10-28T01:45:24.424462
+6152dbac-23e6-5106-bbcc-185be8058912,endocrinenyc.com,,False,Invalid URL format,3,CMD-CMDUI-Organization-3,2025-10-28T01:45:24.428113
+65df2522-df4a-53d4-8bd3-a02c30a1100b,www.plphysicians.com,,False,Invalid URL format,2,CMD-CM0SD-Organization-2,2025-10-28T01:45:24.430259
+714208cb-5fbe-5856-842d-9a079ae73d0c,www.drmullaneandcruz.com,,False,Invalid URL format,3,CMD-CMDPN-Organization-2,2025-10-28T01:45:24.439420
+e8be1dfe-9e1f-5aad-b153-2dc8715171c8,WWW.UPTIMUMINC.COM,,False,Invalid URL format,2,CMD-CM1JU-Organization-2,2025-10-28T01:45:24.441573
+ec2a443a-f993-5eb5-8019-387a5012b553,https://www.laperinatal.org/,,True,,2,CMD-CM1EV-Organization-2,2025-10-28T01:45:24.445141
+ba744787-3ac2-521f-b144-e341f0cb542f,physicianstoyou.com,,False,Invalid URL format,3,CMD-CM0LK-Organization-2,2025-10-28T01:45:24.447023
+73ec8ce1-13fe-57b9-ade8-edba9f2e16fb,www.coastalcareplus.com,,False,Invalid URL format,2,CMD-CM03W-Organization-5,2025-10-28T01:45:24.454183
+f7c20d25-02d5-5c76-9a51-b85ffdb5379f,https://stationmd.com,,True,,2,CMD-CM1F0-Organization-2,2025-10-28T01:45:24.456108
+de3f36bb-7ebe-5766-a490-4aa06758af2f,www.advancedintegrativemedicine.com,,False,Invalid URL format,2,CMD-CM0T5-Organization-5,2025-10-28T01:45:24.460196
+254ed587-8685-52d5-9710-b9a983106cd8,https://apps.officite.com/survey/affiliate?affiliate_key=40684&survey_app_id=445,,True,,3,CMD-CM07P-Organization-2,2025-10-28T01:45:24.462285
+2aa576cb-9801-5764-9f8f-3a342edab513,www.northamptonhd.com,,False,Invalid URL format,2,CMD-CM0N4-Organization-2,2025-10-28T01:45:24.464514
+6a5d024b-6d4a-5101-8867-29be9816f9a9,premierneurologycenter.com,,False,Invalid URL format,3,CMD-CM0GA-Organization-2,2025-10-28T01:45:24.468177
+e42a054d-0ff2-5b66-971d-ab6f5afc6867,www.wilkeshealth.com,,False,Invalid URL format,1,CMD-CM129-Organization-2,2025-10-28T01:45:24.470338
+3ce0a135-8a3e-5f4b-ab75-5c3fdcf66b22,www.regenpainclinic.com,,False,Invalid URL format,3,CMD-CM0LZ-Organization-2,2025-10-28T01:45:24.480592
+bdea20eb-14e9-5fb4-9471-3488b4a06c8c,http://www.forsyth.cc/PublicHealth/,,True,,2,CMD-CM0D6-Organization-2,2025-10-28T01:45:24.482761
+37211bd8-ee2c-5cce-a031-fccf7810c8cb,pohmd.com,,False,Invalid URL format,2,CMD-CM1AO-Organization-2,2025-10-28T01:45:24.489754
+92ac934c-567c-518e-8d3c-e9281c4c2520,www.sjbpublichealth.org,,False,Invalid URL format,2,CMD-CM1JT-Organization-2,2025-10-28T01:45:24.491653
+064197f1-b4ec-554a-a8ec-0c572973c02c,www.footanklecenteroffloridallc.com,,False,Invalid URL format,3,CMD-CM0SU-Organization-2,2025-10-28T01:45:24.495614
+0d532f91-5c47-5696-b3f9-4d0eb7089226,www.curemd.com,,False,Invalid URL format,2,CMD-CMDAE-Organization-18,2025-10-28T01:45:24.499453
+9e7d0067-18ed-59de-823b-2052058fc2b1,www.PrecisionPainRI.COM,,False,Invalid URL format,3,CMD-CM0FK-Organization-2,2025-10-28T01:45:24.501338
+21c1e6b3-6bfd-53a8-8e16-fb4eb9737e4e,www.vitalitymedcenters.com,,False,Invalid URL format,2,CMD-CM0HQ-Organization-2,2025-10-28T01:45:24.505136
+ec614b19-4860-5ab9-87a6-1993d5d5ee6a,www.lotusoncologyhematology.com,,False,Invalid URL format,2,CMD-CM1ET-Organization-2,2025-10-28T01:45:24.507032
+f31b6fdb-3fb8-5b84-a9b4-e795ccd82ae2,https://www.monchd.org/,,True,,2,CMD-CM0T9-Organization-2,2025-10-28T01:45:24.511717
+467501ee-361f-521e-9507-ba778dd7b2e8,www.mitchellhuebnermd.com,,False,Invalid URL format,2,CMD-CM0YT-Organization-2,2025-10-28T01:45:24.515319
+e6ac7f8b-45fe-59fc-b0a6-e3713f92867e,www.warrencountyhd.com,,False,Invalid URL format,1,CMD-CM0OA-Organization-7,2025-10-28T01:45:24.517258
+3f67aa2f-a973-5185-82b9-44db1c8df6d7,www.advancedsurgassociates.com,,False,Invalid URL format,2,CMD-CM0P1-Organization-2,2025-10-28T01:45:24.519195
+54ec3256-cf10-5533-b2c0-85089f836263,www.CurrentNYDoctor.com,,False,Invalid URL format,3,CMD-CM001-Organization-9,2025-10-28T01:45:24.522778
+c930e2cb-8d39-521a-afea-8d94a7c818b7,dsbh@desertsbh.com,,False,Invalid URL format,2,CMD-CM0Z3-Organization-2,2025-10-28T01:45:24.524914
+194ca89e-8d21-5053-8687-771c4eead64d,https://moffat-county-public-health.mailchimpsites.com/,,True,,2,CMD-CM14L-Organization-2,2025-10-28T01:45:24.530378
+8f1a745d-a8ee-5f34-9cf4-6995b7818218,www.pottcounty.org,,False,Invalid URL format,2,CMD-CM1C2-Organization-2,2025-10-28T01:45:24.532301
+4032f199-5651-5cf6-a484-911cc508a61e,WWW.OEDMG.COM,,False,Invalid URL format,2,CMD-CM0BC-Organization-2,2025-10-28T01:45:24.536205
+4fdd0ba5-169d-5241-8991-ca359623251f,texasspineclinic.com,,False,Invalid URL format,2,CMD-CM0XL-Organization-2,2025-10-28T01:45:24.539770
+5166b94d-8fa8-502d-8091-3283a282a7c9,https://fairhavenmentalhealth.com/,,True,,1,CMD-CM1I7-Organization-3,2025-10-28T01:45:24.541647
+15263b46-09f6-59b9-a0e9-160b0abd6cae,www.brivaderm.com,,False,Invalid URL format,2,CMD-CM0SW-Organization-2,2025-10-28T01:45:24.543821
+c561b9a9-87d4-5637-8796-bced2ca17008,www.pikecountyhealth.org,,False,Invalid URL format,2,CMD-CM1AM-Organization-2,2025-10-28T01:45:24.546068
+9d12fe6c-c0af-58d2-b753-6af255c5970d,www.dpcountyks.com,,False,Invalid URL format,2,CMD-CM15D-Organization-2,2025-10-28T01:45:24.553410
+2bbc9dbf-d432-5cc7-b531-57c1d99a2b96,https://www.co.routt.co.us/641/Public-Health,,True,,1,CMD-CM132-Organization-2,2025-10-28T01:45:24.555322
+2ea583a8-4d9d-5fd1-85ed-72e53c9a43dc,drbradleywasserman.com,,False,Invalid URL format,2,CMD-CM07R-Organization-2,2025-10-28T01:45:24.561108
+0be8beea-632a-5b66-bc98-6181caa73c86,www.cabarrushealth.org,,False,Invalid URL format,1,CMD-CM0D4-Organization-2,2025-10-28T01:45:24.564679
+dc7143cc-3de2-5a6a-a7f3-f5305db0eedb,cbrheumatology.com,,False,Invalid URL format,2,CMD-CM1JP-Organization-2,2025-10-28T01:45:24.582133
+e1d526e4-f33d-5b75-b211-b15504c0b73e,http://www.wilson-co.com,,True,,2,CMD-CM035-Organization-6,2025-10-28T01:45:24.583999
+d2697633-ea2c-5f3e-862b-5b6c55177ef6,lspediatrics.com,,False,Invalid URL format,2,CMD-CM043-Organization-2,2025-10-28T01:45:24.587556
+3ed58c6c-bf58-5ec5-a9fe-8eaaeac3b8ee,www.aspencommunityhealth.org,,False,Invalid URL format,2,CMD-CM196-Organization-2,2025-10-28T01:45:24.589443
+ed1feecd-559a-5488-9de8-3444898af97d,https://viewmymed.com,,True,,0,hst,2025-10-28T01:45:30.876302
+a8d50f87-917a-52bd-8a27-48c052dedd74,https://www.ihs.gov/cis/,,True,,0,IndianHealthservice-FourDirectionsHubOrg,2025-10-28T01:45:30.894262
+fe642183-bae2-5190-98ca-65f4448d41c1,https://highlandsmedcenter.com,,True,,0,22cab22a-191b-5189-bb1a-d4406fdd922d,2025-10-28T01:45:32.809313
+11669ec0-cf4f-5b0f-8421-b066f0991ec8,https://spearehospital.com,,True,,0,a4db3249-07de-523b-aeea-23ea063d4623,2025-10-28T01:45:32.812116
+fbcdc556-5b79-5791-a625-dd15910c63ae,https://gfclinic.com/location/great-falls-clinic-hospital,,True,,0,34be94b7-c03e-5035-b8ac-40337bbf4a21,2025-10-28T01:45:32.814439
+e17b75f8-f841-5e22-b4f6-7f3f9a4448c4,https://arh.org,,True,,0,740363a8-2077-57a3-a0c1-7fa83da99be0,2025-10-28T01:45:32.817010
+fd57e267-90b6-5935-9869-e733f2073d38,https://aspirus.org,,True,,0,4389ef41-4beb-5ef8-9278-d3e544947f6a,2025-10-28T01:45:32.819972
+58896694-bc3d-538f-8684-ac3f52bbc855,https://avhnh.org,,True,,0,55137364-2b49-585d-9925-7a169075583a,2025-10-28T01:45:32.822550
+3e7925b2-6566-5d6f-8408-9cddca345d12,https://southshorehospital.com,,True,,0,6e97291f-5058-5cb0-bad9-717db27bebd2,2025-10-28T01:45:32.825226
+c3939e66-3bc0-57f3-926a-17e88c19e671,https://smcok.com,,True,,0,20d56a82-2a24-5cc3-bc4e-1ec8f4c29bad,2025-10-28T01:45:32.827517
+7ba4b941-1945-576e-b6cd-85feff4fa700,https://medicalcityhealthcare.com/locations/medical-city-sachse,,True,,0,fdfcb83c-b815-5a71-81c7-b65ca8b1352d,2025-10-28T01:45:32.829656
+0345f1b3-5f83-5842-bd34-9c89c7050f2e,https://ligacancerpr.org,,True,,0,bd5b4ae6-2e28-5c54-8cc4-2e847227cafc,2025-10-28T01:45:32.831850
+b67468b4-aa07-5473-b4a0-99f8878b81f5,https://grmedcenter.com,,True,,0,40d55f10-ccd5-54fb-8d5a-8c5f57a4ac4d,2025-10-28T01:45:32.834185
+57d1f0ed-b944-5c5b-adb1-fcbf1a2f1d70,https://mtgraham.org,,True,,0,f995afd3-bb8d-55a7-96eb-749208efc3fd,2025-10-28T01:45:32.836307
+5b8a0bc9-835b-538c-b955-c2b9e5e3c159,https://sahealth.com/locations/methodist-hospital-hill-country,,True,,0,408c879c-18ee-57f0-8c38-ba4248a3a58f,2025-10-28T01:45:32.840273
+1fb23b17-b8f5-5885-a792-fea9c92d8629,https://bwwmh.com,,True,,0,76767348-1aba-5a71-892f-916fff91f2fa,2025-10-28T01:45:32.842597
+4a44c1b6-e3e7-5b78-a8bd-1fc6754a88a7,https://ahcs.org,,True,,0,e44f4022-4e7d-5f46-9b30-74fa823c2e02,2025-10-28T01:45:32.845094
+b57361c7-cb74-51ca-8621-7dd69664a40c,https://aboutsmh.org,,True,,0,ff8f48b6-c969-518c-8abd-dfe2d37812a5,2025-10-28T01:45:32.847470
+858b79bd-b58d-5bac-b6ae-0de82182934b,https://haysmed.com,,True,,0,473ae4bc-c82e-58b5-8d20-6c6972a32e7a,2025-10-28T01:45:32.849557
+3093555d-f062-543a-a4ed-6cf10deeb6e7,https://medicalwesthospital.org,,True,,0,83e2c48e-0ac9-5324-84da-a230f2414fb8,2025-10-28T01:45:32.851716
+b410e285-fdd3-52a9-bf4f-df09f3d95461,https://cascademedical.org,,True,,0,29bffe5b-e285-5d82-b587-71802ff91a12,2025-10-28T01:45:32.853865
+6f823ecc-34d8-59ac-88ef-ec16b6742115,https://healthcare.ascension.org/Locations/Wisconsin/WIAPA/Appleton-Ascension-NE-Wisconsin-St-Elizabeth-Campus#Tab_1_1,,True,,0,7092bd7c-925b-521f-aee2-7d09759d02de,2025-10-28T01:45:32.855938
+5e74ab17-ed20-503d-87c8-93793666bcb5,https://paradisevalleyhospital.net,,True,,0,fa56ef2c-aeff-5ede-95c6-a9d2097383b7,2025-10-28T01:45:32.858122
+4655e1cd-7077-5eba-b17b-6a4f5326c2ef,https://shastaregional.com,,True,,0,419f316a-5bcc-5d4f-8bff-b87ffa0083e2,2025-10-28T01:45:32.860336
+8d21e818-a557-5629-aac7-d5f9904d49c7,https://andersonhospital.org,,True,,0,c572bb80-fed2-5d65-a21d-a225cd89c0c1,2025-10-28T01:45:32.862485
+baf699e6-20ed-5a17-9adc-0ed645134dd6,https://monvalleyhospital.com,,True,,0,45c9c82c-9695-56af-8871-2fdfa608f7c2,2025-10-28T01:45:32.864545
+0cbeb997-eda2-5b14-a477-d7726abfcb36,https://harlingenmedicalcenter.com,,True,,0,53ae3d31-00a6-537b-bcfa-3ab312bb9b47,2025-10-28T01:45:32.866719
+4b7cd507-84c4-53f6-84ea-d41f9739ecf6,https://phhealthcare.org,,True,,0,6ee11a3c-ddeb-518a-ac02-4b52df3d8666,2025-10-28T01:45:32.868827
+7b615e8d-61f5-5ded-a1d6-11ffa9d0c904,https://lincolnsurgery.com,,True,,0,0581cc60-94c5-56b7-a292-26d180d317eb,2025-10-28T01:45:32.870823
+b2a33901-13d8-51df-8043-25ff664373aa,https://ajh.org,,True,,0,1b5f57be-48d2-55a2-903e-212dba32e5a2,2025-10-28T01:45:32.872822
+4715c0b4-f3d0-5b5b-8862-7ead490449f9,https://womans.org,,True,,0,5bb4fff9-7529-5c94-9334-c5ba98a7e35c,2025-10-28T01:45:32.874890
+52271338-cbbc-5092-a15d-fe9b7c3cdd9b,https://etch.com,,True,,0,9c1aacab-787a-5a39-8878-06eecc3d11f9,2025-10-28T01:45:32.876900
+f1e6212a-f2a4-5356-9633-2a286fcafbdd,https://stamfordhealth.org/locations/locations-profile/stamford-hospital/?searchId=006a0594-40ad-ed11-a854-000d3a611816&sort=11&page=1&pageSize=50,,True,,0,684410e4-f509-5e50-bd35-428775a12496,2025-10-28T01:45:32.878861
+7d7bf05a-c4d4-53d1-92f0-4209fe4a4ef6,https://frisbiehospital.com,,True,,0,efce7346-20eb-50a5-9a24-cdc4adfa1b96,2025-10-28T01:45:32.881055
+78080661-ca18-5626-952f-35923e9e0310,https://urmc.org,,True,,0,d682a17e-197a-5f64-99bf-64a9e7adf36d,2025-10-28T01:45:32.885229
+b2a7e79a-37d9-54ca-afc6-97843249bcb6,https://fchtexas.com,,True,,0,ab5797e1-4c9d-504b-a9b9-33429d08a55c,2025-10-28T01:45:32.887441
+b5789742-9149-5994-ad20-021d1e78e998,https://noch.org,,True,,0,cad0c101-671a-5ba5-9c87-a1fab8635f22,2025-10-28T01:45:32.889550
+9e35a9db-cd5a-53b8-b9d6-e6fa863214dc,https://hospitaldelaconcepcion.com,,True,,0,639aa0ee-527c-5213-9305-abdb6a5e6af3,2025-10-28T01:45:32.891938
+b9a618cf-dcad-5ed7-b706-3ba5f62a2592,https://personhospital.com,,True,,0,f8042a5f-b23e-549b-8d26-b85662c9f4fa,2025-10-28T01:45:32.894193
+c5f23321-fc6c-52a8-a17f-e2b75f41ad6a,https://hph.care,,True,,0,d2766e69-917a-5f70-bbfa-5c9cd353e07b,2025-10-28T01:45:32.896455
+3bf3a43c-7ccf-57b9-a53e-37134783ea71,https://providencekc.com,,True,,0,23700fcc-dfdf-5385-8689-ddb01e77a97c,2025-10-28T01:45:32.898650
+15060fb7-07c6-5a4f-827d-31ab3d57314f,https://grmc.org,,True,,0,552f3d83-63c9-5ea2-86b5-c5a14e2c7cbd,2025-10-28T01:45:32.902615
+48375579-e84d-583e-8499-ddcdb88ce463,https://avhealthsystem.com,,True,,0,b49153d3-7cb8-5589-880b-b537cd28a892,2025-10-28T01:45:32.904650
+c8fa8e3b-5eaf-5ffe-ab42-03a3a66ca483,https://gvmh.org,,True,,0,8208586e-b39b-562f-9cb4-84e213593081,2025-10-28T01:45:32.906716
+ab4bcc14-2c6f-587d-90b6-10b312ed9880,https://sturgishospital.com,,True,,0,e9198ac0-f8d6-545b-bccf-61d24e0803f1,2025-10-28T01:45:32.908818
+9ea732ec-f54f-5ac5-8453-41bb31003177,https://jrmc.com,,True,,0,34ec3ec7-22e1-56fa-a0fe-c0edcb60a46d,2025-10-28T01:45:32.910951
+9a891ed6-675b-592b-b897-1bba3fa32e9f,https://sanlucaspr.org/#,,True,,0,c5ddb57c-0a9e-58eb-a0c0-6c82f31fac55,2025-10-28T01:45:32.913075
+b348306b-0aa3-5249-805c-6358c575aaf2,https://chisaintjosephhealth.org/saint-joseph-london,,True,,0,bf1a19d4-0ac0-5589-a597-e563ce981571,2025-10-28T01:45:32.915093
+88251c4f-8f37-5aa2-862c-82160ca83a0e,https://unitedmedicaldc.com,,True,,0,b4f4ce09-92b3-58cb-9095-9084085499eb,2025-10-28T01:45:32.917244
+2e9f23ba-3744-568d-8d2d-e996b6d005de,https://qch.on.ca,,True,,0,63987c91-d895-51a7-9c48-022b4305cd7e,2025-10-28T01:45:32.919489
+06c91940-e739-5922-a5ee-6933b59267dd,https://adirondackhealth.org/adirondack-medical-center-saranac-lake,,True,,0,6c65b742-d4c4-5649-8828-a523a512aa9d,2025-10-28T01:45:32.921624
+a46e9324-369d-541b-8bab-20f2748f8e88,https://presencehealth.org,,True,,0,7391f251-8caf-5640-acc1-3265b70e4729,2025-10-28T01:45:32.923842
+7f1fe956-06c2-5449-bdda-798d0910aa2e,https://smha.org,,True,,0,396c7df8-adfd-50e9-8639-7d241bcf4e65,2025-10-28T01:45:32.925969
+2fd44179-f876-5de2-9949-e9420e7682f3,https://saratogahospital.org/locations-directions/saratoga-hospital-campus,,True,,0,1e30e7e5-0436-5a3e-a2ce-e2cd59bcda6c,2025-10-28T01:45:32.928054
+a416c22c-7628-509c-9e87-dcff7557e910,https://emersonhospital.org,,True,,0,40c852a6-d94c-5d84-8d4e-61b15f1f2aee,2025-10-28T01:45:32.930192
+ee52ff93-7f5a-52b0-b9e2-9fa791fbbe48,https://inhs.info,,True,,0,fa99f392-473e-5a8f-bfae-72a5ac028290,2025-10-28T01:45:32.932327
+538acd15-e082-50d7-8b6e-3fb0e02559c5,https://chs.net,,True,,0,8edc5f9e-af6f-5874-857e-07d578a75d23,2025-10-28T01:45:32.934469
+842092a3-bae6-5bee-9c72-9d4722b3c49c,https://uphealthsystem.com/portage,,True,,0,bda09fae-2e63-5100-acc4-8b04b6bdd962,2025-10-28T01:45:32.936450
+272ce2cf-4b80-55a1-9eec-5a2cc2058be8,https://rfgh.net/aboutus/hospital.xhtml,,True,,0,cbca6ebe-04b8-52ff-9206-c44aa9daab01,2025-10-28T01:45:32.938572
+206b4001-f7e9-5f81-abda-9fa3d13ce1dc,https://firelands.com/locations/profile/main-campus,,True,,0,add5d3b0-972d-55a3-b214-ca97b05deb15,2025-10-28T01:45:32.942522
+e70f35d4-9418-55e0-9f3e-98ac89534ced,https://hazelhawkins.com,,True,,0,d34698fa-b98a-5c7d-adcc-3f75394f1d61,2025-10-28T01:45:32.944524
+e7e162f9-025d-5ca5-a905-00ce6272a73d,https://dukelifepointhealthcare.com,,True,,0,cd017289-384b-5166-be97-b873343dc2a1,2025-10-28T01:45:32.946660
+0390ca40-d52f-5fd8-814a-76a67c3ed410,https://cayugamed.org,,True,,0,e8425285-90de-502d-911f-3cd7238bc8d9,2025-10-28T01:45:32.948695
+2152f354-8b87-57df-b31c-02078e3ff254,https://searhc.org,,True,,0,edae8044-aeb5-57a0-bdd0-736948f16fb0,2025-10-28T01:45:32.950617
+03938a91-b84c-5309-861d-8861fc2a3125,https://seviercountymedical.com,,True,,0,8aa96eab-146e-5cb3-8a05-4ac1b41fc8ac,2025-10-28T01:45:32.952521
+8d60e43a-7e4c-5b66-97fa-25f51af69ff1,https://montclair-hospital.org,,True,,0,0fc869cc-902b-5bba-94f2-e558becae858,2025-10-28T01:45:32.954451
+c6d629ad-aca2-508e-9e02-c0329538b99b,https://cedarcomem.com,,True,,0,f5c760bf-fc84-5624-8752-d18539cf6e54,2025-10-28T01:45:32.956449
+9c3e236f-8230-518e-9844-16d9b0e4ec09,https://aultmanalliance.org,,True,,0,30c561a0-f567-5aea-bf96-8ecca1837727,2025-10-28T01:45:32.958466
+9dcff9dc-57cb-5322-bb33-e39236be5c69,https://eastern-niagara-health.org,,True,,0,d7741701-fe20-5dc8-b0c8-c106e47d1795,2025-10-28T01:45:32.960474
+011db3d1-5481-534f-bc92-9a7f38b15f8f,https://narmc.com,,True,,0,af4fd49e-ccf9-51f7-a3ff-8c5579fbdf7c,2025-10-28T01:45:32.962584
+bfe5196a-1700-5d91-9725-58a08189b660,https://lowerumpquahospital.org,,True,,0,82b3bb63-20a8-56d8-bb54-d1323ea0d53b,2025-10-28T01:45:32.964704
+f7909ccf-ec94-536d-8b42-6b276e52ad9b,https://warnerhospital.org,,True,,0,b82dc2ef-b92a-5bd6-b0da-e4f3c8178dc1,2025-10-28T01:45:32.966841
+fc83c1a6-9168-514b-85a9-ab66269c8005,https://thomashealthsystem.com,,True,,0,6f2d3ef9-acb6-5d52-aec6-f88d12b59343,2025-10-28T01:45:32.969044
+43346eaf-fc20-5d0c-91a0-276c1fa9b2f2,https://ghcares.org,,True,,0,e8489354-dfe3-565b-815d-fff5e2e74952,2025-10-28T01:45:32.971002
+e6a689ad-61e6-57ba-bfa7-bedfa6d784e0,https://hhc.org,,True,,0,b1a0f7d5-c500-51ae-bdb9-f0a92be8d5fd,2025-10-28T01:45:32.973062
+c3658f1d-e39d-598f-96ae-558b0dbcb210,https://baylorfrisco.com,,True,,0,99e9667a-eede-5134-8e0b-89f5d3fea0c5,2025-10-28T01:45:32.975234
+ba4b3e4e-95d4-5169-b99f-5b38827b800f,https://achospital.org,,True,,0,10d4d83f-73df-5fdb-9754-86733d0891e3,2025-10-28T01:45:32.977384
+5ba8bf21-a154-54f8-adbc-7065bbf4fc67,https://hamptonregional.org,,True,,0,7d9eec83-50a2-517c-9002-253846f72436,2025-10-28T01:45:32.979566
+88d59263-a1d8-50c3-9f1c-8127f31c2b6b,https://windbercare.org,,True,,0,582b0e44-6bfd-516f-aa00-64deb31f3d6e,2025-10-28T01:45:32.981729
+f6bc2d90-2559-5000-9f6c-726be50cb813,https://sanluisvalleyhealth.org,,True,,0,0dac7442-9817-5a8c-b358-d30010c8c71b,2025-10-28T01:45:32.983871
+7a5cdb61-59e5-55ba-9553-6d641b507364,https://arizonaspecialtyhospital.com/,,True,,0,5b455fe3-6b61-5f8c-a570-8fd14331fd6a,2025-10-28T01:45:32.985894
+a14cba59-e73e-5544-9957-54c3b5410c94,https://bilh.org,,True,,0,05214e56-34b5-5391-addc-4547e25c26ff,2025-10-28T01:45:32.988100
+9fd6ce45-bb83-53df-8ee0-18ea91a62fb0,https://dhchd.org/services/hospital,,True,,0,dff10b84-26c1-5170-8058-82dc0715bca5,2025-10-28T01:45:32.990207
+2c4a33b7-4e7d-58e1-85ba-251c59554f7e,https://choosenorthern.org,,True,,0,7caf4fbd-3996-5f1e-ab69-3863c0e42c01,2025-10-28T01:45:32.992274
+193d9c1f-306d-522f-add4-25ce21e6f8dd,https://thorekandersonville.org,,True,,0,7c4f0285-4319-5c63-b160-e7778d784080,2025-10-28T01:45:32.994282
+6aa48ced-b28e-520c-b274-171ad7714955,https://kdmc.org,,True,,0,9fc49133-50dd-505b-afeb-4a2cadd5da61,2025-10-28T01:45:32.996288
+9edfec7b-3d1a-57d3-ad0b-b556497f72fa,https://connallymmc.org,,True,,0,be679222-f487-5568-af9d-d91e3d622240,2025-10-28T01:45:32.998306
+c3757f1e-135d-545c-8a75-b77e6ea93be1,https://integrisok.com/locations/hospital/ponca-city-hospital,,True,,0,1d547097-98e1-5dbc-ad7d-a49e233408bf,2025-10-28T01:45:33.000458
+76fb21cc-b142-5234-96cb-73bbd65cf04a,https://aboutsmh.org,,True,,0,ea3ebc80-0258-5a80-8367-e24a0e5573aa,2025-10-28T01:45:33.002627
+0fbeab47-59ac-53a9-9299-1b70fc1f66c9,https://newmanrh.org,,True,,0,284c6012-72ea-5899-9f9c-a5245d74b37f,2025-10-28T01:45:33.004745
+9590a590-98d5-5b7f-8117-d87755b4953f,https://cardiovascular.pr.gov,,True,,0,3daeb515-eecd-56f7-9178-00a9a38ebd3c,2025-10-28T01:45:33.006732
+6a9c0c64-6202-556a-a319-b601e41da655,https://primehealthcare.com,,True,,0,d6a22ad1-7348-544c-a4f3-721fc48b292c,2025-10-28T01:45:33.008887
+5cec5217-e2ae-5649-a674-020aef3894ce,https://fcmc.us.com,,True,,0,72a703c0-a321-5bf1-823a-1abf925fa617,2025-10-28T01:45:33.011186
+cf530161-d0ec-5c8f-89be-0bad39155aa8,https://slhduluth.com/locations/st-lukes-hospital,,True,,0,8da57914-b803-505d-9bfb-a51b272cecc9,2025-10-28T01:45:33.013688
+864914f2-b06e-5a6b-b9ac-c0dbe021dd46,https://winnebagohealth.com,,True,,0,a30f5e45-4fc8-5d8c-bb78-48d6355f5057,2025-10-28T01:45:33.016273
+c957ba2f-97b7-5e33-ab6b-a26800ffff65,https://sanlucaspr.org,,True,,0,39248216-d267-5746-8772-1b131bc1287c,2025-10-28T01:45:33.018573
+971de979-59c7-5034-9adc-421080aae373,https://casacolina.org,,True,,0,14368a0e-da47-531c-8799-6222d959e988,2025-10-28T01:45:33.021089
+171ad962-4f41-578c-be7c-5819b58c6549,https://umhtx.org,,True,,0,a9373f17-e10f-53d4-8a39-ff8d8037bb90,2025-10-28T01:45:33.023465
+0e7c7abf-97c6-5f1d-9d1d-2f7cbc98e651,provider.myhelo.com,,False,Invalid URL format,0,74,2025-10-28T01:45:34.086654
+13d65402-9900-5b9a-8176-ed0ab0deab4b,https://www.ohioshospice.org/,,True,,0,fbd11f7a-5480-4648-8de6-c1c39175528c,2025-10-28T01:45:34.128924
+d57f56aa-19f9-58aa-a5f6-b9e678284901,www.snowlinehospice.org,,False,Invalid URL format,0,db01dbad-a480-410e-85f9-2390fe8ef7a7,2025-10-28T01:45:34.130233
+773f610f-f8e2-565c-97c5-97b6c3acad9b,https://www.davita.com/,,True,,0,53598038-53e4-4eb0-a1aa-60629769ab3e,2025-10-28T01:45:34.131058
+497932ff-2ca1-512e-a49c-20b87dd34194,dmh.lacounty.gov/,,False,Invalid URL format,0,a9a9fe15-2e10-4233-8c54-c2ce7448f375,2025-10-28T01:45:34.132061
+0bcb4136-23fb-5619-bf80-ba07fe7cb469,https://www.transitionslifecare.org/,,True,,0,a138f9b3-b2db-447f-95d2-02b6e3bb9006,2025-10-28T01:45:34.133267
+b3d761a3-75af-5d58-ba07-b3cc1edcfcc5,https://hospiceofthevalleys.org,,True,,0,6382a087-59d3-4ac2-aa8f-c7802f09484a,2025-10-28T01:45:34.134315
+bc9bbb0f-bd3b-5cff-8246-dbd001b3d5f7,https://www.lifesonghospice.com,,True,,0,edf235a8-881e-4f89-9a4a-8895b2ba6f32,2025-10-28T01:45:34.135204
+5434399c-3a0d-544d-984b-8692e315183e,www.embracinghospicecare.org,,False,Invalid URL format,0,81dc2ecc-4a94-4b7c-ab86-281a29d40e30,2025-10-28T01:45:34.136086
+3ad973cd-c28f-5fa8-8f7c-c661eaa74994,https://delawarehospice.org/,,True,,0,43dc7656-05c5-49c7-a314-e53f7cbe6b62,2025-10-28T01:45:34.137077
+e092f683-d5d4-51ce-b9c5-e33de8b8e9ef,https://everhearthospice.org/,,True,,0,2c273dc5-20e4-4585-a008-9f1ebe540f7d,2025-10-28T01:45:34.137866
+5026d3a0-f481-5cf9-a641-8d1ef2042043,https://www.hospicechesapeake.org/,,True,,0,3f37e9ed-86e9-44e4-880d-455bfdb004b0,2025-10-28T01:45:34.138654
+6450a51b-1a27-5936-b3e0-01c414e7682c,www.actsretirement.org,,False,Invalid URL format,0,8980d09d-4f9a-4811-8dcd-59a09b5c6080,2025-10-28T01:45:34.139445
+5fe0c69e-a98f-54b9-9d3b-f0e0bc29dc80,www.snowlinehospice.org,,False,Invalid URL format,0,a1e440fb-a4a9-40a5-96e4-c5f301638a1d,2025-10-28T01:45:34.140387
+c4e7c5e4-b629-5fd2-8463-0a1c1ddce833,https://www.health.solutions/,,False,Invalid URL format,0,86d052b2-4856-4978-bacc-e2dd04492043,2025-10-28T01:45:34.141323
+7d198866-47ba-5ed9-804b-c55376e3146d,https://www.partnersbend.org/,,True,,0,7fbd057c-fdbc-480f-96a7-084eb04a4e7e,2025-10-28T01:45:34.142192
+2c99e513-5590-5371-a22d-f35741c12bf5,www.stellamaris.org,,False,Invalid URL format,0,2e5c76f3-f46a-4c01-900c-91a72a946d62,2025-10-28T01:45:34.142992
+1436e852-c9b7-5c05-b14b-151e619e59fe,https://www.hospicebv.org/,,True,,0,beec46e3-cba4-4620-af9a-f59d1fb1bfda,2025-10-28T01:45:34.143903
+265dcd61-2042-5e79-8de6-8c8006e49665,www.wilshirehcs.org,,False,Invalid URL format,0,c8ce237c-d9c8-4a33-bd8c-3603ca8da796,2025-10-28T01:45:34.144690
+f2ff4084-96c6-5135-943a-8830acf55024,https://www.treasurehealth.org/,,True,,0,f0a69ab8-6356-47ab-9651-85975dec2aeb,2025-10-28T01:45:34.145463
+6c423edf-55ea-583f-8835-3407f396cb08,https://www.bgcarenav.org/,,True,,0,9abd4af3-b0a5-419f-a40b-dd1da0dd336f,2025-10-28T01:45:34.146243
+a29e55d6-9b78-59ff-becd-164a94253d59,https://lifecare.org/,,True,,0,cb3edad6-9585-4453-ad63-82560e15a798,2025-10-28T01:45:34.147083
+6a075875-90de-57e7-9e39-d3014c0c8a24,https://www.lssliving.org/,,True,,0,ed180233-8591-4e2a-af5f-5812c15a26fc,2025-10-28T01:45:34.147918
+335bfec8-779a-5836-b166-34e9949f870a,https://elizabethhospice.org/,,True,,0,571f2163-b2e0-4d86-b1d0-6442d38fcc58,2025-10-28T01:45:34.148712
+4adcc0b5-f2bf-54e8-8672-de33c9daedcd,https://cornerstonehospice.org/,,True,,0,ca2b592a-bc3f-4e6b-944c-c845af5a29b0,2025-10-28T01:45:34.149499
+fa6bbccd-8e3e-5de4-8002-4766645af00f,http://www.lamm.care/,,True,,0,acb4e156-b984-4fad-a4ba-abdbf1544bcf,2025-10-28T01:45:34.150333
+5b0d77be-2182-566b-995d-bfb546357981,https://www.buttehomehealth.com/,,True,,0,9708203a-e2eb-460b-b375-6875567fa97a,2025-10-28T01:45:34.151113
+b6110dce-ad7e-5897-b4ca-ed1e6dcacee1,https://www.wellpower.org/,,True,,0,a6e25c0f-0368-4a8b-b57d-ba34f3e0fdeb,2025-10-28T01:45:34.151892
+14cbfce8-ce44-593e-9b46-08fc6d5777dd,https://www.nah.org/,,True,,0,b415adbb-6e28-47c3-88b7-4c16e7798fb2,2025-10-28T01:45:34.152673
+c30813f1-0ec3-58f3-b08a-e49ba8569eb1,https://www.heritage-communities.com/,,True,,0,a04df5e6-6446-4e3e-9c64-f721e8182c56,2025-10-28T01:45:34.153516
+c0e0c217-a90f-526c-9520-ba783f2c0deb,https://www.houstonhospice.org,,True,,0,8b4c35af-aa8c-4efb-8bcf-9e3938ed3b1a,2025-10-28T01:45:34.154325
+d003413e-2ecc-53fb-80ec-f1c837162888,https://www.hospiceofhumboldt.org/,,True,,0,39ea3e5b-f882-49cb-9de5-af9195a1c498,2025-10-28T01:45:34.155104
+a0044c2e-a2dd-5611-9e80-5224e1efff26,https://www.hospiceeastbay.org/,,True,,0,a697435a-ec16-463a-ae56-fc62c01bfd73,2025-10-28T01:45:34.155911
+fb16940d-b2a0-584f-83db-f347530a31eb,www.hospiceserve.com,,False,Invalid URL format,0,bf599b0e-af9e-43ef-94de-e8e106813579,2025-10-28T01:45:34.156752
+741d1089-d7bc-5edb-b710-f578d41f8f62,https://halifaxhealth.org/services/hospice-and-palliative-medicine,,True,,0,430ff37d-f361-479e-831e-c57b9cc8a707,2025-10-28T01:45:34.157527
+62887c71-e9ed-5c4a-820b-ca8f0bfd13fd,https://www.comfortbridge.com/,,True,,0,52094c02-2bbc-4569-a422-371632c01081,2025-10-28T01:45:34.158298
+c3962b1c-06a7-5bf3-b73c-d2e18b06d025,https://ccvna.com/,,True,,0,62572d2b-d543-4565-8aa2-239d4ba0f5cd,2025-10-28T01:45:34.159085
+df7d4e64-9633-52b8-83bc-b8ee70167efb,https://www.hindshospice.org/,,True,,0,0230e088-b7a7-49b2-af22-3b5ab61af798,2025-10-28T01:45:34.159927
+6bc95c73-663a-5fbd-9975-cd88baeffb04,https://www.everystep.org/,,True,,0,4a9b8f1d-490b-4e83-88b1-7b17847a24e0,2025-10-28T01:45:34.160712
+d4017419-3274-56ae-b4b4-5305325a992d,http://northcountryhomehealth-hospice.org/,,True,,0,169ba008-9e39-41ad-a136-4b2489328962,2025-10-28T01:45:34.161486
+0f7c4bcd-e4ed-52b8-b26b-c6336506fe0d,https://www.familyhospicecare.com/,,True,,0,11b0f6ae-9a3c-416b-bbff-18d158890bba,2025-10-28T01:45:34.162265
+5753739b-67a4-55e6-9375-a94629bb21f2,https://www.caredimensions.org/,,True,,0,c9191eb9-8977-4c12-8959-cd868faf73b8,2025-10-28T01:45:34.163091
+70646cd9-1296-5313-993b-ac84ccc7f3e7,https://havenhospice.com/,,True,,0,7425079a-f26d-41cf-8be8-211ff817a6f4,2025-10-28T01:45:34.163867
+c7270ece-0632-5052-9f59-63702b0fa189,https://www.ohioshospice.org/dayton/,,True,,0,5e9c8ef0-ab82-41b3-9ecc-626be54db644,2025-10-28T01:45:34.164703
+1caaa4ff-df9b-572d-b1b3-9580d088cc51,https://www.covliving.org/,,True,,0,7b7d9231-deaa-40cd-8ec6-568787face74,2025-10-28T01:45:34.165484
+6a79368c-6548-5e38-bc9d-cd29e6c05719,https://www.carehospice.com/,,True,,0,bbd899bc-87ec-47a1-a5d1-b52fc63cf5d7,2025-10-28T01:45:34.166347
+ef9eacb8-694a-5d20-b20c-a2af625a27ff,www.hom.org,,False,Invalid URL format,0,51ec6ddc-a606-4d1c-a266-c97b3852a722,2025-10-28T01:45:34.167123
+e9c605f4-21f8-5a23-981c-13ef790ca01d,https://iuhealth.org/,,True,,0,8ba53130-e859-43b7-ba95-7caa234dc630,2025-10-28T01:45:34.167892
+1eb3dc97-a7ca-58c1-98d4-eea3311541e4,http://publichealth.lacounty.gov/sapc/,,True,,0,5f6f1d30-6f0c-46e3-9d8a-2b9f88a0f2b8,2025-10-28T01:45:34.168684
+fc2d5940-6c32-5aa1-ac3f-7af6001342b3,https://www.goodsam.care/,,True,,0,e2295ad0-1524-48fa-9eb8-e30a6aa38b36,2025-10-28T01:45:34.169527
+121e808c-6fd3-5c6d-91e1-fabca8131630,http://www.gonzaba.com/,,True,,0,fa368eb1-4394-4783-bc52-bd27f1d51cd5,2025-10-28T01:45:34.170297
+14350b66-a95c-5a19-985b-837f833d374f,https://hospiceofhuntington.org/,,True,,0,f50f7d4e-26f2-4d9e-a522-f496baf23619,2025-10-28T01:45:34.171069
+17040213-5524-5cf3-8510-1beba4f541e5,https://www.hospiceoflenawee.org/,,True,,0,3c4ac718-7957-42c4-844c-e9f07718a5fa,2025-10-28T01:45:34.171830
+e77526e7-c4bb-52fd-a1cb-b0b27a68f663,https://rubiconfounders.com/,,True,,0,f8deb387-1694-48a8-83d4-0c99f948e0dc,2025-10-28T01:45:34.172658
+2ef971ab-6ef6-545b-a36c-9f30e0105a8d,http://www.opuscare.org/,,True,,0,08207ac0-1bd0-4e9b-90a3-9d3f247c3ab1,2025-10-28T01:45:34.173428
+b9e2f64c-a1bb-5c6a-9079-a4ddd0d4187e,https://www.doverhealth.com/,,True,,0,998c9863-1e1d-438f-96e1-a0ad8f9ab431,2025-10-28T01:45:34.174199
+c5aa442a-7fa2-5897-99dd-667fd2597294,https://www.hospicenwo.org/,,True,,0,83810599-a741-46fd-9a3a-be2415faeb08,2025-10-28T01:45:34.174965
+fe7cdf99-848e-514c-ba9b-1c87fd4c1b7c,https://www.hvhospice.org/,,True,,0,76c2aa7b-c8a3-4cea-815c-279c9f0d3693,2025-10-28T01:45:34.175804
+65236fad-9519-502c-b4fe-1f55151df5a5,https://www.eeh.org,,True,,0,55c65484-455e-4833-8e05-d3fd5d506af3,2025-10-28T01:45:34.176585
+4d3b724c-b6ff-581d-803c-8ac4e7f91f3d,https://www.rochesterregional.org/,,True,,0,926b87ec-45a7-4248-935e-19b3be27cc5d,2025-10-28T01:45:34.177366
+7204f71a-970d-54c9-8b85-b04794526c7a,https://www.jssa.org/,,True,,0,65bb9176-e2eb-4aa6-9e4f-4d8d7c4a1d21,2025-10-28T01:45:34.178146
+2b46982a-bb5d-572f-91ea-7991477e71e3,https://northernlighthealth.org/Our-System/Eastern-Maine-Medical-Center/Locations/Northern-Light-Eastern-Maine-Medical-Center,,True,,0,8480609a-b90b-4789-b85e-ccec1e6b6813,2025-10-28T01:45:34.179001
+97e12b1f-f4e7-5bf4-9f5f-c1def8593213,https://www.columbushospice.com/,,True,,0,c1fdeaf9-8042-45bc-8401-da481cf9ef34,2025-10-28T01:45:34.179776
+8908f80a-defe-5493-880c-1f9c51ccb933,www.hospiceofwc.org,,False,Invalid URL format,0,a8a09112-95f9-4c5d-ab88-c0274d0d19fd,2025-10-28T01:45:34.180546
+37279300-1cf2-56b0-a850-a612db61d83b,www.hospiceofhillsdalecounty.org,,False,Invalid URL format,0,609aa63d-c84f-425c-8e4a-43635e03eed4,2025-10-28T01:45:34.181327
+12f2f0bf-7b17-5af3-bf6d-651ff46f67a1,http://vantagehospice.com,,True,,0,b13bd49c-e80a-4099-ae64-2cde99d72f28,2025-10-28T01:45:34.182169
+dc3a1cff-60b3-563f-9486-57596aef4f49,https://www.lutheranhomessc.org/,,True,,0,aaf2853b-a9e8-43e4-8373-d915126e6016,2025-10-28T01:45:34.182952
+510d28c9-5ef8-59a4-859e-1589d36c2f95,www.edcgov.us,,False,Invalid URL format,0,e8c254e2-72ed-4654-8258-02a395017a2a,2025-10-28T01:45:34.183729
+4aa87f81-cd78-5b45-b719-40dd1811abc3,https://www.samaritannj.org/,,True,,0,0ef41936-6836-4758-ba79-71c46992aedf,2025-10-28T01:45:34.184514
+531cba06-405d-50aa-9f5f-f4df6342c158,https://tidewellhospice.org/,,True,,0,b4eccce2-f058-4251-a1d9-19f8f458d03a,2025-10-28T01:45:34.185364
+85aa2590-76cf-5b16-a52f-c00378418177,https://elizabethhospice.org/california-hospice-network-2/,,True,,0,30016840-8e17-4e84-a695-1d977687eb90,2025-10-28T01:45:34.186134
+06e6184c-e21e-58b2-b6df-555309b92180,https://www.hopehealthco.org/,,True,,0,dd997445-4a85-4e56-a055-c84a34737bfa,2025-10-28T01:45:34.186896
+99642ab9-43dd-59c4-a47d-1995f29bf2de,https://empathhomehealth.org/,,True,,0,176945ee-5614-4ec5-984f-ca9795c60c71,2025-10-28T01:45:34.187651
+23e6fff4-31b6-5c26-8ec8-a9f735f1a3e5,https://montgomeryhospice.org/,,True,,0,9262ee89-8cff-4113-ae6b-b9bdbf05d2cf,2025-10-28T01:45:34.188458
+dd40df23-406a-5814-adef-fd5f03815ec2,https://www.uhc.com,,True,,0,b03c3557-1e6b-447a-945c-55760df71278,2025-10-28T01:45:34.189239
+c10b9ed9-f6b5-5424-88c0-cef0e0ede62e,https://angelahospice.org/,,True,,0,b778fc9a-bd29-4035-abfa-69da65b9d831,2025-10-28T01:45:34.190004
+70e4c98f-a93f-53ca-9227-99552eb89200,https://www.catholichealthservices.org/hospice/,,True,,0,97089b09-d855-454c-a0c6-2ed568ec893b,2025-10-28T01:45:34.190771
+00c0ab76-ccdf-5657-9285-4d9cace9330a,http://www.nd.gov/ndvh/,,True,,0,97cace08-3e59-4931-a4cb-1a09a297730f,2025-10-28T01:45:34.191596
+8c7474b3-2ede-58f0-9878-2cde60a56d15,https://www.hom.org/,,True,,0,22c9bb19-e1e8-4548-b0cc-737fd018bee3,2025-10-28T01:45:34.192371
+3e77ca29-7a6f-5af0-90d1-a31500382564,https://hopva.org/,,True,,0,1d2525ef-41b8-4beb-b791-4bba3e69f064,2025-10-28T01:45:34.193143
+94ea2aaa-7390-5e4f-9721-d643b54bb3eb,https://www.lutheranseniorlife.org/,,True,,0,8b1b17db-0d89-4ce2-a731-d8f736285f9b,2025-10-28T01:45:34.193913
+2ec4206a-a673-5f61-89f4-cfcc3b7c0cfd,https://www.hospicebr.org/,,True,,0,1bedf229-09f5-41e6-9fef-ef3169c1e8c9,2025-10-28T01:45:34.194758
+4eba428c-60eb-5e00-a71c-6e9dc2ef8411,https://foothills-cares.org/,,True,,0,5ea6d87b-9c46-484d-bc55-739ae940f190,2025-10-28T01:45:34.195533
+8cfce14f-ecf8-546a-8512-8387ab8368c6,https://www.angelic.health/,,True,,0,ef102f77-0a46-4de4-ab55-4973de006e17,2025-10-28T01:45:34.196313
+47b06cdc-9dbd-5a60-a823-b89e73f3a601,https://therapybrands.com/contact-us/,,True,,0,idmKlbxW2Sto2YV-kI22EDAw,2025-10-28T01:45:37.271115
+afd1aa9c-b2b2-5c8a-9872-9da8a56b190b,https://therapybrands.com/contact-us/,,True,,0,idoM01so5ZTltYEYvaZK8wAQ,2025-10-28T01:45:39.595200
