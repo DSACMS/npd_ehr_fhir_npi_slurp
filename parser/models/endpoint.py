@@ -167,6 +167,7 @@ class FHIREndpoint(FHIRResource):
                 if code:  # Only create record if we have a code
                     payload_record = {
                         'endpoint_instance_id': self.uuid_id,
+                        'endpoint_instance_original_id': self._clean_string_value(self.original_id, 200),
                         'payload_type_id': self._clean_string_value(code, 200),
                         'mime_type_id': None,  # Will be populated separately
                         'system': self._clean_string_value(system, 200),
