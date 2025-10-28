@@ -44,19 +44,93 @@ We can and will handle these later on in the process, so we are not implementing
 
 ### Basic Usage
 
+#### Option 1: New FHIR Cache Parser (Recommended)
+
+For processing existing FHIR cache data directly into PostgreSQL-ready format:
+
+```bash
+# Process entire FHIR cache
+python -m parser.cli --cache-dir /path/to/fhir_json_cache --output-dir ./csv_output
+
+# Test mode (limited processing for validation)
+python -m parser.cli --cache-dir /path/to/fhir_json_cache --output-dir ./csv_output --test
+
+# With verbose output
+python -m parser.cli --cache-dir /path/to/fhir_json_cache --output-dir ./csv_output --verbose
+```
+
+#### Option 2: Legacy Pipeline
+
 First download the endpoint data from the [Lantern Dashboard download page](https://lantern.healthit.gov/?tab=downloads_tab)
 Put that data in local_data/prod_data/fhir_endpoints.csv
 
-Then choose either go.py or manual runnning of the pipeline step-by-step:
+Then choose either go.py or manual running of the pipeline step-by-step:
 
 ```bash
 # Run the complete pipeline
 python go.py
 ```
 
-Or you can look inside py to understand what specific steps should be run in.
+Or you can look inside go.py to understand what specific steps should be run.
 
-## Pipeline Steps
+## FHIR Cache Parser (New)
+
+The FHIR Cache Parser is a modern, streamlined approach for processing FHIR endpoint data directly from cached JSON files.
+
+### Features
+
+* **Direct Cache Processing**: Processes FHIR JSON files directly from vendor cache directories
+* **Dual Output Format**: Generates both FHIR-focused and NPD-compliant CSV files
+* **NPI Validation**: Real-time validation with 9M+ cached NPIs and CMS API fallback
+* **UUID5 Generation**: Deterministic UUIDs for referential integrity
+* **Field Coverage Tracking**: Comprehensive data loss analysis and reporting
+* **PostgreSQL Ready**: CSV files formatted for direct database import
+* **Performance Optimized**: Singleton patterns and efficient memory usage
+
+### Output Files
+
+The parser generates two sets of CSV files:
+
+#### FHIR Analysis Files (Original)
+* `ehr_vendor.csv` - EHR vendor information
+* `organization.csv` - FHIR Organization resources with metadata
+* `endpoint_instance.csv` - FHIR Endpoint resources with validation
+* `endpoint_instance_to_other_id.csv` - NPI validation results
+* `endpoint_instance_to_payload.csv` - Payload type mappings
+* `data_lineage.csv` - Complete traceability records
+* `field_coverage_log.csv` - Data processing coverage analysis
+
+#### NPD Schema Files (Database Ready)
+* `npd_endpoint_instance.csv` - Endpoints matching `full_npd.sql` schema
+* `npd_endpoint_instance_to_other_id.csv` - Clean NPI relationships
+* `npd_endpoint_instance_to_payload.csv` - Payload mappings
+
+### Processing Report
+
+Each run generates a detailed JSON processing report with:
+* Processing statistics and success rates
+* Resource counts by type
+* Vendor-by-vendor coverage analysis
+* Error logs and validation results
+* Performance metrics
+
+### Example Usage
+
+```bash
+# Process production cache with full validation
+python -m parser.cli \
+  --cache-dir ../npd_ehr_scrape_cache/cache/fhir_json_cache \
+  --output-dir ./production_output
+
+# Test mode for development
+python -m parser.cli \
+  --cache-dir ./test_cache \
+  --output-dir ./test_output \
+  --test \
+  --verbose
+```
+
+## Legacy Pipeline Steps
 
 ### Step 1: Extract List Sources
 
