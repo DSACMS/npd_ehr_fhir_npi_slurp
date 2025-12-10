@@ -1,8 +1,9 @@
 {
   "name": "npd_ehr_fhir_npi_slurp",
-  "description": "Slurps metadata from the EHR FHIR endpoints listed in Lantern",
-  "longDescription": "A comprehensive data processing pipeline for extracting, analyzing, and normalizing EHR (Electronic Health Records) FHIR endpoint data from healthcare providers. This tool helps assess HTI-2 compliance and generates normalized datasets for healthcare interoperability analysis.",
-  "status": "production",
+  "version": "1.0.0",
+  "description": "Slurps metadata from the EHR FHIR endpoints listed in Lantern.",
+  "longDescription": "This project provides a full data processing pipeline for extracting, analyzing, validating, and normalizing EHR (Electronic Health Records) FHIR endpoint metadata sourced from healthcare providers listed in Lantern. It supports interoperability analysis, HTI-2 compliance assessments, and downstream structured data transformation, enabling consistent and secure integrations across provider systems. The tooling automates discovery, retrieval, normalization, and export of FHIR server metadata to better support federal interoperability requirements.",
+  "status": "Production",
   "permissions": {
     "licenses": [
       {
@@ -10,14 +11,19 @@
         "URL": "https://github.com/DSACMS/npd_ehr_fhir_npi_slurp/blob/main/LICENSE"
       }
     ],
-    "usageType": "openSource",
-    "exemptionText": ""
+    "usageType": [
+      "openSource"
+    ],
+    "exemptionText": null
   },
   "organization": "Centers for Medicare & Medicaid Services",
   "repositoryURL": "https://github.com/DSACMS/npd_ehr_fhir_npi_slurp",
-  "projectURL": "",
   "repositoryHost": "github.com/DSACMS",
   "repositoryVisibility": "public",
+  "homepageURL": "",
+  "downloadURL": "",
+  "disclaimerURL": "",
+  "disclaimerText": "",
   "vcs": "git",
   "laborHours": 96335,
   "reuseFrequency": {
@@ -31,17 +37,23 @@
   "categories": [
     "application-development"
   ],
-  "softwareType": "standalone/desktop",
+  "softwareType": "standalone/web",
   "languages": [
     "Python",
     "Shell"
   ],
   "maintenance": "internal",
-  "contractNumber": "0",
+  "contractNumber": [
+    "0"
+  ],
+  "SBOM": "https://github.com/DSACMS/npd_ehr_fhir_npi_slurp/network/dependencies",
+  "relatedCode": [],
+  "reusedCode": [],
+  "partners": [],
   "date": {
     "created": "2025-07-22T19:06:48Z",
     "lastModified": "2025-07-28T13:04:36Z",
-    "metaDataLastUpdated": "2025-07-30T14:47:55.124Z"
+    "metadataLastUpdated": "2025-07-30T14:47:55.124Z"
   },
   "tags": [
     "EHR",
@@ -52,9 +64,8 @@
     "email": "opensource@cms.hhs.gov",
     "name": "Remy DeCausemaker"
   },
-  "feedbackMechanisms": [
-    "https://github.com/DSACMS/npd_ehr_fhir_npi_slurp/issues"
-  ],
+  "feedbackMechanism": "https://github.com/DSACMS/npd_ehr_fhir_npi_slurp/issues",
+  "AIUseCaseID": "0",
   "localisation": false,
   "repositoryType": "tools",
   "userInput": true,
@@ -64,7 +75,6 @@
     "National Provider Directory"
   ],
   "systems": [],
-  "upstream": "https://github.com/DSACMS/npd_ehr_fhir_npi_slurp/network/dependencies",
   "subsetInHealthcare": [
     "operational"
   ],
